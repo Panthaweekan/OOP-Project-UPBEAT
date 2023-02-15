@@ -14,4 +14,16 @@ public interface Overview {
     public interface CityCrew{
 
     }
+    public interface Action{
+
+    }
+    public interface Parser{
+
+    }
+    public interface Tokenizer{
+        
+    }
+    public interface Evaluator{
+
+    }
 }
