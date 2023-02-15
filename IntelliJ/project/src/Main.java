@@ -3,6 +3,6 @@ public class Main {
         Player a = new Player();
         System.out.println(a.cur_budget);
         a.Action();
-    
+        a.Action();
     }
 }
