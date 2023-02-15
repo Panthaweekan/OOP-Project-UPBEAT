@@ -21,7 +21,7 @@ public class Action_Command implements Overview.Action_Command {
     }
 
     @Override
-    public void rellocate() {
+    public void relocate() {
 
     }
 }

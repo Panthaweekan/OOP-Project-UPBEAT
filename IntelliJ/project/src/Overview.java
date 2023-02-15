@@ -20,7 +20,7 @@ public class Overview {
         void invest();
         void shoot();
         void collect();
-        void rellocate();
+        void relocate();
     }
     public interface Territory{
         void create_region();
