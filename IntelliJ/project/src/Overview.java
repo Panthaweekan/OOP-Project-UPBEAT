@@ -1,4 +1,7 @@
-public interface Overview {
+public class Overview {
+    public class Configuration{
+        
+    }
     public interface Player{
 
     }
@@ -21,7 +24,7 @@ public interface Overview {
 
     }
     public interface Tokenizer{
-        
+
     }
     public interface Evaluator{
 
