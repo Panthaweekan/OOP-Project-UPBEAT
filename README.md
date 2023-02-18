@@ -14,3 +14,85 @@ git command for use in VScode Terminal
   - What construct plan look like? (I'm not sure about Sample construct plan in Teacher's documentation
   
  date. ; FEB/18/2023
+
+# Sample
+while (deposit) {
+  if (deposit - 100)
+  then collect (deposit / 4)
+  else if (budget - 25) then invest 25
+  else {}
+}
+
+# AST 
+
+Program
+   |
+   +-- StatementList
+         |
+         +-- BlockStatement
+         |     |
+         |     +-- StatementList
+         |     |     |
+         |     |     +-- AssignmentStatement
+         |     |     |     |
+         |     |     |     +-- Identifier (name: x)
+         |     |     |     |
+         |     |     |     +-- AddExpression
+         |     |     |           |
+         |     |     |           +-- Identifier (name: y)
+         |     |     |           |
+         |     |     |           +-- MultiplyExpression
+         |     |     |                 |
+         |     |     |                 +-- NumberLiteral (value: 2)
+         |     |     |                 |
+         |     |     |                 +-- Identifier (name: z)
+         |     |     |
+         |     |     +-- RegionCommand (command: invest)
+         |     |           |
+         |     |           +-- NumberLiteral (value: 100)
+         |     |
+         |     +-- IfStatement
+         |           |
+         |           +-- LessThanExpression
+         |           |     |
+         |           |     +-- Identifier (name: x)
+         |           |     |
+         |           |     +-- NumberLiteral (value: 10)
+         |           |
+         |           +-- BlockStatement (thenBlock)
+         |           |     |
+         |           |     +-- StatementList
+         |           |           |
+         |           |           +-- RegionCommand (command: collect)
+         |           |                 |
+         |           |                 +-- DivideExpression
+         |           |                       |
+         |           |                       +-- Identifier (name: y)
+         |           |                       |
+         |           |                       +-- NumberLiteral (value: 4)
+         |           |
+         |           +-- BlockStatement (elseBlock)
+         |                 |
+         |                 +-- StatementList
+         |                       |
+         |                       +-- AttackCommand (command: shoot)
+         |                             |
+         |                             +-- Direction (direction: upleft)
+         |                             |
+         |                             +-- NumberLiteral (value: 1000)
+         |
+         +-- WhileStatement
+               |
+               +-- GreaterThanExpression
+               |     |
+               |     +-- Identifier (name: x)
+               |     |
+               |     +-- NumberLiteral (value: 0)
+               |
+               +-- BlockStatement (loopBlock)
+                     |
+                     +-- StatementList
+                           |
+                           +-- MoveCommand (command: move)
+                                 |
+                                 +-- Direction (direction: upright)
