@@ -23,7 +23,7 @@ while (deposit) {
   else {}
 }
 
-# AST 
+# AST (Blame view)
 
 Program
    |
