@@ -14,6 +14,9 @@ git command for use in VScode Terminal
   - What construct plan look like? (I'm not sure about Sample construct plan in Teacher's documentation
   
  date. ; FEB/18/2023
+ 
+# Tomorrow Plan
+Tokenizer must done and Parser must be implemented (not all methods)
 
 # Sample
 while (deposit) {
