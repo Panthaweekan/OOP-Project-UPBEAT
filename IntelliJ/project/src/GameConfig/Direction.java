@@ -1,6 +1,6 @@
 package GameConfig;
 
-public enum Direction {
+public enum Direction { // Possible direction in-game
     Up,
     Down,
     Left,
