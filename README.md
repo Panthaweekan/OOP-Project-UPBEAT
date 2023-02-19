@@ -13,8 +13,8 @@ git command for use in VScode Terminal
  
 # Finish
   - Tokenizer
-  
- date. ; FEB/18/2023
- 
+
 # Tomorrow Plan
 implement AST and Parser (It's ok if it not done)
+
+# date. ; FEB/19/2023
