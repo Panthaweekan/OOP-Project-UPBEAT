@@ -1,165 +1,280 @@
-:root {
-    --orange: #ff8473;
-  }
-  
-  body,
-  html {
+html {
     height: 100%;
-    font-family: "Lato", sans-serif;
   }
-  
   body {
-    background-color: var(--orange);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    color: rgb(255, 255, 255);
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#8ea2c8, #4e54c8);
   }
   
-  .container {
-    width: 900px;
-    transform: translateX(0rem) translateY(6.5rem);
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
   }
-  .container2 {
-    width: 900px;
-    transform: translateX(35rem) translateY(-7.8rem);
+  .login-box2 {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    /* background transparent to allow for :before&::after effect */
-    background: transparent;
-    max-width: 320px;
-    /*height: 300px;*/
-    padding: 2rem;
+
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  .login-box2 h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  .login-box .user-box {
     position: relative;
   }
-  form::before,
-  form::after {
-    position: absolute;
-    content: "";
+  .login-box2 .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
     width: 100%;
-    height: 100%;
-    transition: all 0.5s ease;
-  }
-  form::before {
-    z-index: -1;
-    background: transparent;
-    transform: translateX(-3.5rem) translateY(-3.75rem);
-    border: 6px solid #0e39fe;
-  }
-  form::after {
-    background: #0ea8ec;
-    z-index: -2;
-    transform: translateX(-2rem) translateY(-2.25rem);
-  }
-  
-  form h1 {
-    text-align: center;
-    margin: 0 0 0.25rem 0;
-    padding: 0;
-    font-size: 1.5rem;
-  }
-  
-  form small {
-    display: block;
-    margin: 0 auto 1rem;
-    padding: 0;
-    font-size: 14px;
-  }
-  
-  /* focus-within pseudo element allows us to change elements inside the form when "focused/clicked on" */
-  form:focus-within {
-    background: #0ea8ec;
-  }
-  
-  form:focus-within::before {
-    width: 0%;
-    height: 0%;
-    transform: translatex(0px) translatey(0px);
-  }
-  /*end focus-within*/
-  /*containers for input and labels*/
-  form .field {
-    display: flex;
-    flex-flow: column-reverse;
-    margin-bottom: 1em;
-  }
-  
-  form label,
-  form input {
-    transition: all 0.3s ease;
-    touch-action: manipulation;
-  }
-  form label {
-    opacity: 0;
-  }
-  form input {
-    padding: 10px 20px;
-    border: 4px solid white;
-    margin: 0 1.5rem;
-    background-color: transparent !important;
-    -webkit-appearance: none;
-    /*font-weight: bold;*/
-    color: rgb(0, 0, 0);
-    /*important to override chrome's yellow background and black text autofill*/
-  }
-  .form-field input:-webkit-autofill {
-    background-color: transparent !important;
-    -webkit-box-shadow: 0 0 0px 1000px #0ea8ec inset;
-    -webkit-text-fill-color: white !important;
-  }
-  .form-field input::placeholder {
-    color: rgb(0, 0, 0);
-  }
-  .form-field input:focus {
-    color: #0e39fe;
-    font-weight: bold;
-    outline: 0;
-    border: 6px solid #0e39fe;
-  }
-  .form-field input::-webkit-input-placeholder {
-    opacity: 1;
-    transition: inherit;
-  }
-  
-  .form-field input:focus::-webkit-input-placeholder {
-    opacity: 0;
-  }
-  
-  form button {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
     border: none;
-    padding: 0.85rem 1rem;
-    margin-top: 2rem;
-    background-color: #0e39fe;
-    color: white;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    width: 65%;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box2 .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+
+  .login-box .user-box label {
     position: absolute;
-    bottom: -20px;
-    right: 18%;
-    letter-spacing: 0.15em;
-    transition: all 0.3s ease;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .login-box2 .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
   }
   
-  form button:hover {
-    border: 6px solid #090c9b;
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  .login-box2 .user-box input:focus ~ label,
+  .login-box2 .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
   }
   
-  p {
-    font-size: 0.75rem;
-    line-height: 1.125rem;
-    margin: 0.5rem 1.5rem 1.75rem 1.5rem;
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  .login-box2 form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
   }
   
-  .form-field p:success-message {
-    font-size: 1.25rem;
-    text-align: center;
-    line-height: 2rem;
-    margin: 1.5rem auto 5rem auto;
+  .login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
   }
+  .login-box2 a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  .login-box2 a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  .login-box2 a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  .login-box2 a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  .login-box2 a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  .login-box2 a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
   
