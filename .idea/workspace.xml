@@ -1,96 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3322c306-b622-459e-8582-5f95e7cdbd96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/howpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/howpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/planpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/planpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/planpage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/seleccha.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/selecta.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Expression/BinaryOperateNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Expression/NearbyNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Expression/OpponentNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/CalculateNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/GameConfig/GamePlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/GameConfig/Player/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/GameConfig/Region/Region.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/Parser/GameParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/Parser/GameParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/Parser/ParserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntelliJ/project/src/Tokenizer/TokenizerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP-Project-UPBEAT-1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Expression/BinaryOperateNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Expression/NearbyNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Expression/OpponentNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Node$Exec.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Node$Expr.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/AssignmentNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/AttackNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/CalculateNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/CollectNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/DoneNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/Exception_AST$IntegerRequired.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/Exception_AST$LeftoverTokenException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/Exception_AST$UndefinedIdentifier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/Exception_AST$UnknownOperator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/Exception_AST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/If_ElseNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/InvestNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/MoveNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/RelocateNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/AST/Statement/WhileNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/GameConfig/Configuration.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/GameConfig/Direction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/GameConfig/GameCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/GameConfig/GameSetting.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/GameConfig/Player/Player.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/GameConfig/Region/Region.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Parser/GameParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Parser/Parser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Parser/ParserException$InvalidDirection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Parser/ParserException$InvalidInfoExpression.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Parser/ParserException$NeedStatement.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Parser/ParserException$NoSuchCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Parser/ParserException$NotImplemented.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Parser/ParserException$specVarIdentifier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Parser/ParserException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Tokenizer/ExprTokenizer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Tokenizer/TokenException$ExceptChar.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Tokenizer/TokenException$NoMoreToken.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Tokenizer/TokenException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Tokenizer/Tokenizer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOP-Project-UPBEAT-1/Tokenizer/TokenizerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/first.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/first.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/first.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/first.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/AssignmentNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/AssignmentNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/AttackNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/AttackNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/BinaryOperateNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/CollectNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/CollectNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/DoneNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/DoneNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/Exception_AST.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/Exception_AST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/If_ElseNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/If_ElseNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/InvestNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/InvestNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/MoveNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/MoveNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/NearbyNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/RelocateNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/RelocateNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/WhileNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/AST/Statement/WhileNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/GameConfig/Configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/GameConfig/Configuration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/Tokenizer/ExprTokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/Tokenizer/ExprTokenizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntelliJ/project/src/Tokenizer/TokenException.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntelliJ/project/src/Tokenizer/TokenException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="3322c306-b622-459e-8582-5f95e7cdbd96" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,17 +25,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/xanta/OPP-project-2023/OOP-Project-UPBEAT-1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xanta/OPP-project-2023/OOP-Project-UPBEAT-1&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TokenizerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP-Project-UPBEAT-1" />
