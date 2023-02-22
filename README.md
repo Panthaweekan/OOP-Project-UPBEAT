@@ -1,4 +1,4 @@
-# Main Branch!
+# Frontend!
 
 work space!
 - https://miro.com/app/board/uXjVPr34o4g=/
@@ -6,4 +6,7 @@ work space!
 
 git command for use in VScode Terminal
  - http://guides.beanstalkapp.com/version-control/common-git-commands.html
+ 
+ # NAPATSIRI TOMORROW I WILL TEACH U TO USE THIS BRANCH !!!
+ -.-
 
