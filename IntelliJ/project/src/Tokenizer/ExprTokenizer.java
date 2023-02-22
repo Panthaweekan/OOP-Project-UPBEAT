@@ -14,12 +14,12 @@ public class ExprTokenizer implements Tokenizer {
 
     @Override
     public boolean hasNext() {
-        return next == null;
+        return next != null;
     }
 
     @Override
     public String consume() {
-        if (hasNext())
+        if (!hasNext())
             throw new TokenException.NoMoreToken(prev);
         String result = next;
         compute();
@@ -66,35 +66,39 @@ public class ExprTokenizer implements Tokenizer {
         return Character.isWhitespace(c) || c == '#' || c == '"';
     }
     
-    private void compute() {
-       if(src == null) return; // nothing to compute!
-       StringBuilder sb = new StringBuilder();
-       while (pos < src.length() && ignoreCommentChar(src.charAt(pos))){
-        if (src.charAt(pos) == '#')
-            CommentLineCal();
-        else pos++;
-       }
+    private boolean isLetter(char c) {
+        return Character.isLetter(c) || c == '_';
+    }
 
-       if (pos == src.length()) { // pos == src! so just return
-        prev = next;
-        next = null;
-        return;
-        }
-        String Operand = "()+-*/%^{}=";
-        char c = src.charAt(pos);
-        if(Character.isLetter(c)){
-            while (pos < src.length() && Character.isLetter(src.charAt(pos))) {
-                sb.append(src.charAt(pos));
+    private void compute() {
+        if (src == null) return;
+        StringBuilder sb = new StringBuilder();
+        while (pos < src.length() && ignoreCommentChar(src.charAt(pos))) {
+            if (src.charAt(pos) == '#')
+                CommentLineCal();
+            else
                 pos++;
-            }
-        } else if(Character.isDigit(c)){
+        }
+
+        if (pos == src.length()) {
+            prev = next;
+            next = null;
+            return;
+        }
+        char c = src.charAt(pos);
+        if (Character.isDigit(c)) {
             while (pos < src.length() && Character.isDigit(src.charAt(pos))) {
                 sb.append(src.charAt(pos));
                 pos++;
             }
-        } else if(Operand.contains(String.valueOf(c))){
-            sb.append(src.charAt(pos));
+        } else if (isLetter(c) || c == '_') {
+            while (pos < src.length() && isLetter(src.charAt(pos))) {
+                sb.append(src.charAt(pos));
                 pos++;
+            }
+        } else if ("()+-*/%^{}=".contains(String.valueOf(c))) {
+            sb.append(src.charAt(pos));
+            pos++;
         } else {
             throw new TokenException.ExceptChar(c);
         }
@@ -102,6 +106,5 @@ public class ExprTokenizer implements Tokenizer {
         next = sb.toString();
     }
 
-    
 
 }
