@@ -18,8 +18,8 @@ public abstract class ParserException extends RuntimeException {
     }
 
     public static class InvalidDirection extends ParserException {
-        public InvalidDirection(String direction) {
-            super(String.format("invalid-direction ->'%s'!!!", direction));
+        public InvalidDirection(String dir) {
+            super(String.format("invalid-direction ->'%s'!!!", dir));
         }
     }
 

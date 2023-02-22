@@ -41,7 +41,7 @@ public class GameParser implements Parser {
 
     public GameParser(ExprTokenizer tkz){
         if(!tkz.hasNext()){
-            // throw error
+            throw new NeedStatement();
         }
         this.tkz = tkz;
     }
@@ -50,7 +50,7 @@ public class GameParser implements Parser {
     public Exec Parse() {
         Exec parse = parsePlan();
         if(tkz.hasNext()){
-            // throw error
+            throw new UnExceptTokenException(tkz.peek());
         }
         return parse;
     }
