@@ -7,14 +7,21 @@ git command for use in VScode Terminal
  - http://guides.beanstalkapp.com/version-control/common-git-commands.html
 
 - Problem now!
-  - How to implement Parser and AST for upbeat game style (25%)
-  - How to used AST to help us created Correct Parser (50%)
+  - all gameconfig and need to implement un-finish gamecommand to interact with player!
+  - create Parser-tester and AST to check coverage for this game
+  - redo model design and overview
   - need to know about Parser & Tokenizer more and more to make this game! (60%)
  
 # Finish
   - Tokenizer
+  - GameParser
+  - AST Node for Parser
+  
+# Need to do next
+  - Parser-tester & AST tester 
 
 # Tomorrow Plan
-implement AST and Parser (It's ok if it not done)
+  - do some documentation for assignment!
+  - Simpify code again and check wrong syntax!
 
-# date. ; FEB/19/2023
+# date. ; FEB/23/2023 (Deadline)
