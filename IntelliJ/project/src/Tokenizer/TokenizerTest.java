@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// used in IntelliJ to Test!
+
 public class TokenizerTest {
     private ExprTokenizer tkz;
 

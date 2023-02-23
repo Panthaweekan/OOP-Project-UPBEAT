@@ -7,6 +7,7 @@ import AST.Statement.*;
 import AST.Expression.BinaryOperateNode;
 import AST.Expression.NearbyNode;
 import AST.Node.*;
+import AST.Statement.Exception_AST.*;
 import GameConfig.Direction;
 import Parser.ParserException.*;
 import Tokenizer.ExprTokenizer;
