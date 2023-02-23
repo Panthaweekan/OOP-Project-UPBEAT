@@ -58,18 +58,18 @@ public class TokenizerTest {
     public void testConsumeString() {
         tkz = new ExprTokenizer(null);
         assertThrows(TokenException.NoMoreToken.class, () -> tkz.consume(""));
-        assertThrows(TokenException.NoMoreToken.class, () -> tkz.consume("a"));
+        assertThrows(TokenException.NoMoreToken.class, () -> tkz.consume("hi"));
         tkz = new ExprTokenizer("");
         assertThrows(TokenException.NoMoreToken.class, () -> tkz.consume(""));
-        assertThrows(TokenException.NoMoreToken.class, () -> tkz.consume("a"));
-        tkz = new ExprTokenizer("a");
-        assertTrue(tkz.consume("a"));
-        tkz = new ExprTokenizer("a");
-        assertFalse(tkz.consume("abc"));
-        assertTrue(tkz.consume("a"));
-        tkz = new ExprTokenizer("abc");
-        assertFalse(tkz.consume("a"));
-        assertTrue(tkz.consume("abc"));
+        assertThrows(TokenException.NoMoreToken.class, () -> tkz.consume("hi"));
+        tkz = new ExprTokenizer("hi");
+        assertTrue(tkz.consume("hi"));
+        tkz = new ExprTokenizer("hi");
+        assertFalse(tkz.consume("hello"));
+        assertTrue(tkz.consume("hi"));
+        tkz = new ExprTokenizer("hello");
+        assertFalse(tkz.consume("hi"));
+        assertTrue(tkz.consume("hello"));
     }
 
     @Test

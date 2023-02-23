@@ -151,7 +151,7 @@ public class GameParser implements Parser {
     private Exec parseShootCommand() {
         Direction dir = parseDirection();
         Expr expr = parseExpression();
-        return new AttackNode(expr,dir); // AttacjNode on AST!
+        return new AttackNode(expr,dir); // AttackNode on AST!
     }
 
     private Direction parseDirection() {
