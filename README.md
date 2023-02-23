@@ -7,3 +7,5 @@ work space!
 git command for use in VScode Terminal
  - http://guides.beanstalkapp.com/version-control/common-git-commands.html
  
+# Doc (23/2/2023)
+ - https://docs.google.com/document/d/1E1WuKGlhLUqvdyuBnl1TUP5KxOKySHV182qMFKrCtZI/edit?usp=sharing
