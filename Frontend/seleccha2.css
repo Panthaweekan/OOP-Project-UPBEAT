@@ -1,5 +1,5 @@
 
-  body {
+body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -23,13 +23,13 @@
   }
 
   .square {
+    position: relative;
     width: 140vmin;
     height: 80vmin;
     background-color: #d2f0fd ;
     opacity: 0.8;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    position: relative;
   }
   
   #logo {
@@ -46,14 +46,14 @@
     top: 15%;
     left: 50.4%;
     transform: translateX(-50%);
-    width: 220px;
+    width: 350px;
     height: 47px;
     border-radius: 20px;
     background-color: #1589E6;
   }
 
   #box1::before {
-    content: "How to play";
+    content: "Select Character";
     display: block;
     color: #fff;
     font-size: 32px;
@@ -61,7 +61,139 @@
     margin-top: 4px;
     font-family: Arial Rounded MT Bold;
   }
-   
+
+  .hero-section {
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 130px;
+    grid-row-gap: 10px;
+    max-width: var(--width-container);
+    width: 100%;
+    opacity: 10;
+  }
+  
+  @media(min-width: 10px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 20px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  .card{
+    list-style: none;
+    position: relative;
+  }
+  
+  .card:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .card__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    trsnsform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .card:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card-grid:hover > .card:not(:hover) .card__background{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  
+  .card__content{
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card__category{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+  
+  .card__heading{
+    color: var(--text-lighter);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
+  }
+
+  .card.selected {
+    border: 5px solid hotpink;
+  }
+  
+  /* Rest of the CSS for card grid and card styles */
+  
+
+  
+  /* button back */
+  .button {
+    position: absolute;
+    left: 10%;
+    top: 14%;
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: -1em;
+    padding: 0.5em;
+    color: #000000;
+    background: #ffffff;
+    border-radius: 50%;
+    line-height: 2;
+    text-align: center;
+    font-family: impact;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a.button-back span {
+    top: -62%;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    font-size: 45px;
+  }
+  
+
+
+   /* next button */
   .custom-btn {
     top: 81%;
     left: 45%;
@@ -113,7 +245,7 @@
       width: 130px;
       height: 100%;
       background-color: #fff;
-      animation: shiny-btn1 3s ease-in-out infinite;
+      animation: shiny-btn1 2s ease-in-out infinite;
   }
   .btn-11:hover{
     opacity: .7;
@@ -133,4 +265,4 @@
       100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
   }
   
-  
+ 
