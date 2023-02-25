@@ -377,3 +377,111 @@ class BouncyBlockClock {
   }
 
 })();
+
+Vue.filter('zerofill', function (value) {
+  //value = ( value < 0 ? 0 : value );
+  return ( value < 10 && value > -1 ? '0' : '' ) + value;
+});
+
+var Tracker = Vue.extend({
+  template: `
+  <span v-show="show" class="flip-clock__piece">
+    <span class="flip-clock__card flip-card">
+      <b class="flip-card__top">{{current | zerofill}}</b>
+      <b class="flip-card__bottom" data-value="{{current | zerofill}}"></b>
+      <b class="flip-card__back" data-value="{{previous | zerofill}}"></b>
+      <b class="flip-card__back-bottom" data-value="{{previous | zerofill}}"></b>
+    </span>
+    <span class="flip-clock__slot">{{property}}</span>
+  </span>`, 
+  props: ['property','time'],
+  data: () => ({
+    current: 0,
+    previous: 0,
+    show: false
+  }),
+  
+  events: {
+    time(newValue) {
+      
+      if ( newValue[this.property] === undefined ) { 
+        this.show = false; 
+        return;
+      }
+      
+      var val = newValue[this.property];
+      this.show = true;
+      
+      val = ( val < 0 ? 0 : val );
+      
+      if ( val !== this.current ) {
+  
+        this.previous = this.current;
+        this.current = val;
+  
+        this.$el.classList.remove('flip');
+        void this.$el.offsetWidth;
+        this.$el.classList.add('flip');
+      }
+      
+    }
+  },
+
+});
+  
+
+  // time
+  let countdown;
+
+const init_countdown = () => {
+  countdown = new FlipClock($('.countdown'), {
+    clockFace: 'MinuteCounter',
+    language: 'en',
+    autoStart: false,
+    countdown: true,
+    showSeconds: true,
+    callbacks: {
+      start: () => {
+        console.log('The clock has started!');
+      },
+      stop: () => {
+        console.log('The clock has stopped!');
+      },
+      interval: () => {
+        const time = this.factory.getTime().time;
+        if (time) {
+          console.log('Clock interval', time);
+        }
+      }
+    }
+  });
+
+  return countdown;
+};
+
+const set_countdown = (minutes, start) => {
+
+  if (countdown.running) {
+    return;
+  }
+
+  const seconds = minutes * 60;
+
+  const now = new Date();
+  start = new Date(start);
+  const end = start.getTime() + seconds * 1000;
+
+  let left_secs = Math.round((end - now.getTime()) / 1000);
+
+  let elapsed = false;
+  if (left_secs < 0) {
+    left_secs *= -1;
+    elapsed = true;
+  }
+
+  countdown.setTime(left_secs);
+  countdown.start();
+};
+
+countdown = init_countdown();
+set_countdown(1, new Date());
