@@ -7,10 +7,10 @@
   --clock-flip-width: calc(var(--clock-flip-font-size) * 0.8);
   --clock-flip-margin: calc(var(--clock-digit-gap) / 2);
   --clock-flip-section-width: calc(2 * (var(--clock-flip-width) + 2 * var(--clock-flip-margin)));
-  --clock-flip-bg: #ffffff;
-  --clock-flip-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
-  --clock-flip-font-color: #000000;  
-  --clock-flip-font-shadow: 0 1px 1px #ffffff;
+  --clock-flip-bg: #000000;
+  --clock-flip-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  --clock-flip-font-color: #ffffff;  
+  --clock-flip-font-shadow: 0 1px 1px #000000;
 }
 
 /* FlipClock */
@@ -19,9 +19,9 @@
 }
 
 .countdown-wrapper {
-  left: 35%;
+  left: 36.6%;
   position: absolute;
-  top: -3.7%;
+  top: -5%;
   transform: translate(-50%, -50%);
 }
 
@@ -29,7 +29,7 @@
   height: 36px;
   margin: 0 5px;
   width: 24px;
-  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .countdown.flip-clock-wrapper ul li {
@@ -37,10 +37,10 @@
 }
 
 .countdown.flip-clock-wrapper ul li a div div.inn {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   font-size: 30px;
-  text-shadow: 0 1px 1px #ffffff;
+  text-shadow: 0 1px 1px #000000;
 }
 
 .countdown.flip-clock-wrapper ul,
@@ -58,20 +58,18 @@
 }
 
 .countdown .flip-clock-dot.top {
-  top: 22.4px;
-  display: block;
+  top: 27.4px;
 }
 
 .countdown .flip-clock-dot.bottom {
-  top: 22.6px;
-  display: block;
+  top: 27.6px;
 }
 
 .countdown .flip-clock-dot {
   height: 5px;
   left: 10px;
   width: 5px;
-  background: #ffffff;
+  background: #000000;
   display: block;
 }
 
@@ -90,7 +88,7 @@
 }
 
 .countdown .flip-clock-divider .flip-clock-label {
-  color: #000000;
+  color: #ffffff;
   font-size: 7.5px;
   width: 38px;
 }

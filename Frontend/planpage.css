@@ -196,5 +196,33 @@ section{
     width: 100%;
     
   }
-
+  .my-box {
+    box-sizing: border-box;
+    position: absolute;
+    width: 210px;
+    height: 65px;
+    left: 507px;
+    top: 0px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #DCF3FF 100%);
+    border: 1px solid #5779C2;
+    border-radius: 11px;
+    z-index: -1; /* Set a lower z-index value */
+  }
+  
+  .clock-container {
+    position: absolute;
+    top: 1.5%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Set a higher z-index value */
+  }
+  
+  .clock-container img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
   
