@@ -1,0 +1,96 @@
+:root {
+  --clock-flip-font-size: 30px;
+  --clock-flip-border-radius: 2px;
+  --clock-digit-gap: 5px;
+  --clock-dot-size: 5px;
+  --clock-height: calc(var(--clock-flip-font-size) * 1.2);
+  --clock-flip-width: calc(var(--clock-flip-font-size) * 0.8);
+  --clock-flip-margin: calc(var(--clock-digit-gap) / 2);
+  --clock-flip-section-width: calc(2 * (var(--clock-flip-width) + 2 * var(--clock-flip-margin)));
+  --clock-flip-bg: #ffffff;
+  --clock-flip-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+  --clock-flip-font-color: #000000;  
+  --clock-flip-font-shadow: 0 1px 1px #ffffff;
+}
+
+/* FlipClock */
+.countdown .flip-clock-label {
+  display: none;
+}
+
+.countdown-wrapper {
+  left: 35%;
+  position: absolute;
+  top: -3.7%;
+  transform: translate(-50%, -50%);
+}
+
+.countdown.flip-clock-wrapper ul {
+  height: 36px;
+  margin: 0 5px;
+  width: 24px;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.countdown.flip-clock-wrapper ul li {
+  line-height: 36px;
+}
+
+.countdown.flip-clock-wrapper ul li a div div.inn {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 30px;
+  text-shadow: 0 1px 1px #ffffff;
+}
+
+.countdown.flip-clock-wrapper ul,
+.countdown.flip-clock-wrapper ul li a div div.inn {
+  border-radius: 2px;
+}
+
+.countdown.flip-clock-wrapper ul li a div.down {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.countdown.flip-clock-wrapper ul li a div.up:after {
+  top: 17.5px;
+}
+
+.countdown .flip-clock-dot.top {
+  top: 22.4px;
+  display: block;
+}
+
+.countdown .flip-clock-dot.bottom {
+  top: 22.6px;
+  display: block;
+}
+
+.countdown .flip-clock-dot {
+  height: 5px;
+  left: 10px;
+  width: 5px;
+  background: #ffffff;
+  display: block;
+}
+
+.countdown .flip-clock-divider {
+  height: 36px;
+  width: 15px;
+}
+
+.countdown .flip-clock-divider:first-child {
+  width: 0;
+}
+
+.countdown .flip-clock-divider.seconds .flip-clock-label,
+.countdown .flip-clock-divider.minutes .flip-clock-label {
+  right: -484px;
+}
+
+.countdown .flip-clock-divider .flip-clock-label {
+  color: #000000;
+  font-size: 7.5px;
+  width: 38px;
+}
