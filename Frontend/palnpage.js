@@ -132,91 +132,86 @@ $('section').each( function(i,e) {
 
 });
 
+// Let's do it!!
+$(document).ready(function() {
 
+  var history = []; // new array to store input values
 
+  $('.command').hide();
+  $('input[type="text"]').focus();
+  $('#home').addClass('open');
+  $('#home').textTyper({
+    speed:20,
+    afterAnimation:function(){
+      $('.command').fadeIn();
+      $('input[type="text"]').focus();
+      $('input[type="text"]').val('');
+    }
+  });
 
-//time
-window.addEventListener("DOMContentLoaded",() => {
-	const clock = new BouncyBlockClock(".clock");
-});
+  // get array of section ids, that exist in DOM
+  var sectionArray = [];
+  // We are using <section> here, you can use <div> or <article> if you want
+  $('section').each( function(i,e) {
+      //you can use e.id instead of $(e).attr('id')
+      sectionArray.push($(e).attr('id'));
+  });
 
-class BouncyBlockClock {
-	constructor(qs) {
-		this.el = document.querySelector(qs);
-		this.time = { a: [], b: [] };
-		this.rollClass = "clock__block--bounce";
-		this.digitsTimeout = null;
-		this.rollTimeout = null;
-		this.mod = 0 * 60 * 1000;
+  // Debug
+  //console.log(sectionArray);
 
-		this.loop();
-	}
-	animateDigits() {
-		const groups = this.el.querySelectorAll("[data-time-group]");
+  // Command Input------------------------------
 
-		Array.from(groups).forEach((group,i) => {
-			const { a, b } = this.time;
+  $('input[type="text"]').keyup(function(e){
 
-			if (a[i] !== b[i]) group.classList.add(this.rollClass);
-		});
+    if(e.which == 13){// ENTER key pressed
 
-		clearTimeout(this.rollTimeout);
-		this.rollTimeout = setTimeout(this.removeAnimations.bind(this),900);
-	}
-	displayTime() {
-		// screen reader time
-		const timeDigits = [...this.time.b];
-		const ap = timeDigits.pop();
+      $('.command').hide();
+      var destination = $('input[type="text"]').val();
 
-		this.el.ariaLabel = `${timeDigits.join(":")} ${ap}`;
+      // Push the command into the history array
+      history.push(destination);
 
-		// displayed time
-		Object.keys(this.time).forEach(letter => {
-			const letterEls = this.el.querySelectorAll(`[data-time="${letter}"]`);
+      // Display section with id == destination and hide all others
+      $('section[id="' + destination + '"]').addClass('open').siblings().removeClass('open');
 
-			Array.from(letterEls).forEach((el,i) => {
-				el.textContent = this.time[letter][i];
-			});
-		});
-	}
-	loop() {
-		this.updateTime();
-		this.displayTime();
-		this.animateDigits();
-		this.tick();
-	}
-	removeAnimations() {
-		const groups = this.el.querySelectorAll("[data-time-group]");
-	
-		Array.from(groups).forEach(group => {
-			group.classList.remove(this.rollClass);
-		});
-	}
-	tick() {
-		clearTimeout(this.digitsTimeout);
-		this.digitsTimeout = setTimeout(this.loop.bind(this),1e3);	
-	}
-	updateTime() {
-		const rawDate = new Date();
-		const date = new Date(Math.ceil(rawDate.getTime() / 1e3) * 1e3 + this.mod);
-		let h = date.getHours();
-		const m = date.getMinutes();
-		const s = date.getSeconds();
-		const ap = h < 12 ? "AM" : "PM";
+      // If destination does not match our array of section ids, display error section
+      if($.inArray(destination, sectionArray) == -1){
+        $('#error').addClass('open');
+        $('#error').siblings().removeClass('open');
+      }
 
-		if (h === 0) h = 12;
-		if (h > 12) h -= 12;
+      // If user types "history", show the history menu
+      if (destination === 'history') {
+        showHistory();
+        $('input[type="text"]').val('');
+        return;
+      }
 
-		this.time.a = [...this.time.b];
-		this.time.b = [
-			(h < 10 ? `0${h}` : `${h}`),
-			(m < 10 ? `0${m}` : `${m}`),
-			(s < 10 ? `0${s}` : `${s}`),
-			ap
-		];
+      // All sections with class .open init textTyper
+      $('.open').textTyper({
+        speed:20,
+        afterAnimation:function(){
+          $('.command').fadeIn();
+          $('input[type="text"]').focus();
+          $('input[type="text"]').val('');
+        }
+      });
 
-		if (!this.time.a.length) this.time.a = [...this.time.b];
-	}
-}
+    }// end if ENTER key pressed
+  }); // end keyup function
+
+  // Function to display history menu
+  function showHistory() {
+    var $history = $('<div>').addClass('history');
+    for (var i = 0; i < history.length; i++) {
+      var $item = $('<div>').addClass('history-item').text(history[i]);
+      $history.append($item);
+    }
+    $('body').append($history);
+  }
+
+}); // end document ready function
+
 
 
