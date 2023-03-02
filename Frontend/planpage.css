@@ -6,15 +6,14 @@ html {
 }
 
 body {
-  width: 28%;
+  width: 25%;
   font: .875em/1.6 'Inconsolata', monospace;
   color: #000000;
   font-weight: 400;
   background-color: #ffffff;
-  padding: 42.5em 2.5em 5em; /* Add padding to the bottom instead of using height */
-  margin: 0; /* Remove margin from top and bottom */
+  padding: 42.5em 2.5em 5em; 
   float: right;
-  min-height:   100%; /* Set minimum height to 100% */
+  min-height:   100%; 
 }
 
 /* Rest of the CSS code */
@@ -36,7 +35,7 @@ a:hover,a:focus{
   color:rgb(0, 0, 0)
 }
 h2{
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 400;
 }
 p{
@@ -52,11 +51,6 @@ ul{
 li{
   margin:1em 0 0;
 }
-/* span{
-  display: block;
-  color:#999;
-  line-height:1;
-} */
 
 kbd{
   font-family: 'Inconsolata', monospace;
@@ -78,21 +72,46 @@ input[type="text"]:focus{
 }
 
 .command{
-
   position: absolute;
-  bottom: -30%; /* Align with the bottom of the page */
+  bottom: 0%; 
   display: block;
-  height: 23em; /* Reduce the height to fit in the remaining space */
   color: #000000;
   font-weight: 700;
-  margin: 2em 0;
+  margin: 1em 0;
   padding-left: 0%;
+  font-size: 1.1em;
 }
 section{
   display: none;
 }
 .open{
   display: block;
+}
+
+#home {
+  position: absolute;
+  top: 200px;
+  right: 70px;
+}
+
+
+.turn {
+  position: fixed;
+  top: 45px;
+  left: 60px;
+  z-index: 9999;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.image {
+  position: fixed;
+  bottom: 0;
+  left: 3%;
+  width: 11%; /* adjust the size as needed */
+  height: 30%; /* adjust the size as needed */
+  z-index: 9999; /* ensure it appears on top of other elements */
 }
 
 
@@ -102,8 +121,8 @@ section{
   justify-content: flex-end;
   height: 50vh;
   position: absolute;
-  right: 13%;
-  top: 2%;
+  right: 14%;
+  top: -8%;
 }
 
 .right-button {
@@ -208,7 +227,7 @@ section{
     position: absolute;
     width: 210px;
     height: 65px;
-    left: 507px;
+    left: 541px;
     top: 0px;
     background: linear-gradient(180deg, #FFFFFF 0%, #DCF3FF 100%);
     border: 1px solid #5779C2;
@@ -219,7 +238,7 @@ section{
   .clock-container {
     position: absolute;
     top: 1.5%;
-    left: 30%;
+    left: 32%;
     display: flex;
     justify-content: center;
     align-items: center;
