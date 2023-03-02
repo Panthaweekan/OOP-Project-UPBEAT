@@ -71,9 +71,10 @@ input[type="text"]:focus{
   outline:none;
 }
 
+
 .command{
   position: absolute;
-  bottom: 0%; 
+  bottom: 2%; 
   display: block;
   color: #000000;
   font-weight: 700;
@@ -90,10 +91,19 @@ section{
 
 #home {
   position: absolute;
-  top: 200px;
+  top: 180px;
   right: 70px;
 }
 
+.clear-box {
+  position: absolute;
+  top: 12.5%;
+  width: 160px;
+  height: 37px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 40px;
+}
 
 .turn {
   position: fixed;
