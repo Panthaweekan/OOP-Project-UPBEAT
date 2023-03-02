@@ -1,19 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
 html {
+  height: 100%; /* Set height to 100% */
   background: linear-gradient(180deg, #D0D6F6 0%, #9DD6FF 100%);
 }
 
 body {
-  width: 30%;
+  width: 28%;
   font: .875em/1.6 'Inconsolata', monospace;
   color: #000000;
   font-weight: 400;
   background-color: #ffffff;
-  padding: 2.5em 2.5em 26em; /* Add 5em to the bottom padding to make room for the command section */
-  margin: 5% 0; 
+  padding: 42.5em 2.5em 5em; /* Add padding to the bottom instead of using height */
+  margin: 0; /* Remove margin from top and bottom */
   float: right;
+  min-height:   100%; /* Set minimum height to 100% */
 }
 
+/* Rest of the CSS code */
 
 ::selection{
   background: #000000
@@ -57,7 +61,7 @@ li{
 kbd{
   font-family: 'Inconsolata', monospace;
   border:1px solid #999;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding:0 .2em;
 }
 input[type="text"]{
@@ -74,9 +78,11 @@ input[type="text"]:focus{
 }
 
 .command{
-  
+
+  position: absolute;
+  bottom: -30%; /* Align with the bottom of the page */
   display: block;
-  height: 28em;
+  height: 23em; /* Reduce the height to fit in the remaining space */
   color: #000000;
   font-weight: 700;
   margin: 2em 0;
@@ -89,13 +95,14 @@ section{
   display: block;
 }
 
+
 /* botton */
 .right-button-container {
   display: flex;
   justify-content: flex-end;
   height: 50vh;
   position: absolute;
-  right: 15%;
+  right: 13%;
   top: 2%;
 }
 
