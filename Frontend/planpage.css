@@ -124,6 +124,15 @@ section{
   z-index: 9999; /* ensure it appears on top of other elements */
 }
 
+.coin {
+  position: fixed;
+  top: 12%;
+  right: 21.5%;
+  width: 3%; /* adjust the size as needed */
+  height: 5%; /* adjust the size as needed */
+  z-index: 9999; /* ensure it appears on top of other elements */
+}
+
 
 /* botton */
 .right-button-container {
@@ -132,7 +141,7 @@ section{
   height: 50vh;
   position: absolute;
   right: 14%;
-  top: -8%;
+  top: -2%;
 }
 
 .right-button {
@@ -232,6 +241,8 @@ section{
     width: 100%;
     
   }
+
+  /* clock */
   .my-box {
     box-sizing: border-box;
     position: absolute;
