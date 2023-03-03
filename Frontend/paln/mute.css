@@ -1,0 +1,124 @@
+
+  /* COMMON STYLES */
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* WRAPPER STYLES */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* BUTTON STYLES */
+  .button {
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .button:active {
+    animation: click 0.1s 2 linear alternate;
+  }
+  
+  #small-curve,
+  #dark-line {
+    stroke: #52d7df;
+    stroke-width: 8px;
+  }
+
+  #large-curve,
+    #light-line {
+      stroke: #c9f1ef;
+      stroke-width: 6px;
+    }
+    #dark-line,
+    #light-line {
+      opacity: 0;
+      stroke-width: 6px;
+    }
+    .mute {
+        position: absolute;
+        z-index: 10;
+        width: 100px;
+        height: 100px;
+        top: 25px;
+        right: 10px;
+      }
+      .curve-small,
+      .curve-large {
+        position: absolute;
+        z-index: 10;
+        width: 100px;
+        height: 100px;
+      }
+      .curve-small {
+        top: 42px;
+        right: -10px;
+      }
+      .curve-large {
+        top: 15px;
+        right: -2px;
+      }
+
+  /* SPEAKER STYLES */
+  .speaker {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    border: 25px solid;
+    border-color: transparent #52d7df transparent transparent;
+    top: 40px;
+    left: 5px;
+  }
+  
+  .speaker::after {
+    content: "";
+    height: 22px;
+    width: 15px;
+    background-color: #52d7df;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    border-radius: 2px 0 0 2px;
+  }
+
+  
+  /* PATH STYLES */
+  svg path {
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  /* ANIMATIONS */
+  @keyframes click {
+    100% {
+      transform: scale(0.9, 0.9);
+    }
+  }
+  
+  @keyframes large-curve {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
