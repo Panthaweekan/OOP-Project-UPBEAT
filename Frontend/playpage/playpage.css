@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+html {
+    height: 100%; /* Set height to 100% */
+    background: linear-gradient(180deg, #D0D6F6 0%, #9DD6FF 100%);
+  }
+
+  h1 {
+    position: fixed;
+    top: 45px;
+    left: 60px;
+    z-index: 9999;
+    font-size: 2em;
+    font-weight: 400;
+    font: .875em/1.6 'Inconsolata', monospace;
+    color: #000000;
+  }
+  
+  img {
+    position: fixed;
+    bottom: 0;
+    left: 3%;
+    width: 11%;
+    height: 30%;
+    z-index: 9999;
+  }
+
+/* VARIABLES -  START */
+/* COLORS  */
+/* DIMENSIONS */
+/* FONTS */
+/* VARIABLES - END */
+/* COMMONS - START */
+.flex-center, .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* COMMONS - END */
+/* STYLES -  START */
+
+.wrapper .button {
+    position: fixed;
+    top: 10%;
+    left: 0%;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #b4ecf3;
+  }
+  
+.wrapper .button:active {
+  animation: click 0.1s 2 linear alternate;
+}
+.wrapper .button #small-curve,
+.wrapper .button #dark-line {
+  stroke: #52d7df;
+  stroke-width: 8px;
+}
+.wrapper .button #large-curve,
+.wrapper .button #light-line {
+  stroke: #c9f1ef;
+  stroke-width: 6px;
+}
+.wrapper .button #dark-line,
+.wrapper .button #light-line {
+  opacity: 0;
+  stroke-width: 6px;
+}
+.wrapper .button .mute {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  top: 25px;
+  right: 10px;
+}
+.wrapper .button .curve-small,
+.wrapper .button .curve-large {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+}
+.wrapper .button .curve-small {
+  top: 42px;
+  right: -10px;
+}
+.wrapper .button .curve-large {
+  top: 15px;
+  right: -2px;
+}
+.wrapper .button .speaker {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 5px;
+  border: 25px solid;
+  border-color: transparent #52d7df transparent transparent;
+  top: 40px;
+  left: 5px;
+}
+.wrapper .button .speaker:after {
+  content: "";
+  height: 22px;
+  width: 15px;
+  background-color: #52d7df;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  border-radius: 2px 0 0 
+}
+
+svg path {
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  /* STYLES - END */
+  /* ANIMATIONS - START */
+  @keyframes click {
+    100% {
+      transform: scale(0.9, 0.9);
+    }
+  }
+  @keyframes large-curve {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  /* ANIMATIONS - END */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Play Upbeat</title>
+    <link rel="stylesheet" type="text/css" href="playpage.css">
+</head>
+<body>
+    <h1>Turn : </h1>
+    <img src="p1.png">
+    
+    <!-- New HTML code -->
+    <div class="wrapper">
+      <div class="container">
+        <div class="button">
+          <div class="speaker"></div>
+          <div class="curve-small">
+            <svg viewBox="0 0 150 150">
+              <path id="small-curve" d="M 40 30 Q 60 50 40 70" />
+            </svg>
+          </div>
+          <div class="curve-large">
+            <svg viewBox="0 0 100 100">
+              <path id="large-curve" d="M 50 40 Q 70 60 50 80" />
+            </svg>
+          </div>
+          <div class="mute">
+            <svg viewBox="0 0 100 100">
+              <path id="dark-line" d="M 50 40 L 75 65" />
+              <path id="light-line" d="M 75 40 L 50 65" />
+            </svg>
+            <svg viewBox="0 0 100 100">
+
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of new HTML code -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js'></script>
+    <script  src="playpage.js"></script>
+</body>
+</html>

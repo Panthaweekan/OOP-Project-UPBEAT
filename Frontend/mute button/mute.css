@@ -1,6 +1,12 @@
-
-  /* COMMON STYLES */
-  .flex-center {
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/* COMMON STYLES */
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +32,7 @@
     background-color: #ffffff;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px #52d7df;
     position: relative;
   }
   
@@ -39,41 +45,41 @@
     stroke: #52d7df;
     stroke-width: 8px;
   }
-
+  
   #large-curve,
-    #light-line {
-      stroke: #c9f1ef;
-      stroke-width: 6px;
+  #light-line {
+    stroke: #c9f1ef;
+    stroke-width: 6px;
+  }
+  #dark-line,
+  #light-line {
+    opacity: 0;
+    stroke-width: 6px;
+  }
+  .mute {
+      position: absolute;
+      z-index: 10;
+      width: 100px;
+      height: 100px;
+      top: 25px;
+      right: 10px;
     }
-    #dark-line,
-    #light-line {
-      opacity: 0;
-      stroke-width: 6px;
+    .curve-small,
+    .curve-large {
+      position: absolute;
+      z-index: 10;
+      width: 100px;
+      height: 100px;
     }
-    .mute {
-        position: absolute;
-        z-index: 10;
-        width: 100px;
-        height: 100px;
-        top: 25px;
-        right: 10px;
-      }
-      .curve-small,
-      .curve-large {
-        position: absolute;
-        z-index: 10;
-        width: 100px;
-        height: 100px;
-      }
-      .curve-small {
-        top: 42px;
-        right: -10px;
-      }
-      .curve-large {
-        top: 15px;
-        right: -2px;
-      }
-
+    .curve-small {
+      top: 42px;
+      right: -10px;
+    }
+    .curve-large {
+      top: 15px;
+      right: -2px;
+    }
+  
   /* SPEAKER STYLES */
   .speaker {
     position: absolute;
@@ -96,7 +102,7 @@
     left: 8px;
     border-radius: 2px 0 0 2px;
   }
-
+  
   
   /* PATH STYLES */
   svg path {
