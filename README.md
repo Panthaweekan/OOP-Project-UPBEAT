@@ -1,5 +1,7 @@
 # Backend!
 
+# Last week was to busy to go this project (cuz micro project)
+
 work space!
  - https://miro.com/app/board/uXjVPr34o4g=/
  - https://docs.google.com/document/d/1dQThnNRY4VE0AUE6bmrtzr2TL25oGN1kzhiByPQ0Z7o/edit
@@ -20,9 +22,9 @@ work space!
 
  # Need to do next
    - Parser-tester & AST tester 
-
- # Tomorrow Plan
-   - do some documentation for assignment!
-   - Simpify code again and check wrong syntax!
-
- # date. ; FEB/23/2023 (Deadline)
+   
+ # Plan now (5/3/2023)
+   - Do all tester and simply code from feedback
+   - Do elevaluator for game-state!
+ 
+ # FEB/9/2023 (Deadline)
