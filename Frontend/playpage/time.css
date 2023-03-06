@@ -1,0 +1,74 @@
+.countdown-wrapper {
+    left: 40%;
+    position: absolute;
+    top: 5%;
+    transform: translate(-50%, -50%) scale(0.55);
+  }
+  
+  .countdown.flip-clock-wrapper ul {
+    height: 79.2px;
+    margin: 0 5.5px;
+    width: 52.8px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
+  }
+  
+  .countdown.flip-clock-wrapper ul li {
+    line-height: 79.2px;
+  }
+  
+  .countdown.flip-clock-wrapper ul li a div div.inn {
+    background-color: #633800;
+    color: #f4d436;
+    font-size: 63.8px;
+    text-shadow: 0 1px 2px #ff7300;
+  }
+  
+  .countdown.flip-clock-wrapper ul,
+  .countdown.flip-clock-wrapper ul li a div div.inn {
+    border-radius: 5.5px;
+  }
+  
+  .countdown.flip-clock-wrapper ul li a div.down {
+    border-bottom-left-radius: 5.5px;
+    border-bottom-right-radius: 5.5px;
+  }
+  
+  .countdown.flip-clock-wrapper ul li a div.up:after {
+    top: 39.6px;
+  }
+  
+  .countdown .flip-clock-dot.top {
+    top: 22px;
+  }
+  
+  .countdown .flip-clock-dot.bottom {
+    top: 50.6px;
+  }
+  
+  .countdown .flip-clock-dot {
+    height: 11.44px;
+    left: 11.44px;
+    width: 11.44px;
+    background: #633800;
+  }
+  
+  .countdown .flip-clock-divider {
+    height: 79.2px;
+    width: 33.44px;
+  }
+  
+  .countdown .flip-clock-divider:first-child {
+    width: 0;
+  }
+  
+  .countdown .flip-clock-divider.seconds .flip-clock-label,
+  .countdown .flip-clock-divider.minutes .flip-clock-label {
+    right: -133.76px;
+  }
+  
+  .countdown .flip-clock-divider .flip-clock-label {
+    color: #000;
+    font-size: 21.56px;
+    width: 133.76px;
+  }
+  
