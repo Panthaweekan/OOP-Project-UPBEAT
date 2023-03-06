@@ -329,7 +329,6 @@ $(() => {
         let fs = opts.fillStyle || this.fillStyle;
         let ss = opts.strokeStyle || this.strokeStyle;
         if (this.mouseOver || this.highlight) {
-          // fs = '#F00';
           ss = "#FFF";
           ctx.lineWidth = 3;
         }

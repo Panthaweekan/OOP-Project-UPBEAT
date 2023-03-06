@@ -11,14 +11,21 @@
     <link rel="stylesheet" href="mute.css">
     <link rel="stylesheet" type="text/css" href="playpage.css">
     <link rel="stylesheet" href="command.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="mute.css">
 </head>
 
-    <h1>Turn : </h1>
-    <img src="p1.png">
-    
-    <div class="clear-box"></div>
+    <div class="turn">
+      <h1>Turn : </h1>
+    </div>
+    <div class="plan">
+      <h1>Plan</h1>
+    </div>
+    <img id="money-img" src="money.png">
+    <img id="p1-img" src="p1.png">    
+    <div class="box"></div>
     <div class="square"></div>
     <div class="sq"></div>
+
 
 
   <div class="right-button-container">
@@ -59,5 +66,19 @@
     <div id="msg"></div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="hexgrid.js"></script>
+
+  <div class="container">
+    <div class="unmuted toggle-sound"  href="#">
+        <div class="tooltip--left sound" data-tooltip="Turn On/Off Sound">
+          <div class="sound--icon fa fa-volume-off"></div>
+          <div class="sound--wave sound--wave_one"></div>
+          <div class="sound--wave sound--wave_two"></div>
+          <div class="sound--wave sound--wave_three"></div>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="mute.js"></script>
+
 </body>
 </html>

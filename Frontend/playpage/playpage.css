@@ -5,39 +5,61 @@ html {
     background: linear-gradient(180deg, #D0D6F6 0%, #9DD6FF 100%);
   }
 
-  h1 {
+  .turn {
     position: fixed;
-    top: 45px;
-    left: 60px;
-    z-index: 9999;
-    font-size: 2em;
+    top: 0%;
+    left: 1%;
+    z-index: 1;
+    font-size: 1.2em;
     font-weight: 400;
     font: .875em/1.6 'Inconsolata', monospace;
-    color: #000000;
+    color: #000f6e;
   }
   
-  img {
+  .plan {
     position: fixed;
-    bottom: 0;
-    left: 3%;
-    width: 11%;
-    height: 30%;
-    z-index: 9999;
+    top: 4%;
+    right: 9%;
+    z-index: 1;
+    font-size: 1.2em;
+    font-weight: 400;
+    font: .875em/1.6 'Inconsolata', monospace;
+    color: #000f6e;
   }
 
-  .clear-box {
-    position: absolute;
-    top: 12.5%;
-    right: 20%;
+  .box {
+    position: fixed;
+    top: 11%;
+    right: 10.5%;
     width: 160px;
     height: 37px;
     background-color: transparent;
-    border: 2px solid #000;
+    border: 2px solid #623e1c;
     border-radius: 40px;
+    z-index: 5;
+  }
+  
+  #money-img {
+    position: absolute;
+    top: 10.5%;
+    right: 18.5%;
+    width: 3%;
+    height: 7;
+    z-index: 11;
+  }
+  
+  #p1-img {
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    width: 11%;
+    height: 31%;
+    z-index: 2;
   }
 
+
   .square {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     width: 400px;
@@ -51,11 +73,12 @@ html {
     position: fixed;
     top: 6%;
     right: 0;
-    width: 400px;
+    width: 396px;
     height: 40px;
     background-color: rgb(0,172,238);
     resize: both;
     overflow: auto;
+    border: 2px solid rgba(2,126,251,1);
   }
   
   /* botton */
@@ -65,7 +88,7 @@ html {
   height: 50vh;
   position: absolute;
   right: 8.1%;
-  top: -0.5%;
+  top: -0.6%;
 }
 
 .right-button {
