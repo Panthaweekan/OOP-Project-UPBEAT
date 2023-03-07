@@ -1,0 +1,84 @@
+.toggle-sound {
+    position: fixed;
+    top: 6%;
+	left: 1%;
+	background-color: #40d8ec;
+	width: 55px;
+	height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 99;
+	animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	box-shadow: 0 0 0 0 #40d8ec;
+}
+.toggle-sound.sound-mute {
+	box-shadow: none;
+}
+
+.sound {
+	width: 97%;
+	height: 100%;
+	position: absolute;
+	cursor: pointer;
+	display: inline-block;
+	left: 0;
+	top: 0;
+	margin-left: -15%;
+}
+.sound--icon {
+	color: inherit;
+	line-height: inherit;
+	font-size: 1.6rem;
+	display: block;
+	margin: auto;
+	text-align: left;
+	padding-left: 20px;
+}
+.sound--wave {
+	position: absolute;
+	border: 2px solid transparent;
+	border-right: 2px solid #fff;
+	border-radius: 50%;
+	transition: all 200ms;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.sound--wave_one {
+  width: 45%;
+  height: 40%;
+}
+.sound--wave_two {
+  width: 70%;
+  height: 62%;
+}
+.sound--wave_three {
+width: 95%;
+height:75%;
+}
+.sound-mute .sound--wave {
+border-radius: 0;
+width: 35%;
+height: 35%;
+border-width: 0 2px 0 0;
+left: 5px;
+}
+.sound-mute .sound--wave_one {
+  -webkit-transform: rotate(45deg) translate3d(0, -50%, 0);
+          transform: rotate(45deg) translate3d(0, -50%, 0);
+}
+.sound-mute .sound--wave_two {
+  -webkit-transform: rotate(-45deg) translate3d(0, 50%, 0);
+          transform: rotate(-45deg) translate3d(0, 50%, 0);
+}
+.sound-mute .sound--wave_three {
+    opacity: 0;
+    transform: translateX(-46%);
+    height: 20%;
+
+}
