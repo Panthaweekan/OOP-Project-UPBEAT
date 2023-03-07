@@ -1,10 +1,11 @@
-
 html, body {
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .bg-image {
-  background-image: url("Background\ 1.png");
+  background-image: url("Background1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -17,11 +18,10 @@ html, body {
   z-index: -1;
 }
 
-
 .content {
   position: absolute;
   top: 50%;
-  left: 49%;
+  left: 450;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ html, body {
 }
 
 .button {
-  left: 49%;
+  left: 50%;
   width:200px;
   height: 50px;
   padding: 15px;	
