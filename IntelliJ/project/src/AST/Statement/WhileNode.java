@@ -20,16 +20,16 @@ public class WhileNode extends If_ElseNode {
     }
 
     @Override
-    public Exec execute(GameCommand gamecmd) {
+    public boolean execute(GameCommand gamecmd) {
         if (super.condition.eval(gamecmd) > 0) {
             if (executionCount >= 10000)
-                return next;
+                return next.execute(gamecmd);
             Exec last = getLastNode(trueNode);
             if (last != this)
                 last.next = this;
             executionCount++;
-            return trueNode;
+            return trueNode.execute(gamecmd);
         }
-        return next;
+        return next.execute(gamecmd);
     }
 }

@@ -13,6 +13,6 @@ public abstract class Node {
     public abstract static class Exec extends Node {
         
         public Exec next;
-        public abstract Exec execute(GameCommand command);
+        public abstract boolean execute(GameCommand command);
     }
 }

@@ -15,9 +15,9 @@ public class AssignmentNode extends Exec {
         this.expression = expression;
     }
 
-    public Exec execute(GameCommand gamecmd) {
+    public boolean execute(GameCommand gamecmd) {
         Map<String, Long> memory = gamecmd.getIdentifiers();
         memory.put(identifier, expression.eval(gamecmd));
-        return next;
+        return next.execute(gamecmd);
     }
 }

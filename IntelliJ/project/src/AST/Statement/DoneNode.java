@@ -6,7 +6,7 @@ import static AST.Node.*;
 
 public class DoneNode extends Exec {
     @Override
-    public Exec execute(GameCommand game) {
-        return null;
+    public boolean execute(GameCommand game) {
+        return true;
     }
 }

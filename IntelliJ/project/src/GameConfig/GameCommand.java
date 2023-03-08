@@ -1,22 +1,28 @@
 package GameConfig;
 
+import GameConfig.Region.Region;
+
+import java.util.List;
 import java.util.Map;
 
 public interface GameCommand {
     
-    void attack(Direction dir, long v);
+    boolean attack(Direction dir, long v);
 
-    void collect(long v);
+    boolean collect(long v);
 
-    void invest(long eval);
+    boolean invest(long eval);
 
-    void relocate();
+    boolean relocate();
 
     long nearby(Direction dir);
 
-    void move(Direction dir);
+    boolean move(Direction dir);
 
     long opponent();
-    
+    List<Region> getTerritory();
+    Region getRegion(int location);
+    Region getCityCrew();
+    long getBudget();
     Map<String, Long> getIdentifiers();
 }

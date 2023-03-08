@@ -5,7 +5,6 @@ import GameConfig.Region.Region;
 import java.util.Map;
 
 public interface Player {
-    Long getID();
     String getName();
     long getBudget();
     void updateBudget(long money);

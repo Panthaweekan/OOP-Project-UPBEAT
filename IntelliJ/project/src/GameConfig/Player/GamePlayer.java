@@ -7,14 +7,12 @@ import java.util.Map;
 
 public class GamePlayer implements Player{
     private final String name;
-    private final long id;
     private long budget;
     private boolean life;
     private Region CityCenter; //location is row * col
     private final Map<String, Long> identifier;
-    public GamePlayer(String name, long id, long budget, Region CityCenter) {
+    public GamePlayer(String name, long budget, Region CityCenter) {
         this.name = name;
-        this.id = id;
         this.budget = budget;
         this.life = true;
         this.CityCenter = CityCenter;
@@ -24,11 +22,6 @@ public class GamePlayer implements Player{
     @Override
     public String getName() {
         return this.name;
-    }
-
-    @Override
-    public Long getID() {
-        return this.id;
     }
 
     @Override

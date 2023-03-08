@@ -15,13 +15,13 @@ public class If_ElseNode extends Exec {
     }
 
     @Override
-    public Exec execute(GameCommand gamecmd) {
+    public boolean execute(GameCommand gamecmd) {
         trueNode.next = next;
         falseNode.next = next;
         if(condition.eval(gamecmd) > 0){
-            return trueNode;
+            return trueNode.execute(gamecmd);
         } else {
-            return falseNode;
+            return falseNode.execute(gamecmd);
         }
     }
 }

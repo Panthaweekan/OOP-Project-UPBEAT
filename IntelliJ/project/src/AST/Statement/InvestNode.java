@@ -11,8 +11,7 @@ public class InvestNode extends Exec {
     }
 
     @Override
-    public Exec execute(GameCommand gamecmd) {
-        gamecmd.collect(expr.eval(gamecmd));
-        return next;
+    public boolean execute(GameCommand gamecmd) {
+        return gamecmd.collect(expr.eval(gamecmd));
     }
 }

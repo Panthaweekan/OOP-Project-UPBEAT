@@ -1,18 +1,16 @@
 package GameConfig.Region;
 
-import GameConfig.Player.GamePlayer;
+import GameConfig.GameSetup;
 import GameConfig.Player.Player;
 
 public class GameRegion implements Region{
     private final int location;
-    private GamePlayer owner;
+    private Player owner;
     private long deposit;
-    private final long max_deposit;
-
+    private final long max_deposit = GameSetup.getMaxDeposit();
     private  int row, col;
-    public GameRegion(int location, long max_deposit) {
+    public GameRegion(int location) {
         this.location = location;
-        this.max_deposit = max_deposit;
         this.owner = null;
         this.deposit = 0;
     }
@@ -34,7 +32,7 @@ public class GameRegion implements Region{
     }
 
     @Override
-    public void updateOwner(GamePlayer owner) {
+    public void updateOwner(Player owner) {
         this.owner = owner;
     }
 
@@ -51,6 +49,11 @@ public class GameRegion implements Region{
     @Override
     public int getCol() {
         return this.col;
+    }
+    @Override
+    public void SetLocation(int row, int col) {
+        this.row = row;
+        this.col = col;
     }
 
 

@@ -1,8 +1,11 @@
 package Parser;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import AST.Expression.IdentifierNode;
+import AST.Expression.NumNode;
 import AST.Statement.*;
 import AST.Expression.BinaryOperateNode;
 import AST.Expression.NearbyNode;
@@ -13,26 +16,6 @@ import Parser.ParserException.*;
 import Tokenizer.ExprTokenizer;
 
 public class GameParser implements Parser {
-
-    /* Grammar!
-    Plan → Statement+
-    Statement → Command | BlockStatement | IfStatement | WhileStatement
-    Command → AssignmentStatement | ActionCommand
-    AssignmentStatement → <identifier> = Expression
-    ActionCommand → done | relocate | MoveCommand | RegionCommand | AttackCommand
-    MoveCommand → move Direction
-    RegionCommand → invest Expression | collect Expression
-    AttackCommand → shoot Direction Expression
-    Direction → up | down | upleft | upright | downleft | downright
-    BlockStatement → { Statement* }
-    IfStatement → if ( Expression ) then Statement else Statement
-    WhileStatement → while ( Expression ) Statement
-    Expression → Expression + Term | Expression - Term | Term
-    Term → Term * Factor | Term / Factor | Term % Factor | Factor
-    Factor → Power ^ Factor | Power
-    Power → <number> | <identifier> | ( Expression ) | InfoExpression
-    InfoExpression → opponent | nearby Direction
-     */
 
     private final ExprTokenizer tkz;
     private final List<String> Allcommand = Arrays.asList("done" , "relocate" , "move" , "invest" , "collect" , "shoot");
@@ -47,55 +30,51 @@ public class GameParser implements Parser {
         this.tkz = tkz;
     }
 
+    /** Renew List<Exec> to Exec **/
     @Override
-    public Exec Parse() {
-        Exec nodes = parsePlan();
+    public List<Exec> Parse() {
+        List<Exec> nodes = parsePlan();
         if(tkz.hasNext()){
             throw new UnExceptTokenException(tkz.peek());
         }
         return nodes;
     }
 
-    private Exec parsePlan(){
-        Exec current = parseStatement();
-        current.next = parseManyStatement();
-        return current;
+    private List<Exec> parsePlan(){
+        List<Exec> plan = new ArrayList<>();
+        plan.add(parseStatement());
+        parseManyStatement(plan);
+        return plan;
     }
 
     private Exec parseStatement() {
-        if (tkz.peek("if")) {
+        if(tkz.peek("if")){
             return parseIfStatement();
-        } else if (tkz.peek("while")) {
+        }else if(tkz.peek("while")){
             return parseWhileStatement();
-        } else if (tkz.peek("{")) {
+        }else if(tkz.peek("{")){
             return parseBlockStatement();
-        } else {
+        }else{
             return parseCommand();
         }
     }
     
-    private Exec parseManyStatement(){
-        Exec root = null, node = null;
-        while (!tkz.peek("}") && tkz.hasNext()) {
-            Exec current = parseStatement();
-            if (root == null)
-                root = current;
-            if (node != null)
-                node.next = current;
-            node = current;
+    private void parseManyStatement(List<Exec> l){
+        while(tkz.hasNext() && !tkz.peek("}")) {
+            l.add(parseStatement());
         }
-        return root;
     }
 
     private Exec parseBlockStatement() {
+        List<Exec> block = new ArrayList<>();
         tkz.consume("{");
-        Exec parse = parseManyStatement();
+        parseManyStatement(block);
         tkz.consume("}");
-        return parse;
+        return new BlockNode(block);
     }
 
     private Exec parseWhileStatement() {
-        tkz.consume("While");
+        tkz.consume("while");
         tkz.consume("{");
         Expr expr = parseExpression();
         tkz.consume("}");
@@ -151,7 +130,7 @@ public class GameParser implements Parser {
     private Exec parseShootCommand() {
         Direction dir = parseDirection();
         Expr expr = parseExpression();
-        return new AttackNode(expr,dir); // AttacjNode on AST!
+        return new AttackNode(expr,dir); // AttackNode on AST!
     }
 
     private Direction parseDirection() {
@@ -208,7 +187,7 @@ public class GameParser implements Parser {
 
     private Expr parsePower() {
         if (Character.isDigit(tkz.peek().charAt(0))) {
-            return null; //CalculateNode on AST!
+            return new NumNode(Long.parseLong(tkz.consume())); //CalculateNode on AST!
         } else if (tkz.peek("opponent") || tkz.peek("nearby")) {
             return parseInfoExpression();
         } else if (tkz.peek("(")) {
@@ -216,8 +195,10 @@ public class GameParser implements Parser {
             Expr expr = parseExpression();
             tkz.consume(")");
             return expr;
+        }else if(Character.isAlphabetic(tkz.peek().charAt(0)) ){
+            return new IdentifierNode( tkz.consume() );
         }
-        return null; //CalculateNode on AST!
+        return null;
     }
 
     private Expr parseInfoExpression() {

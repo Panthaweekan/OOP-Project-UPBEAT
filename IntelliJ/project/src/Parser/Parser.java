@@ -2,6 +2,8 @@ package Parser;
 
 import AST.Node.Exec;
 
+import java.util.List;
+
 public interface Parser {
-    Exec Parse();
+    List<Exec> Parse(); // add List<Exec>
 }

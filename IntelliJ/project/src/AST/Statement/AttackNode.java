@@ -15,11 +15,10 @@ public class AttackNode extends Exec {
     }
 
     @Override
-    public Exec execute(GameCommand gamecmd) {
-        gamecmd.attack(
+    public boolean execute(GameCommand gamecmd) {
+        return gamecmd.attack(
                 direction,
                 expression.eval(gamecmd)
         );
-        return next;
     }
 }

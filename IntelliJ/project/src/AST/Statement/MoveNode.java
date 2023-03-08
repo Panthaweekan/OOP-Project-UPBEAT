@@ -13,8 +13,7 @@ public class MoveNode extends Exec {
     }
 
     @Override
-    public Exec execute(GameCommand gamecmd) {
-        gamecmd.move(direction);
-        return next;
+    public boolean execute(GameCommand gamecmd) {
+        return gamecmd.move(direction);
     }
 }
