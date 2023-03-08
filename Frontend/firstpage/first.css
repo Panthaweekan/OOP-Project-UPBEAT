@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -37,9 +38,9 @@ html, body {
 
 .button {
   left: 50%;
-  width:200px;
+  width: 200px;
   height: 50px;
-  padding: 15px;	
+  padding: 15px;
   text-align: center;
   line-height: 50px;
 }
@@ -49,9 +50,9 @@ span {
   top: 58%;
   left: 46%;
   font-size: 30px;
-  font-family: Arial Rounded MT Bold;
-  color: white;
-  animation: blink 1.7s linear infinite;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(255, 255, 255);
+  animation: blink 2s linear infinite;
 }
 
 @keyframes blink {
@@ -59,13 +60,18 @@ span {
     opacity: 0;
   }
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
+  50% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.25;
+  }
 }
-  
 
 /* customizable snowflake styling */
 .snowflake {
@@ -121,7 +127,7 @@ span {
 
 .snowflake:nth-of-type(3) {
   left: 20%;
-  animation-delay: 6s, .5s;
+  animation-delay: 6s, 0.5s;
 }
 
 .snowflake:nth-of-type(4) {
@@ -171,7 +177,7 @@ span {
 
 .snowflake:nth-of-type(13) {
   left: 35%;
-  animation-delay: 6s, .5s;
+  animation-delay: 6s, 0.5s;
 }
 
 .snowflake:nth-of-type(14) {
@@ -196,6 +202,5 @@ span {
 
 .snowflake:nth-of-type(18) {
   left: 85%;
-  animation-delay: 2.5
+  animation-delay: 2.5;
 }
-
