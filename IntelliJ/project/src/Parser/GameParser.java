@@ -49,17 +49,17 @@ public class GameParser implements Parser {
 
     @Override
     public Exec Parse() {
-        Exec parse = parsePlan();
+        Exec nodes = parsePlan();
         if(tkz.hasNext()){
             throw new UnExceptTokenException(tkz.peek());
         }
-        return parse;
+        return nodes;
     }
 
     private Exec parsePlan(){
-        Exec parse = parseStatement();
-        parse.next = parseManyStatement();
-        return parse;
+        Exec current = parseStatement();
+        current.next = parseManyStatement();
+        return current;
     }
 
     private Exec parseStatement() {
