@@ -1,6 +1,6 @@
 # Backend!
 
-# Last week was to busy to go this project (cuz micro project)
+# Now im done Micro Project !
 
 work space!
  - https://docs.google.com/document/d/1dQThnNRY4VE0AUE6bmrtzr2TL25oGN1kzhiByPQ0Z7o/edit
