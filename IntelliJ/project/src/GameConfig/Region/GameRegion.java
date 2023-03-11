@@ -7,7 +7,7 @@ public class GameRegion implements Region{
     private final int location;
     private Player owner;
     private long deposit;
-    private final long max_deposit = GameSetup.getMaxDeposit();
+    private final long max_deposit = GameSetup.getMax_dep(); // set max_dep foreach region!
     private  int row, col;
     public GameRegion(int location) {
         this.location = location;

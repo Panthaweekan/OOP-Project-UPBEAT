@@ -38,15 +38,13 @@ public class GameSetup {
     private static long max_dep = 2500;
     private static long interest_pct = 5;
 
+    /** Useful method for GameState to use after **/
     public static long getRows() {return rows;}
     public static long getCols() {return cols;}
-
-    public static long getInitialBudget() {return init_budget;}
-    public static long getMaxDeposit() {return max_dep;}
-
-    public static long getInterestRatePercentage() {return interest_pct;}
-
-    public static long getInitialDeposit() { return init_center_dep;}
+    public static long getInit_budget() {return init_budget;}
+    public static long getMax_dep() {return max_dep;}
+    public static long getInterest_pct() {return interest_pct;}
+    public static long getInit_center_dep() { return init_center_dep;}
     private static List<Region> territory;
 
 
@@ -71,7 +69,7 @@ public class GameSetup {
 
     public static Region randomCityCenter(){
         Region region;
-        Random random = new Random();
+        Random random = new Random(); // random city-cen foreach player
         do {
             int location = random.nextInt(territory.size());
             region = territory.get(location);

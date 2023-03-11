@@ -8,13 +8,13 @@ import java.util.Map;
 public class GamePlayer implements Player{
     private final String name;
     private long budget;
-    private boolean life;
-    private Region CityCenter; //location is row * col
+    private boolean isAlive;
+    private Region CityCenter; // location is row * col
     private final Map<String, Long> identifier;
     public GamePlayer(String name, long budget, Region CityCenter) {
         this.name = name;
         this.budget = budget;
-        this.life = true;
+        this.isAlive = true;
         this.CityCenter = CityCenter;
         this.identifier = new HashMap<>();
     }
@@ -46,7 +46,7 @@ public class GamePlayer implements Player{
 
     @Override
     public boolean life() {
-        return this.life;
+        return this.isAlive;
     }
 
     @Override
@@ -55,9 +55,9 @@ public class GamePlayer implements Player{
     }
 
     @Override
-    public void updateCityCenter(Region to) {
+    public void updateCityCenter(Region target) {
         CityCenter.updateOwner(null);
-        CityCenter = to;
+        CityCenter = target;
         CityCenter.updateOwner(this);
     }
 }

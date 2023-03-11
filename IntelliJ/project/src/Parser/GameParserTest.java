@@ -13,15 +13,14 @@ public class GameParserTest {
     public Exec node;
 
     @Test
-    public void testNoStatement() {
-        assertThrows(NeedStatement.class, () -> new GameParser(new ExprTokenizer(null)));
-        assertThrows(NeedStatement.class, () -> new GameParser(new ExprTokenizer("")));
-    }
-
-    @Test
     public void testExpression() {
         parser = new GameParser(new ExprTokenizer("123+321-213"));
         assertThrows(NoSuchCommand.class, parser::Parse);
+    }
+    @Test
+    public void testNoStatement() {
+        assertThrows(NeedStatement.class, () -> new GameParser(new ExprTokenizer(null)));
+        assertThrows(NeedStatement.class, () -> new GameParser(new ExprTokenizer("")));
     }
     @Test
     public void testUnknownWord() {
