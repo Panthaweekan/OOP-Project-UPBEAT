@@ -1,0 +1,105 @@
+{
+    "name": "flipclock",
+    "version": "0.10.8",
+    "email": "support@objectivehtml.com",
+    "author": "Objective HTML, LLC <justin@justin.com>",
+    "contributors": [
+        "Objective HTML, LLC <support@objectivehtml.com>",
+        "Brian Espinosa <b@bje.co>"
+    ],
+    "description": "A fully featured countdown clock.",
+    "license": "MIT",
+    "main": "dist/flipclock.js",
+    "homepage": "http://flipclockjs.com/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/objectivehtml/FlipClock"
+    },
+    "bugs": {
+        "url": "https://github.com/objectivehtml/FlipClock/issues"
+    },
+    "keywords": [
+        "clock",
+        "countdown",
+        "time",
+        "javascript",
+        "html",
+        "css",
+        "sass",
+        "scss"
+    ],
+    "languages": [
+        "Arabic",
+        "Czech",
+        "English",
+        "Spanish"
+    ],
+    "dependencies": {
+        "jsdocs": "^1.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.4",
+        "@babel/helper-plugin-utils": "^7.0.0",
+        "@babel/plugin-proposal-export-default-from": "^7.2.0",
+        "@babel/preset-env": "^7.4.4",
+        "@babel/preset-react": "^7.0.0",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^23.6.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-es2015-rollup": "^3.0.0",
+        "babel-preset-react": "^6.24.1",
+        "jest": "^23.6.0",
+        "jest-cli": "^23.6.0",
+        "jsdoc": "^3.5.5",
+        "jsdoc-export-default-interop": "^0.3.1",
+        "jsdom": "^11.7.0",
+        "node-sass": "^4.12.0",
+        "parse5": "^2.2.3",
+        "rollup": "^0.57.1",
+        "rollup-plugin-babel": "^4.3.2",
+        "rollup-plugin-browsersync": "^0.2.6",
+        "rollup-plugin-commonjs": "^8.4.1",
+        "rollup-plugin-conditional": "^1.1.1",
+        "rollup-plugin-eslint": "^5.1.0",
+        "rollup-plugin-json": "^2.3.0",
+        "rollup-plugin-livereload": "^0.6.0",
+        "rollup-plugin-node-builtins": "^2.1.2",
+        "rollup-plugin-node-globals": "^1.2.0",
+        "rollup-plugin-node-resolve": "^3.3.0",
+        "rollup-plugin-postcss": "^1.6.3",
+        "rollup-plugin-progress": "^0.4.0",
+        "rollup-plugin-replace": "^2.2.0",
+        "rollup-plugin-root-import": "^0.2.4",
+        "rollup-plugin-sass": "^0.9.3",
+        "rollup-plugin-scss": "^0.4.0",
+        "rollup-plugin-serve": "^0.4.2",
+        "rollup-plugin-uglify-es": "0.0.1"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c --watch",
+        "commit": "git add -A && git commit -m $npm_package_version;",
+        "release-patch": "npm run release; npm version patch; npm run docs; npm run commit; npm publish;",
+        "release-minor": "npm run release; npm version minor; npm run docs; npm run commit; npm publish;",
+        "release-major": "npm run release; npm version major; npm run docs; npm run commit; npm publish;",
+        "release": "npm run build; npm run uglify;",
+        "uglify": "rollup -c rollup.uglify.js",
+        "docs": "rm -r ./public; ./node_modules/.bin/jsdoc -r -c jsdoc.config.js -u ./docs -t ./.jsdoc/flipclock -R ./README.md"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.js?$": "babel-jest"
+        },
+        "moduleFileExtensions": [
+            "js",
+            "json"
+        ],
+        "moduleNameMapper": {
+            "^@/(.*)$": "<rootDir>/src/$1"
+        },
+        "moduleDirectories": [
+            "node_modules"
+        ]
+    }
+}

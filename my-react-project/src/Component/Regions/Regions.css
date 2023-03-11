@@ -1,0 +1,69 @@
+.evenHex {
+    margin-top: 0px;
+  }
+  .oddHex {
+    margin-top: 88px;
+  }
+  .HwxPosition {
+    position: absolute;
+  }
+  .container {
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    /* background: linear-gradient(180deg, pink, black); */
+    background: linear-gradient(321.5deg, #404258 -13.09%, #ffafaf 97.75%);
+  
+    left: 50%;
+    /* height: 100vh; */
+    overflow: hidden;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+    position: relative;
+    margin-top: 10%;
+  }
+  
+  .item {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: inherit;
+  }
+  .x {
+    position: absolute;
+    right: 30px;
+    top: 2.5vh;
+    width: 15px;
+    height: 15px;
+    opacity: 0.5;
+    transition: ease-in-out 0.25s;
+  }
+  .x:hover {
+    opacity: 1;
+  }
+  .x:before,
+  .x:after {
+    position: absolute;
+    left: 65%;
+    content: " ";
+    top: 0.5vh;
+    height: 20px;
+    width: 2px;
+    background-color: white;
+  }
+  .x:before {
+    transform: rotate(45deg);
+  }
+  .x:after {
+    transform: rotate(-45deg);
+  }

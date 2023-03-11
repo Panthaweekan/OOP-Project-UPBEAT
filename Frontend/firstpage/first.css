@@ -21,7 +21,7 @@ body {
 
 .content {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -34,15 +34,6 @@ body {
 .content img {
   max-width: 300%;
   max-height: 300%;
-}
-
-.button {
-  left: 50%;
-  width: 200px;
-  height: 50px;
-  padding: 15px;
-  text-align: center;
-  line-height: 50px;
 }
 
 span {

@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../dist/flipclock.css">
+		<script src="../dist/flipclock.js"></script>
+	</head>
+	<body>
+		<div class="clock" style="margin:2em;"></div>
+
+		<script type="text/javascript">
+			var el = document.querySelector('.clock');
+
+			var clock = new FlipClock(el, new Date, {
+				face: 'MinuteCounter'
+			});
+
+			clock.on('start', () => {
+				const date = new Date;
+
+				date.setMinutes(date.getMinutes() + 10);
+
+				clock.value = date;
+			});
+		</script>
+
+	</body>
+</html>

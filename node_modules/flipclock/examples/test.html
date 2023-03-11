@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../dist/flipclock.css">
+	</head>
+	<body>
+		<div class="clock" style="margin:2em;"></div>
+
+		<script src="../dist/flipclock.js"></script>
+		<script>
+			const el = document.querySelector('.clock');
+
+			const clock = FlipClock.make(el, new Date(1850, 11, 26), {
+				face: 'YearCounter',
+				countdown: false,
+				showSeconds: true,
+				showLabels: true
+			});
+
+			//clock.start();
+		</script>
+
+	</body>
+</html>

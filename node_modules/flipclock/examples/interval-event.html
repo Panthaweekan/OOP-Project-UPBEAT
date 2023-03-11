@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../dist/flipclock.css">
+
+		<script src="../dist/flipclock.js"></script>
+	</head>
+	<body>
+	<div class="clock" style="margin:2em;"></div>
+
+	<script type="text/javascript">
+		var el = document.querySelector('.clock');
+
+		var clock = new FlipClock(el, new Date, {
+			face: 'HourCounter'
+		});
+
+		clock.on('interval', () => {
+			console.log('interval', clock.value);
+		});
+	</script>
+
+	</body>
+</html>

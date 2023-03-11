@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../dist/flipclock.css">
+		<script src="../dist/flipclock.js"></script>
+	</head>
+	<body>
+		<div class="clock" style="margin:2em;"></div>
+
+		<script type="text/javascript">
+			var el = document.querySelector('.clock');
+
+			var clock = new FlipClock(el, new Date, {
+				face: 'HourCounter',
+				language: 'es'
+			});
+		</script>
+
+	</body>
+</html>

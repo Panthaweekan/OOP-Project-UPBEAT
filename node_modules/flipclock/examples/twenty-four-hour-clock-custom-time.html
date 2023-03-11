@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../dist/flipclock.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="../dist/flipclock.js"></script>
+	</head>
+	<body>
+		<div class="clock" style="margin:2em;"></div>
+
+		<script type="text/javascript">
+			const el = document.querySelector('.clock');
+
+			const clock = new FlipClock(el, new Date('2014-01-01 05:02:12 pm'), {
+				face: 'TwentyFourHourClock'
+			});
+		</script>
+
+	</body>
+</html>

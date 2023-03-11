@@ -1,0 +1,17 @@
+<section>
+    <article>
+        <?js if (tutorial.meta && tutorial.meta.header) { ?>
+            <h1><?js= tutorial.meta.header === true ? tutorial.title : tutorial.meta.header ?></h1>
+        <?js } ?>
+
+        <?js= content ?>
+    </article>
+
+    <?js if (tutorial.children.length > 0) { ?>
+        <ul><?js
+            var self = this;
+            tutorial.children.forEach(function(t) { ?>
+            <li><?js= self.tutoriallink(t.name) ?></li>
+        <?js }); ?></ul>
+    <?js } ?>
+</section>

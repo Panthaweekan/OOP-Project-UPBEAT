@@ -1,0 +1,363 @@
+body, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 300px;
+    }
+}
+
+.hero, .nav {
+    text-align: center;
+    background: url(../img/binding_dark.png) repeat;
+}
+
+.hero h1, .nav h1 {
+    font-family: "Oleo Script", cursive, sans-serif;
+    text-shadow: 0 -1px 0 rgb(207, 132, 172), 0 1px 0 rgb(142, 9, 78), 0 0 40px rgba(0, 0, 0, 1);
+}
+
+.hero {
+    color: rgb(168, 168, 168);
+    padding: 10rem 0 8em;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0 1rem;
+    font-size: 8rem;
+}
+
+.hero h1 {
+    margin: 0 1rem;
+    font-size: 8rem;
+}
+
+.hero h1, .hero a, .hero a:hover, .nav h1, .nav h1 a, .nav a:hover {
+    color: rgb(203, 14, 112);
+}
+
+.hero .version {
+    display: block;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: none;
+}
+
+.nav .buttons a:not(:last-child), .hero .buttons a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.nav .buttons a, .hero .buttons a {
+    font-size: 1.8rem;
+    color: white;
+    background: rgb(203, 13, 112);
+    padding: 0.45em 0.5em;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0 rgb(154, 30, 63);
+    text-shadow: 0 -1px 0 rgb(154, 30, 63);
+    cursor: pointer;
+    width: 100%;
+}
+
+.nav .buttons a:hover, .hero a:hover {
+    text-decoration: none;
+}
+
+.nav .buttons a:active, .hero .buttons a:active {
+    box-shadow: none;
+    position: relative;
+    top: 1px;
+}
+
+.nav .buttons a {
+    font-size: 1.2rem;
+}
+
+.nav .buttons {
+    padding: 1rem;
+}
+
+#app nav ul {
+    margin: 0 0 2rem;
+    padding: 0;
+}
+
+#app nav li {
+    list-style: none;
+}
+
+#app nav a {
+    color: black;
+    display: block;
+    padding: .5rem 0;
+}
+
+#app nav a:hover {
+    text-decoration: none;
+}
+
+#app nav a:after {
+    float: right;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    color: black;
+}
+
+#app nav li:not(:last-child) a {
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.hero .flip-clock-label {
+    font-weight: 200 !important;
+    font-size: 1.6rem !important;
+}
+
+.nav .navbar-brand {
+    font-size: 2.5rem;
+}
+
+.container-overview .table td:not(.description) {
+    white-space: nowrap;
+}
+
+.class-description {
+    font-size: 130%;
+    line-height: 140%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.class-description:empty {
+    margin: 0;
+}
+
+.variation {
+    display: none;
+}
+
+.signature-attributes {
+    font-size: 60%;
+    color: #aaa;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.subsection-title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+}
+
+.ancestors, .attribs {
+    color: #999;
+}
+
+.ancestors a, .attribs a {
+    color: #999 !important;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.important {
+    font-weight: bold;
+    color: #950B02;
+}
+
+.yes-def {
+    text-indent: -1000px;
+}
+
+.type-signature {
+    color: #aaa;
+}
+
+h2 .signature,
+h4 .signature {
+    font-size: .66em;
+}
+
+.name, .signature {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+}
+
+.details {
+    margin-top: 1.5rem;
+    border-left: 2px solid #DDD;
+}
+
+.details dt {
+    width: 120px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+
+.details dd {
+    margin-left: 70px;
+}
+
+.details ul {
+    margin: 0;
+}
+
+.details ul {
+    list-style-type: none;
+}
+
+.details li {
+    margin-left: 30px;
+    padding-top: 6px;
+}
+
+.details pre.prettyprint {
+    margin: 0
+}
+
+.details .object-value {
+    padding-top: 0;
+}
+
+.description {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.code-caption {
+    font-style: italic;
+    font-size: 107%;
+    margin: 0;
+}
+
+.source {
+    border: 1px solid #ddd;
+    width: 80%;
+    overflow: auto;
+}
+
+.prettyprint.source {
+    width: inherit;
+}
+
+.source code {
+    font-size: 100%;
+    line-height: 18px;
+    display: block;
+    padding: 4px 12px;
+    margin: 0;
+    background-color: #fff;
+    color: #4D4E53;
+}
+
+.prettyprint code span.line {
+    display: inline-block;
+}
+
+.prettyprint.linenums {
+    padding-left: 70px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.prettyprint.linenums ol {
+    padding-left: 0;
+}
+
+.prettyprint.linenums li {
+    border-left: 3px #ddd solid;
+}
+
+.prettyprint.linenums li.selected, .prettyprint.linenums li.selected * {
+    background-color: lightyellow;
+}
+
+.prettyprint.linenums li * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.params .name, .props .name, .name code {
+    color: #4D4E53;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 100%;
+}
+
+.params td.description>p:first-child, .props td.description>p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.params td.description>p:last-child, .props td.description>p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.disabled {
+    color: #454545;
+}
+
+.contributor {
+    display: flex;
+    width: 100%;
+    padding: 1em;
+}
+
+.contributor .rounded-circle {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1em;
+}
+
+.contributor .name {
+    font-size: 1.3em;
+}
+
+.card .table {
+    border-right: 0;
+    border-left: 0;
+    margin-bottom: 0;
+}
+
+.card .table:last-child {
+    border-bottom: 0;
+}
+
+.card .table td:last-child,
+.card .table th:last-child {
+    border-right: 0;
+}
+
+.card .table td:first-child,
+.card .table th:first-child {
+    border-left: 0;
+}
+
+.card .table tr:first-child td,
+.card .table tr:first-child th {
+    border-top: 0;
+}
+
+.card .table tr:last-child td {
+    border-bottom: 0;
+}

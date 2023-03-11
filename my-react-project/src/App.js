@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+// eslint-disable-next-line
+import Firstname from "./pages/firstpage/Firstpage"
+import Howpage from "./pages/howpage/Howpage";
+import Select1 from "./pages/select1/Select1";
 import './App.css';
+import Playpage from "./pages/playpage/Playpage";
+import Firstpage from "./pages/firstpage/Firstpage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Playpage/>
     </div>
   );
 }

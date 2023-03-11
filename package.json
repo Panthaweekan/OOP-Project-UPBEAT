@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "flipclock": "^0.10.8",
+    "jquery": "^3.6.4"
+  }
+}

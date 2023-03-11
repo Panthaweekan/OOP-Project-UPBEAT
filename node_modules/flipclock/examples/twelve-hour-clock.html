@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../dist/flipclock.css">
+
+		<script src="../dist/flipclock.js"></script>
+	</head>
+	<body>
+		<div class="clock" style="margin:2em;"></div>
+
+		<script type="text/javascript">
+			const el = document.querySelector('.clock');
+
+			const clock = new FlipClock(el, {
+				face: 'TwelveHourClock'
+			});
+		</script>
+
+	</body>
+</html>
