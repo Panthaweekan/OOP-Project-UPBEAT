@@ -18,7 +18,7 @@ html {
 
 .plan {
   position: fixed;
-  top: 4%;
+  top: 3.7%;
   right: 5%;
   z-index: 1;
   font-size: 1.2em;
@@ -73,7 +73,7 @@ html {
   position: fixed;
   top: 6%;
   right: 0;
-  width: 401px;
+  width: 400px;
   height: 40px;
   background-color: rgb(0, 172, 238);
   resize: both;

@@ -31,11 +31,11 @@
 .sound--icon {
 	color: inherit;
 	line-height: inherit;
-	font-size: 1.6rem;
 	display: block;
 	margin: auto;
 	text-align: left;
-	padding-left: 20px;
+	font-size: 20px;
+	padding-left: 1px;
 }
 .sound--wave {
 	position: absolute;

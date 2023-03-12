@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 365px;
+    margin: 0 auto;
+    right: 1%;
+    top: 16%;
+}
+
+.panel {
+    width: 90%;
+    height: 80vh;
+    background: #d0d3d3;
+    padding: 20px;
+    overflow-y: scroll;
+    border-radius: 20px;
+    z-index: 9999;
+}
+
+.action {
+    margin-bottom: 10px;
+}
+
+.command {
+    width: 10;
+    height: 5px;
+    background: #d0d3d3;
+    color: #060606;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+input[type="text"] {
+    width: 90%;
+    background: #d0d3d3;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.output {
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin-top: 5px;
+    margin-left: 12px;
+}

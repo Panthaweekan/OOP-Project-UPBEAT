@@ -1,54 +1,54 @@
-import React, { useRef, useEffect } from "react";
-import FlipClock from "flipclock";
-
-const Countdown = ({ minutes, start }) => {
-  const clockRef = useRef(null);
-
-  useEffect(() => {
-    const clock = new FlipClock(clockRef.current, {
-      clockFace: "MinuteCounter",
-      language: "en",
-      autoStart: false,
-      countdown: true,
-      showSeconds: true,
-      callbacks: {
-        start: () => console.log("The clock has started!"),
-        stop: () => console.log("The clock has stopped!"),
-        interval: function () {
-          const time = this.factory.getTime().time;
-          if (time) {
-            console.log("Clock interval", time);
+(function() {
+    var countdown, init_countdown, set_countdown;
+  
+    countdown = init_countdown = function() {
+      countdown = new FlipClock($('.countdown'), {
+        clockFace: 'MinuteCounter',
+        language: 'en',
+        autoStart: false,
+        countdown: true,
+        showSeconds: true,
+        callbacks: {
+          start: function() {
+            return console.log('The clock has started!');
+          },
+          stop: function() {
+            return console.log('The clock has stopped!');
+          },
+          interval: function() {
+            var time;
+            time = this.factory.getTime().time;
+            if (time) {
+              return console.log('Clock interval', time);
+            }
           }
-        },
-      },
-    });
-
-    const setCountdown = (minutes, start) => {
-      if (clock.running) {
+        }
+      });
+      return countdown;
+    };
+  
+    set_countdown = function(minutes, start) {
+      var elapsed, end, left_secs, now, seconds;
+      if (countdown.running) {
         return;
       }
-      const seconds = minutes * 60;
-      const now = new Date();
+      seconds = minutes * 3000;
+      now = new Date();
       start = new Date(start);
-      const end = start.getTime() + seconds * 1000;
-      let leftSecs = Math.round((end - now.getTime()) / 1000);
-      let elapsed = false;
-      if (leftSecs < 0) {
-        leftSecs *= -1;
+      end = start.getTime() + seconds * 1000;
+      left_secs = Math.round((end - now.getTime()) / 1000);
+      elapsed = false;
+      if (left_secs < 0) {
+        left_secs *= -1;
         elapsed = true;
       }
-      clock.setTime(leftSecs);
-      clock.start();
+      countdown.setTime(left_secs);
+      return countdown.start();
     };
-
-    setCountdown(minutes, start);
-
-    return () => {
-      clock.stop();
-    };
-  }, [minutes, start]);
-
-  return <div ref={clockRef} />;
-};
-
-export default Countdown;
+  
+    init_countdown();
+  
+    set_countdown(1, new Date());
+  
+  }).call(this);
+  
