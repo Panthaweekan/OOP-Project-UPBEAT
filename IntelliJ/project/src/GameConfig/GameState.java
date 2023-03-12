@@ -19,7 +19,7 @@ public class GameState implements GameCommand{
      * @param p1
      * @param p2
      * @param territory
-     * effect : initialized gameState
+     * effect : initialized gameState for 2 player with current player turn
      */
     public GameState(Player p1, Player p2, List<Region> territory) {
         this.territory = territory;
@@ -73,7 +73,6 @@ public class GameState implements GameCommand{
         int curr_cols = (int) GameSetup.getCols();
         switch (dir) {
             case Up -> location -= curr_cols;
-            case Down -> location += curr_cols;
             case UpLeft -> {
                 if(col == 1) location = -1;
                 else {
@@ -88,6 +87,8 @@ public class GameState implements GameCommand{
                     else location++;
                 }
             }
+
+            case Down -> location += curr_cols;
             case DownLeft -> {
                 if(col == 1) location = -1;
                 else {
@@ -103,6 +104,7 @@ public class GameState implements GameCommand{
                 }
             }
         }
+
         if(location < 0 || location >= territory.size()) return -1;
         else return location;
     }
@@ -174,6 +176,7 @@ public class GameState implements GameCommand{
     public boolean relocate() {
         return false; // Don't know how to get the Shortest-path
     }
+
     /**
      * @param dir
      * effect : return the opponent's region closest to the current location of the city crew in a given direction
