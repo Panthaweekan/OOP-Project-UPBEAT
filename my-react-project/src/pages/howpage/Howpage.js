@@ -12,7 +12,7 @@ function Howpage() {
     <img id="logo"src={logo} />
 
     <div id="box1"></div>
-    <button><a href="#" className="custom-btn btn-11"><span>NEXT</span></a></button>
+    <button><a href="#" className="custom-btn btn-11"><span2>NEXT</span2></a></button>
     </div>
   );
 }

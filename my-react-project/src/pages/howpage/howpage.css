@@ -85,13 +85,13 @@ body {
     text-decoration: none;
   }
 
-  .custom-btn span {
+  .custom-btn span2 {
     text-decoration: none;
     position: relative;
     z-index: 1;
     font-size: 30px;
     font-family: 'Varela Round, sans-serif' ;
-  }
+  }  
   
 
   .btn-11 {
@@ -126,12 +126,29 @@ body {
       inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
   }
   
-  
-  @-webkit-keyframes shiny-btn1 {
-      0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-      80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-      81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-      100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+  @keyframes shiny-btn1 {
+    0% { transform: scale(0) rotate(45deg); opacity: 0; }
+    50% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+    51% { transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { transform: scale(50) rotate(45deg); opacity: 0; }
   }
   
+  @-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    50% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    51% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+  }
   
+  .btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 130px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+    -webkit-animation: shiny-btn1 
+  }  

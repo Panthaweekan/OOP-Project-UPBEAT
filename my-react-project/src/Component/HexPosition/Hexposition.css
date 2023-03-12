@@ -11,22 +11,4 @@
     background-size: cover;
     border-radius: 20px;
   }
-  
-  .HexName {
-    margin: 0;
-    margin-left: 20px;
-    font-size: 28px;
-    line-height: 37px;
-    color: #fff;
-    text-transform: uppercase;
-  }
-  
-  .info {
-    margin-top: 5px;
-    margin-left: 40px;
-    font-size: 15px;
-    line-height: 20px;
-    color: #fff;
-    font-weight: 400;
-  }
-  
+

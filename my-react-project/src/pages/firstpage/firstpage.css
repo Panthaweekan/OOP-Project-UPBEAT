@@ -4,7 +4,6 @@ body {
   width: 100%;
   overflow: hidden;
   font-family: 'Varela Round';
-
 }
 
 .bg-image {
@@ -24,7 +23,7 @@ body {
 .content {
   position: absolute;
   top: 45%;
-  left: 50%;
+  left: 48%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;

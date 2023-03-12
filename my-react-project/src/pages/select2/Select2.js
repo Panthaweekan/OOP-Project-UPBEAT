@@ -1,10 +1,10 @@
 // eslint-disable-next-line
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './select1.css';
+import './select2.css';
 import logo from '../../logo1.png'
 
-function Select1() {
+function Select2() {
   return (
     <div>
     <div className="bg-image"></div>
@@ -24,9 +24,9 @@ function Select1() {
       </div>
   </section>
     <a href="#" className="button button-back"><span5>&lt;</span5></a>
-    <button><a href="#" className="custom-btn btn-11"><span2>NEXT</span2></a></button>
+    <button><a href="#" className="custom-btn btn-11"><span2>START</span2></a></button>
     </div>
   );
 }
 
-export default Select1;
+export default Select2;

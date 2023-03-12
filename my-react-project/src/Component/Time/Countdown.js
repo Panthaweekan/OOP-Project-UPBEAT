@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import FlipClock from "flipclock";
+import '../Time/countdown'
 
 const Countdown = ({ minutes, start }) => {
   const clockRef = useRef(null);

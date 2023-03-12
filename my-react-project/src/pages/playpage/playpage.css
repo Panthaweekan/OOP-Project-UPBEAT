@@ -5,17 +5,6 @@ html {
   background: linear-gradient(180deg, #d0d6f6 0%, #9dd6ff 100%);
 }
 
-#canvas {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  left: 15%;
-  right: 0;
-  top: 10%;
-  bottom: 0;
-  position: absolute;
-}
-
 .turn {
   position: fixed;
   top: 0%;
@@ -68,7 +57,7 @@ html {
   z-index: 2;
 }
 
-.square {
+.square5 {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -77,47 +66,47 @@ html {
   background-color: white;
   resize: both;
   overflow: auto;
+  border-radius: 0%;
 }
 
 .sq {
   position: fixed;
   top: 6%;
   right: 0;
-  width: 396px;
+  width: 401px;
   height: 40px;
   background-color: rgb(0, 172, 238);
   resize: both;
   overflow: auto;
-  border: 2px solid rgba(2, 126, 251, 1);
 }
 
 /* botton */
 .right-button-container {
-  display: flex;
-  justify-content: flex-end;
-  height: 50vh;
-  position: absolute;
-  right: 8.1%;
-  top: -0.6%;
-}
-
-.right-button {
-  margin-left: 0px;
-  margin-top: 10%;
-}
+    display: flex;
+    justify-content: flex-end;
+    height: 100px; /* Set the height of the container */
+    position: absolute;
+    top: -6.6%;
+    right: 11.6%;
+  }
+  
+  .right-button {
+    margin-left: 0px;
+    margin-top: 10%;
+  }
 
 .custom-btn {
   width: 130px;
   height: 40px;
   color: #fff;
   padding: 10px 25px;
-  font-family: Arial Rounded MT;
+  font: 0.875em/1.6 "Varela Round", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
   outline: none;
 }
 
@@ -134,7 +123,7 @@ html {
   padding: 0;
   border: none;
 }
-.btn-3 span {
+.btn-3 span7 {
   position: relative;
   display: block;
   width: 100%;
@@ -168,11 +157,11 @@ html {
 .btn-3:hover:after {
   width: 100%;
 }
-.btn-3 span:hover {
+.btn-3 span7:hover {
   color: rgba(2, 126, 251, 1);
 }
-.btn-3 span:before,
-.btn-3 span:after {
+.btn-3 span7:before,
+.btn-3 span7:after {
   position: absolute;
   content: "";
   left: 0;
@@ -180,17 +169,17 @@ html {
   background: rgba(2, 126, 251, 1);
   transition: all 0.3s ease;
 }
-.btn-3 span:before {
+.btn-3 span7:before {
   width: 2px;
   height: 0%;
 }
-.btn-3 span:after {
+.btn-3 span7:after {
   width: 0%;
   height: 2px;
 }
-.btn-3 span:hover:before {
+.btn-3 span7:hover:before {
   height: 100%;
 }
-.btn-3 span:hover:after {
+.btn-3 span7:hover:after {
   width: 100%;
 }

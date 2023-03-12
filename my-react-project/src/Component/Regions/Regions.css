@@ -14,13 +14,10 @@
     place-content: center;
     place-items: center;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
-    /* background: linear-gradient(180deg, pink, black); */
-    background: linear-gradient(321.5deg, #404258 -13.09%, #ffafaf 97.75%);
+    background: linear-gradient(180deg, #d0d6f6 0%, #9dd6ff 100%);
   
     left: 50%;
-    /* height: 100vh; */
     overflow: hidden;
     transform: translateX(-50%);
     padding: 0;
