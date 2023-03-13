@@ -1,10 +1,6 @@
 package AST.Statement;
 
 public abstract class Exception_AST extends RuntimeException {
-    protected Exception_AST() {
-        super();
-    }
-
     protected Exception_AST(String m) {
         super(m);
     }
