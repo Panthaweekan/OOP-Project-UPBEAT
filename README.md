@@ -1,7 +1,5 @@
 # Backend!
 
-# Now im done Micro Project !
-
 work space!
  - https://docs.google.com/document/d/1dQThnNRY4VE0AUE6bmrtzr2TL25oGN1kzhiByPQ0Z7o/edit
  - https://docs.google.com/document/d/1ubeSoBOBubPaamOSkKfxSsZLfIndivG0lwaJ__0T7gc/edit?usp=sharing (current overview)
@@ -19,13 +17,14 @@ work space!
    - Some method in GameState
 
  # Need to do next
-   - implement all GameState method for gameplay
+   - implement all GameState method for gameplay (now is 60% done)
    
- # Plan now (5/3/2023)
-   - Do all tester and simply code from feedback (Finished) -> implement List for Parser and AST
-   - Do elevaluator for game-state! (40 % done)
-   - Need to sample GameState to Test
-   - Need to know more about Spring Framework
-   - Help Frontend to design MVC for use in Spring
+ # Plan now (13/3/2023)
+   - Do all tester and simply code from feedback (done) -> implement List for Parser and AST (done)
+   - Do elevaluator for game-state! (60 % done)
+   - Test Game-State (Coverage or not)
+   - Need to sample GameState to Test (not implement yet!)
+   + Need to know more about Spring Framework
+   + Help Frontend to design MVC for use in Spring (optional)
    
  # Mar/13/2023 (Deadline)
