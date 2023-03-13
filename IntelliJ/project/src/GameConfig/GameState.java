@@ -8,7 +8,9 @@ import java.util.Map;
 import java.util.Random;
 
 public class GameState implements GameCommand{
-    private final Player p1, p2;
+
+    // private final Player p1, p2; old version
+    private final List<Player> players;
     private final List<Region> territory;
     private final long Cost = 1;
     private Player curr_player;
@@ -16,17 +18,19 @@ public class GameState implements GameCommand{
     private int turn;
 
     /**
-     * @param p1
-     * @param p2
+     * @param players
      * @param territory
      * effect : initialized gameState for 2 player with current player turn
      */
-    public GameState(Player p1, Player p2, List<Region> territory) {
+    public GameState(List<Player> players, List<Region> territory) {
         this.territory = territory;
-        this.p1 = p1;
-        this.p2 = p2;
-        this.curr_player = this.p1;
+        this.players = players;
+        this.curr_player = this.players.get(1); // not really sure but I don't think it gonna worked ;-;
         this.turn = 1;
+    }
+
+    public Player getPlayers(int index){ // for-testing now 13/3/2023
+        return players.get(index);
     }
 
 
@@ -212,7 +216,7 @@ public class GameState implements GameCommand{
 
     @Override
     public long opponent() {
-        return 0; // not-sure
+        return 0; // not implement yet!
     }
 
     @Override
@@ -273,7 +277,7 @@ public class GameState implements GameCommand{
     @Override
     public long getRandom() {
         Random ran = new Random();
-        return ran.nextInt(500);
+        return ran.nextInt(100);
     }
 
     @Override

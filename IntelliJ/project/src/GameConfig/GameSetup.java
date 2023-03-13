@@ -10,8 +10,6 @@ import Parser.GameParser;
 import Parser.Parser;
 import Tokenizer.ExprTokenizer;
 import GameConfig.GameException.*;
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -50,11 +48,15 @@ public class GameSetup {
 
     public static GameState createGame(String p1, String p2){
         List<Region> territory = createMap();
-        Player player1 = createPlayer(p1);
-        Player player2 = createPlayer(p2);
-        return new GameState(player1, player2, territory);
+        List<Player> players = new ArrayList<>();
+        players.add(createPlayer(p1));
+        players.add(createPlayer(p2));
+        return new GameState(players , territory);
     }
 
+    /**
+     * effect : to create Map for GameState
+     */
     public static List<Region> createMap(){
         territory = new ArrayList<>();
         for(int i = 0; i < rows * cols; i++){
@@ -67,6 +69,9 @@ public class GameSetup {
         return territory;
     }
 
+    /**
+     * effect : to random city-cen foreach player
+     */
     public static Region randomCityCenter(){
         Region region;
         Random random = new Random(); // random city-cen foreach player
@@ -77,6 +82,10 @@ public class GameSetup {
         return region;
     }
 
+    /**
+     * @param name
+     * effect : create Player for GameState with Name init_budget and region
+     */
     public static Player createPlayer(String name){
         if(territory == null || territory.size() == 0) return null;
         Region region = randomCityCenter();

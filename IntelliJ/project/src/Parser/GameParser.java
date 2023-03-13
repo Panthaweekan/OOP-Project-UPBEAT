@@ -4,11 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import AST.Expression.IdentifierNode;
-import AST.Expression.NumNode;
+import AST.Expression.*;
 import AST.Statement.*;
-import AST.Expression.BinaryOperateNode;
-import AST.Expression.NearbyNode;
 import AST.Node.*;
 import AST.Statement.Exception_AST.*;
 import GameConfig.Direction;
@@ -32,7 +29,7 @@ public class GameParser implements Parser {
 
     /** Renew List<Exec> to Exec **/
     @Override
-    public List<Exec> Parse() {
+    public List<Exec> Parse() {     // parse to linked-list instead of Create my own Linked-list (From Last FeedBack)
         List<Exec> nodes = parsePlan();
         if(tkz.hasNext()){
             throw new UnExceptTokenException(tkz.peek());
@@ -177,7 +174,7 @@ public class GameParser implements Parser {
     }
     private Expr parseF() {
         Expr left = parsePower();
-        while (tkz.peek("^")) {
+        if (tkz.peek("^")) {    // Fixed : (wrong associativity from last FeedBack)
             String operator = tkz.consume();
             Expr right = parseF();
             left = new BinaryOperateNode(left, operator, right); // BinaryOptNode on AST!
@@ -187,7 +184,7 @@ public class GameParser implements Parser {
 
     private Expr parsePower() {
         if (Character.isDigit(tkz.peek().charAt(0))) {
-            return new NumNode(Long.parseLong(tkz.consume())); //CalculateNode on AST!
+            return new NumNode(Long.parseLong(tkz.consume())); // NumNode on AST!
         } else if (tkz.peek("opponent") || tkz.peek("nearby")) {
             return parseInfoExpression();
         } else if (tkz.peek("(")) {
@@ -200,15 +197,14 @@ public class GameParser implements Parser {
         }
         return null;
     }
-
     private Expr parseInfoExpression() {
         if (tkz.peek("opponent")) {
             tkz.consume();
-            return null; // EnemyNode on AST!
+            return new OpponentNode();          // EnemyNode on AST!
         } else if (tkz.peek("nearby")) {
             tkz.consume();
             Direction direction = parseDirection();
-            return new NearbyNode(direction); // NearbyNode on AST
+            return new NearbyNode(direction);   // NearbyNode on AST
         } else {
             throw new InvalidInfoExpression(tkz.peek());
         }
