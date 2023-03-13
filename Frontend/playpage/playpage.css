@@ -30,7 +30,7 @@ html {
 .plan {
   position: fixed;
   top: 4%;
-  right: 5%;
+  right: 3%;
   z-index: 1;
   font-size: 1.2em;
   font-weight: 400;
@@ -134,6 +134,21 @@ html {
   padding: 0;
   border: none;
 }
+
+.btn-4 {
+  background: rgb(248, 95, 230);
+  background: linear-gradient(
+    0deg,
+    rgb(248, 95, 230) 0%,
+    rgb(251, 2, 234) 100%
+  );
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
 .btn-3 span {
   position: relative;
   display: block;

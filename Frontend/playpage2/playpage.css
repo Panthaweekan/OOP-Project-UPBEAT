@@ -102,7 +102,7 @@ html {
     height: 40px;
     color: #fff;
     padding: 10px 25px;
-    font-family: Arial Rounded MT Bold;
+    font: 0.875em/1.6 "Varela Round", sans-serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
