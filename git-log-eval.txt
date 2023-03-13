@@ -1,353 +1,647 @@
-* commit 984b707f8f1abda1b086fffdbbad2cb3c6beb4bb
-| Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
-| Date:   Thu Feb 23 02:06:00 2023 +0700
+* commit 651bba0b2f7ec853ac7224c700167bf1b73d5457
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Mon Mar 13 22:02:32 2023 +0700
 | 
-|     fixed
-|     
+|     Updated Current Version for Documentation (GameParser,GameSetup,GameState)
+| 
+* commit 4c5327c241328f2aac4ee9ff18399dc5d97e6499
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Mon Mar 13 20:11:39 2023 +0700
+| 
+|     Fixed Exception_AST constructor
+|   
+*   commit 5d43d5dafdadb147259476c13510cc79a7bb0b81
+|\  Merge: d47fc33 edae8fc
+| | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | Date:   Sun Mar 12 19:28:18 2023 +0700
+| | 
+| |     Merge branch 'Backend' of https://github.com/Panthaweekan/OOP-Project-UPBEAT into Backend
+| | 
+| * commit edae8fcfbd736919c93bf37adcb10ba9e6309f75
+| | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | Date:   Sat Mar 11 19:58:53 2023 +0700
+| | 
+| |     Update README.md
+| | 
+| * commit eabd9592ed7b999292704796a021a95592c76913
+| | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | Date:   Sat Mar 11 19:55:50 2023 +0700
+| | 
+| |     11/3/2023 Updated Plan and Problem
+| | 
+* | commit d47fc33d0bf75284a3c0630a5faeb43c21ecbddc
+|/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+|   Date:   Sun Mar 12 19:28:04 2023 +0700
+|   
+|       Updated GameParserTest & GameState
+| 
+* commit 06880889b87f595dcb396c113f0ebe26d5490f45
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Sat Mar 11 19:50:38 2023 +0700
+| 
+|     Updated GameState and renew some method
+| 
+* commit 114918bb72c59b8e68d7b008d8bc7d47419e5d76
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Thu Mar 9 00:02:55 2023 +0700
+| 
+|     Renew GameParser , add useful methods and implemented GameState with GameSetup
+| 
+* commit a8689d86ceeb7937a8888fa102a707f02cf1d6c9
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Wed Mar 8 13:55:01 2023 +0700
+| 
+|     Implement GameParserTest GamePlayer GameRegion and Updated all Interfaces
+| 
+* commit d1d47b5305d282a8b41ab0ec20bc23e5644d32c5
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Sun Mar 5 22:43:04 2023 +0700
+| 
+|     5/3/2023 Updated
+| 
+* commit e89b8af1da36f72a7b0ab745be31f4301627d4ab
+| Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| Date:   Thu Feb 23 20:44:29 2023 +0700
+| 
+|     Updated
+|   
+*   commit 546819d0f3f6e9c4afdef33b7e5ba0b725bca17b
+|\  Merge: 35df68e 97b9731
+| | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | Date:   Thu Feb 23 14:20:45 2023 +0700
+| | 
+| |     Updated
+| | 
+| * commit 97b973172c9014bdf76cd30d69ad02224d88b2e3
+| | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | Date:   Thu Feb 23 11:50:47 2023 +0700
+| | 
+| |     redo-updated
+| | 
+| * commit 88947d5a66e00af2f8e2a0ea507d7cd2a51b8138
+| | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | Date:   Thu Feb 23 02:17:51 2023 +0700
+| | 
+| |     Update git-log-eval.txt
+| |   
 | *   commit 230e3162159cdd1009743d833802745d29bf548f
 | |\  Merge: c7a91d1 82a82c7
-| |/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-|/|   Date:   Thu Feb 23 02:04:22 2023 +0700
-| |   
-| |       Merge pull request #33 from Panthaweekan/main
-| |       
-| |       merge Main to Backend!
-| |   
-* |   commit 82a82c7264b0b9e13b11e12853c68c7cc72d2f70
-|\ \  Merge: 0016c63 b08d1c9
-| | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
-| | | Date:   Thu Feb 23 02:01:47 2023 +0700
-| | | 
-| | |     re-push
-| | | 
-| * | commit b08d1c9b835a292e69ba6e508132ae673b01c487
-| |\| Merge: 05be1b9 c7a91d1
 | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | Date:   Thu Feb 23 01:52:09 2023 +0700
+| | | Date:   Thu Feb 23 02:04:22 2023 +0700
 | | | 
-| | |     Merge pull request #32 from Panthaweekan/Backend
+| | |     Merge pull request #33 from Panthaweekan/main
 | | |     
-| | |     Backend merge to main
+| | |     merge Main to Backend!
+| | | 
+* | | commit 35df68ebaa4daa26dd0355daa94dbb6a00622adf
+| | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | | Date:   Thu Feb 23 14:19:43 2023 +0700
+| | | 
+| | |     Updated GameParser
 | | |   
-| | *   commit c7a91d14a1e6d326e5136495349b14b10804f1c0
-| | |\  Merge: 1a49db7 05be1b9
-| | |/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| |/|   Date:   Thu Feb 23 01:51:57 2023 +0700
+| | | * commit c0d48ab1dbcef85762edf9b7d4fb82c4bb65f9da
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Sun Mar 12 22:44:11 2023 +0700
+| | | | 
+| | | |     command react
+| | | | 
+| | | * commit f5cc48ff81fed2323f81c9869a96bcd25e2475c9
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Sun Mar 12 11:14:41 2023 +0700
+| | | | 
+| | | |     re layout
+| | | | 
+| | | * commit 79532584a00224eca8bf864a0522e633dcb138d6
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Sat Mar 11 23:43:13 2023 +0700
+| | | | 
+| | | |     build react
+| | | | 
+| | | * commit f0aeb554ded3510f4ba51fbfac48539f41f66382
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Sat Mar 11 11:35:11 2023 +0700
+| | | | 
+| | | |     build react
+| | | | 
+| | | * commit 07882b00874d92b165035e755e7236a1387e78ef
+| | | | Author: Donteatpineappleonpizza <winittra_saengsroy@cmu.ac.th>
+| | | | Date:   Wed Mar 8 18:04:24 2023 +0700
+| | | | 
+| | | |     update fonts and move hex into center
+| | | | 
+| | | * commit 0a8f893a754f8e80acaefc582f517d884034b224
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Tue Mar 7 15:44:47 2023 +0700
+| | | | 
+| | | |     add sound
+| | | | 
+| | | * commit 7b8036f65efa6cfea6ffeddff09798e2d7fe3100
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Tue Mar 7 10:11:40 2023 +0700
+| | | | 
+| | | |     dup player2
+| | | | 
+| | | * commit a195ecbc127a373c8ebd9f7479da82827962283e
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Tue Mar 7 08:01:12 2023 +0700
+| | | | 
+| | | |     clean
+| | | | 
+| | | * commit 78ba144137d684fb680c2bef2376a6bb60ac924d
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Mon Mar 6 23:48:55 2023 +0700
+| | | | 
+| | | |     Update
+| | | | 
+| | | * commit c8a6e11f801a1317dc09fe464f603a6b1cde86c9
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Mon Mar 6 16:39:54 2023 +0700
+| | | | 
+| | | |     add final hex grid
+| | | | 
+| | | * commit fce3e9b76ca3a16adf16ea9faeb33d589f414ae0
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Sat Mar 4 16:40:29 2023 +0700
+| | | | 
+| | | |     new page play game
+| | | | 
+| | | * commit 43c3805d85fae8db7e16f04e12c3bf57dc7f21f6
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Fri Mar 3 23:58:49 2023 +0700
+| | | | 
+| | | |     build sound
+| | | | 
+| | | * commit 0221c9b56c9c01cb71dc8079d8dd7d69ea335d5d
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Fri Mar 3 22:05:53 2023 +0700
+| | | | 
+| | | |     add coin
+| | | | 
+| | | * commit 43466ba1a88bec1c6295c94a15c093a699a5b1a3
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Fri Mar 3 01:03:16 2023 +0700
+| | | | 
+| | | |     ommo ommo gag
+| | | | 
+| | | * commit 127b96df73b2ef28551b5f3129fbe71020faff62
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Thu Mar 2 23:42:05 2023 +0700
+| | | | 
+| | | |     Update planpage of all
+| | | | 
+| | | * commit b336119a51e102613277ff88e5097fcdb065b46f
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Thu Mar 2 13:37:02 2023 +0700
+| | | | 
+| | | |     Updated Frontend
+| | | | 
+| | | * commit c6389cdcaeaf10f72d139252138cd73eb268c45c
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Mon Feb 27 23:52:04 2023 +0700
+| | | | 
+| | | |     in put history
+| | | | 
+| | | * commit 2c8342887838c5fad5b6ea70c143b9b63ac0c3f4
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Sun Feb 26 23:26:10 2023 +0700
+| | | | 
+| | | |     Update planpage
+| | | | 
+| | | * commit 8eb605b9c979f846f0186b81ec12f3ccf58e762d
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Sun Feb 26 22:23:35 2023 +0700
+| | | | 
+| | | |     Update time
+| | | | 
+| | | * commit a4efbc9849af44c961dfe66099b91902972b7ecc
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Sat Feb 25 23:26:44 2023 +0700
+| | | | 
+| | | |     Add time
+| | | | 
+| | | * commit 27e36cafcfef91a81520fe5e5a502145c9ff5f6d
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Sat Feb 25 14:35:52 2023 +0700
+| | | | 
+| | | |     add to click card
+| | | | 
+| | | * commit 08b4ef12b49e87ee14d30a64d54d42f9a66572cc
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Thu Feb 23 21:13:19 2023 +0700
+| | | | 
+| | | |     create hexagonal grid
+| | | | 
+| | | * commit c68b8c4b9e8db0bb5ccb624ac66406cc942b7103
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Thu Feb 23 16:25:21 2023 +0700
+| | | | 
+| | | |     Updated
+| | | | 
+| | | * commit 8f7842ba233756222d2bff7c964c8bc014e72dfb
+| | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | Date:   Thu Feb 23 02:13:36 2023 +0700
+| | | | 
+| | | |     Notify to NATTY
+| | | |   
+| | | *   commit 1e2135f64497971b0b364488fd57d9594512b1bf
+| | | |\  Merge: 1ee9386 a39ca9c
+| | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | Date:   Thu Feb 23 02:12:23 2023 +0700
+| | | | | 
+| | | | |     Merge pull request #34 from Panthaweekan/main
+| | | | |     
+| | | | |     Merge main to Frontend
+| | | | |   
+| | | | | * commit 4323b3c93296a05020d48bd679070e501ea89009
+| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | Date:   Sat Mar 11 19:58:02 2023 +0700
+| | | | | | 
+| | | | | |     Update README.md
+| | | | | | 
+| | | | | * commit d05564d338e3507bc3a7fbacb34836c6e0d46b54
+| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | Date:   Sat Mar 11 19:57:31 2023 +0700
+| | | | | | 
+| | | | | |     Update README.md
+| | | | | | 
+| | | | | * commit 30beb4ef8260ccb7af3fcb1561eb37f536b9ba7a
+| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | Date:   Thu Feb 23 23:34:20 2023 +0700
+| | | | | | 
+| | | | | |     add Doc's link to README.md
+| | | | | | 
+| | | | | * commit c6d38f54bcf9952742f4255915861ed6b01671b1
+| | | | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | | | | | Date:   Thu Feb 23 20:48:08 2023 +0700
+| | | | | | 
+| | | | | |     Updated git-log-eval
+| | | | | | 
+| | | | | * commit d17a9f2876fe4ef9b8eac4f9665a34f3f0ba84bb
+| | | | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | | | | | Date:   Thu Feb 23 20:46:50 2023 +0700
+| | | | | | 
+| | | | | |     Updated Tokenizer-Tester
+| | | | | | 
+| | | | | * commit d502de4d70bf3a9670494f60f32df6e0ed6a870c
+| | | | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | | | | | Date:   Thu Feb 23 14:21:24 2023 +0700
+| | | | | | 
+| | | | | |     Deleted unexpect file
+| | | | | | 
+| | | | | * commit fc08a24a01e6df9ef77a847649bbfdc5f3d944de
+| | | | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | | | | | Date:   Thu Feb 23 10:25:14 2023 +0700
+| | | | | | 
+| | | | | |     Import AST Exception for parser
+| | | | | | 
+| | | | | * commit 8bb51b66a73a6d2434de0ab42ad908ce3dd943ee
+| | | | |/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | |   Date:   Thu Feb 23 02:18:03 2023 +0700
+| | | | |   
+| | | | |       Update git-log-eval.txt
+| | | | | 
+| | | | * commit a39ca9cfa20e8bd8b00930b815ac7880849b3a6a
+| | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | Date:   Thu Feb 23 02:10:32 2023 +0700
+| | | | | 
+| | | | |     wrong merge!
+| | | | |   
+| | | | *   commit 51cba35f4a5a7b91a427729359ce1b17b0442544
+| | | | |\  Merge: 984b707 1ee9386
+| | | | |/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | |/|   Date:   Thu Feb 23 02:09:56 2023 +0700
+| | | | |   
+| | | | |       Merge branch 'Frontend' into main
+| | | | | 
+| | | * | commit 1ee93866392fb252dca0393348f2d4b72c39fd74
+| | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | Date:   Thu Feb 23 01:50:30 2023 +0700
+| | | | | 
+| | | | |     re-detail about Frontend README.md
+| | | | |   
+| | | * |   commit 334055fdc3636e25fec2354807c8e3175e691f6c
+| | | |\ \  Merge: 5083e9a 05be1b9
+| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | Date:   Thu Feb 23 01:49:06 2023 +0700
+| | | | | | 
+| | | | | |     Merge pull request #31 from Panthaweekan/main
+| | | | | |     
+| | | | | |     Merge main to Frontend!
+| | | | | | 
+| | | * | | commit 5083e9a4e52fffbacf6b5cc3843d3ff2811638bd
+| | | | | | Author: Donteatpineappleonpizza <winittra_saengsroy@cmu.ac.th>
+| | | | | | Date:   Mon Feb 20 11:34:46 2023 +0700
+| | | | | | 
+| | | | | |     Add Graphic pic.
+| | | | | | 
+| | | * | | commit 14b7ae702c3160173786bd62b890dff8226714e7
+| | | | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | | | | | Date:   Mon Feb 20 01:49:13 2023 +0700
+| | | | | | 
+| | | | | |     Graphic folder
+| | | | | | 
+| | | * | | commit 978fbb30b6c63c099c5ed0e530373f4b3adac298
+| | | | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | | | | | Date:   Mon Feb 20 01:47:32 2023 +0700
+| | | | | | 
+| | | | | |     create Graphic folder for Frontend
+| | | | | | 
+| | | | | * commit 984b707f8f1abda1b086fffdbbad2cb3c6beb4bb
+| | | |_|/  Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | |/| |   Date:   Thu Feb 23 02:06:00 2023 +0700
+| | | | |   
+| | | | |       fixed
+| | | | |   
+| | * | |   commit 82a82c7264b0b9e13b11e12853c68c7cc72d2f70
+| | |\ \ \  Merge: 0016c63 b08d1c9
+| | | | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| | | | | | Date:   Thu Feb 23 02:01:47 2023 +0700
+| | | | | | 
+| | | | | |     re-push
+| | | | | |   
+| | | * | |   commit b08d1c9b835a292e69ba6e508132ae673b01c487
+| | | |\ \ \  Merge: 05be1b9 c7a91d1
+| | |_|/ / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| |/| | | /   Date:   Thu Feb 23 01:52:09 2023 +0700
+| | | | |/    
+| | | |/|         Merge pull request #32 from Panthaweekan/Backend
+| | | | |         
+| | | | |         Backend merge to main
+| | | | |   
+| * | | |   commit c7a91d14a1e6d326e5136495349b14b10804f1c0
+| |\ \ \ \  Merge: 1a49db7 05be1b9
+| | | |/ /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | |/| |   Date:   Thu Feb 23 01:51:57 2023 +0700
+| | | | |   
+| | | | |       Merge branch 'main' into Backend
+| | | | |   
+| | * | |   commit 05be1b96a4bb5978a0e993c2c100b909e7d9bddc
+| | |\ \ \  Merge: 59b24e4 e0430b5
+| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | Date:   Thu Feb 23 01:46:14 2023 +0700
+| | | | | | 
+| | | | | |     Merge pull request #29 from Panthaweekan/napatsiri-patch-4
+| | | | | |     
+| | | | | |     Change the appearance of the page.
+| | | | | | 
+| | | * | | commit e0430b585ed27c86080a82dfcfc520c25400bf1d
+| | | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | | Date:   Mon Feb 20 23:35:59 2023 +0700
+| | | | | | 
+| | | | | |     Change the appearance of the page.
+| | | | | |   
+| | * | | |   commit 59b24e420f91b11f198e94074616fbefc34adb1f
+| | |\ \ \ \  Merge: ea71508 6caeb4c
+| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | Date:   Thu Feb 23 01:45:39 2023 +0700
+| | | | | | | 
+| | | | | | |     Merge pull request #28 from Panthaweekan/napatsiri-patch-5
+| | | | | | |     
+| | | | | | |     Delete login.js
+| | | | | | | 
+| | | * | | | commit 6caeb4caadaa3d9daa4ed6bcfc8d6cfc2687b35e
+| | | |/ / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | |   Date:   Mon Feb 20 23:36:51 2023 +0700
+| | | | | |   
+| | | | | |       Delete login.js
+| | | | | |   
+| | * | | |   commit ea715084e820d72e51139041fc3740d26c27498d
+| | |\ \ \ \  Merge: 09d5217 e680693
+| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | Date:   Thu Feb 23 01:45:13 2023 +0700
+| | | | | | | 
+| | | | | | |     Merge pull request #27 from Panthaweekan/napatsiri-patch-3
+| | | | | | |     
+| | | | | | |     Change the details of the page appearance.
+| | | | | | | 
+| | | * | | | commit e680693936da417723f768ceec087a186af87dbe
+| | | |/ / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | |   Date:   Mon Feb 20 23:34:59 2023 +0700
+| | | | | |   
+| | | | | |       Change the details of the page appearance.
+| | | | | |   
+| | * | | |   commit 09d521740c26d2a4b94f6cd0a71e9f302b448380
+| | |\ \ \ \  Merge: 5800db5 71d392a
+| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | Date:   Thu Feb 23 01:43:41 2023 +0700
+| | | | | | | 
+| | | | | | |     Merge pull request #26 from Panthaweekan/napatsiri-patch-6
+| | | | | | |     
+| | | | | | |     Create home.html
+| | | | | | | 
+| | | * | | | commit 71d392acbad3125b22fc433262cfa53edcb9aaaf
+| | | |/ / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | |   Date:   Mon Feb 20 23:37:39 2023 +0700
+| | | | | |   
+| | | | | |       Create home.html
+| | | | | |   
+| | * | | |   commit 5800db5f5436365f388527e0ec3b5a301eba881e
+| | |\ \ \ \  Merge: c89cb07 c0fdfd3
+| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | Date:   Thu Feb 23 01:42:02 2023 +0700
+| | | | | | | 
+| | | | | | |     Merge pull request #17 from Panthaweekan/napatsiri-patch-8
+| | | | | | |     
+| | | | | | |     change time sec
+| | | | | | | 
+| | | * | | | commit c0fdfd3514a3afa633364a812a4eb836ed0873c7
+| | | | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | | | Date:   Wed Feb 22 23:45:22 2023 +0700
+| | | | | | | 
+| | | | | | |     change time sec
+| | | | | | |   
+| | * | | | |   commit c89cb07c0ea25aa5d77c8b1d403fcb5289e00f37
+| | |\ \ \ \ \  Merge: 0cae57e f9f24f8
+| | | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | | Date:   Thu Feb 23 01:41:33 2023 +0700
+| | | | | | | | 
+| | | | | | | |     Merge pull request #18 from Panthaweekan/napatsiri-patch-9
+| | | | | | | |     
+| | | | | | | |     Update first.html
+| | | | | | | | 
+| | | * | | | | commit f9f24f89ebdf7071297a967be37115169699ebe1
+| | | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | | |   Date:   Wed Feb 22 23:46:37 2023 +0700
+| | | | | | |   
+| | | | | | |       Update first.html
+| | | | | | |   
+| | * | | | |   commit 0cae57e4c9b6119011e0500dd24a3944b66e949c
+| | |\ \ \ \ \  Merge: f093d4f 6513e16
+| | | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | | Date:   Thu Feb 23 01:41:07 2023 +0700
+| | | | | | | | 
+| | | | | | | |     Merge pull request #19 from Panthaweekan/napatsiri-patch-10
+| | | | | | | |     
+| | | | | | | |     Create howpage.html
+| | | | | | | | 
+| | | * | | | | commit 6513e16b74b753281e428c00b2ff5e7d42a9a662
+| | | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | | |   Date:   Wed Feb 22 23:50:42 2023 +0700
+| | | | | | |   
+| | | | | | |       Create howpage.html
+| | | | | | |   
+| | * | | | |   commit f093d4fa6770ccacd9f50b6a91f81721e7381703
+| | |\ \ \ \ \  Merge: 5def3de 57cd521
+| | | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | | Date:   Thu Feb 23 01:40:01 2023 +0700
+| | | | | | | | 
+| | | | | | | |     Merge pull request #20 from Panthaweekan/napatsiri-patch-11
+| | | | | | | |     
+| | | | | | | |     Create howpage.css
+| | | | | | | | 
+| | | * | | | | commit 57cd521c47c53edc5f6252f1728bd785fdfc4252
+| | | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | | |   Date:   Wed Feb 22 23:51:23 2023 +0700
+| | | | | | |   
+| | | | | | |       Create howpage.css
+| | | | | | |   
+| | * | | | |   commit 5def3de090640266b964d24f5341a94238e0e8e8
+| | |\ \ \ \ \  Merge: 2d6b018 15a3184
+| | | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | | Date:   Thu Feb 23 01:39:32 2023 +0700
+| | | | | | | | 
+| | | | | | | |     Merge pull request #21 from Panthaweekan/napatsiri-patch-12
+| | | | | | | |     
+| | | | | | | |     Create planpage.html
+| | | | | | | | 
+| | | * | | | | commit 15a3184e73e56c4c8fc0e51f5c1c48d6cbae363b
+| | | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | | |   Date:   Wed Feb 22 23:52:23 2023 +0700
+| | | | | | |   
+| | | | | | |       Create planpage.html
+| | | | | | |   
+| | * | | | |   commit 2d6b018aa30a9ae9cfcdb2fc978027a49f4f315f
+| | |\ \ \ \ \  Merge: 9c24af5 062294a
+| | | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | | Date:   Thu Feb 23 01:39:01 2023 +0700
+| | | | | | | | 
+| | | | | | | |     Merge pull request #22 from Panthaweekan/napatsiri-patch-13
+| | | | | | | |     
+| | | | | | | |     Create planpage.css
+| | | | | | | | 
+| | | * | | | | commit 062294a0551045e4a5bec23fcebc8f4c2261526c
+| | | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | | |   Date:   Wed Feb 22 23:53:02 2023 +0700
+| | | | | | |   
+| | | | | | |       Create planpage.css
+| | | | | | |   
+| | * | | | |   commit 9c24af52eb1c3e42d99af386fffe9f580e9d4c72
+| | |\ \ \ \ \  Merge: 4b30f9a e0c6c76
+| | | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | | Date:   Thu Feb 23 01:38:21 2023 +0700
+| | | | | | | | 
+| | | | | | | |     Merge pull request #23 from Panthaweekan/napatsiri-patch-14
+| | | | | | | |     
+| | | | | | | |     Create planpage.js
+| | | | | | | | 
+| | | * | | | | commit e0c6c76fa4baf6573927fa217739a2b12dc2c465
+| | | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | | |   Date:   Wed Feb 22 23:53:33 2023 +0700
+| | | | | | |   
+| | | | | | |       Create planpage.js
+| | | | | | |   
+| | * | | | |   commit 4b30f9ab016316878676ae8bd6594129d8bf9c07
+| | |\ \ \ \ \  Merge: 04fd9cb 89b2f80
+| | | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | | | Date:   Thu Feb 23 01:37:54 2023 +0700
+| | | | | | | | 
+| | | | | | | |     Merge pull request #24 from Panthaweekan/napatsiri-patch-15
+| | | | | | | |     
+| | | | | | | |     Create seleccha.html
+| | | | | | | | 
+| | | * | | | | commit 89b2f80ea913abd4734971a04dd7525891ef0b4b
+| | | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | | |   Date:   Wed Feb 22 23:54:35 2023 +0700
+| | | | | | |   
+| | | | | | |       Create seleccha.html
+| | | | | | |   
+| | * | | | |   commit 04fd9cbbea1b3037e7906abfb9bec4f02543940b
+| | |\ \ \ \ \  Merge: 70daa6e 2307141
+| | | |/ / / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | |/| | | |   Date:   Thu Feb 23 01:37:18 2023 +0700
+| | | | | | |   
+| | | | | | |       Merge pull request #25 from Panthaweekan/napatsiri-patch-16
+| | | | | | |       
+| | | | | | |       Create selecta.css
+| | | | | | | 
+| | | * | | | commit 230714102ee4de605ab03d347b3442c35291c696
+| | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | | |   Date:   Wed Feb 22 23:55:17 2023 +0700
+| | | | | |   
+| | | | | |       Create selecta.css
+| | | | | |   
+| | * | | |   commit 70daa6e7a7efe5fbe91ebf28bc59b98a5ad761fe
+| | |\ \ \ \  Merge: 7df2fa9 40ef1af
+| | | |/ / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | |/| | |   Date:   Tue Feb 21 23:57:25 2023 +0700
+| | | | | |   
+| | | | | |       Merge pull request #16 from Panthaweekan/napatsiri-patch-7
+| | | | | |       
+| | | | | |       Create home.css
+| | | | | | 
+| | | * | | commit 40ef1af9960f2f23f97cc752fff8910fbb71c5ce
+| | |/ / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | | |   Date:   Mon Feb 20 23:39:20 2023 +0700
+| | | | |   
+| | | | |       Create home.css
+| | | | | 
+| | * | | commit 7df2fa9067d09cad7c31fe2ad5e2789bba828960
+| | | |/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | |/|   Date:   Mon Feb 20 14:48:35 2023 +0700
+| | | |   
+| | | |       Update README.md
+| | | | 
+| * | | commit 1a49db764eeec02ffaf8d090a35daab537933acb
+|/ / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | |   Date:   Thu Feb 23 01:29:53 2023 +0700
 | | |   
-| | |       Merge branch 'main' into Backend
+| | |       Update README.md
 | | | 
-| | * commit 1a49db764eeec02ffaf8d090a35daab537933acb
-| | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | Date:   Thu Feb 23 01:29:53 2023 +0700
-| | | 
-| | |     Update README.md
-| | | 
-| | * commit 9e1f549d3160407954ca25b840e37b831f002f5e
+* | | commit 9e1f549d3160407954ca25b840e37b831f002f5e
 | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
 | | | Date:   Thu Feb 23 01:25:18 2023 +0700
 | | | 
 | | |     Simpify all code and fixed
 | | |   
-| | *   commit 743900402fa8afbd908ccd4a53dd17382ec27b8c
-| | |\  Merge: 3d01dd5 315f905
+* | |   commit 743900402fa8afbd908ccd4a53dd17382ec27b8c
+|\ \ \  Merge: 3d01dd5 315f905
 | | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
 | | | | Date:   Wed Feb 22 23:00:21 2023 +0700
 | | | | 
 | | | |     Implement Parser and AST
 | | | | 
-| | | * commit 315f905462f8a1bd686eebd1c5fb2660c0ed0179
+| * | | commit 315f905462f8a1bd686eebd1c5fb2660c0ed0179
 | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | Date:   Mon Feb 20 14:51:31 2023 +0700
 | | | | 
 | | | |     Redo name
 | | | | 
-| | | * commit d9dd6d4432603e69a0344f6638a65d3786f36cd8
+| * | | commit d9dd6d4432603e69a0344f6638a65d3786f36cd8
 | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | Date:   Mon Feb 20 14:49:54 2023 +0700
 | | | | 
 | | | |     Rename README.md to README-Back.md
 | | | | 
-| | * | commit 3d01dd527d0c16765d5bff72ceba20ccc19784bb
-| | |/  Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+* | | | commit 3d01dd527d0c16765d5bff72ceba20ccc19784bb
+|/ / /  Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
 | | |   Date:   Wed Feb 22 22:46:49 2023 +0700
 | | |   
 | | |       Implemented Parser and AST for game now
 | | | 
-* | | commit 0016c6326898b151e291737761284d15b4997aad
+| | * commit 0016c6326898b151e291737761284d15b4997aad
 | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
 | | | Date:   Thu Feb 23 02:01:09 2023 +0700
 | | | 
 | | |     re-push
 | | | 
-* | | commit fdddb591d40dcdaa398def5af570e277bd9b6ba9
-| | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
-| | | Date:   Thu Feb 23 01:54:48 2023 +0700
-| | | 
-| | |     git-log-eval.txt for assignment
-| | |   
-| | | * commit 1ee93866392fb252dca0393348f2d4b72c39fd74
-| | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | Date:   Thu Feb 23 01:50:30 2023 +0700
-| | | | 
-| | | |     re-detail about Frontend README.md
-| | | |   
-| | | *   commit 334055fdc3636e25fec2354807c8e3175e691f6c
-| | | |\  Merge: 5083e9a 05be1b9
-| | |_|/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| |/| |   Date:   Thu Feb 23 01:49:06 2023 +0700
-| | | |   
-| | | |       Merge pull request #31 from Panthaweekan/main
-| | | |       
-| | | |       Merge main to Frontend!
-| | | |   
-| * | |   commit 05be1b96a4bb5978a0e993c2c100b909e7d9bddc
-| |\ \ \  Merge: 59b24e4 e0430b5
-| | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | Date:   Thu Feb 23 01:46:14 2023 +0700
-| | | | | 
-| | | | |     Merge pull request #29 from Panthaweekan/napatsiri-patch-4
-| | | | |     
-| | | | |     Change the appearance of the page.
-| | | | | 
-| | * | | commit e0430b585ed27c86080a82dfcfc520c25400bf1d
-| | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | | Date:   Mon Feb 20 23:35:59 2023 +0700
-| | | | | 
-| | | | |     Change the appearance of the page.
-| | | | |   
-| * | | |   commit 59b24e420f91b11f198e94074616fbefc34adb1f
-| |\ \ \ \  Merge: ea71508 6caeb4c
-| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | Date:   Thu Feb 23 01:45:39 2023 +0700
-| | | | | | 
-| | | | | |     Merge pull request #28 from Panthaweekan/napatsiri-patch-5
-| | | | | |     
-| | | | | |     Delete login.js
-| | | | | | 
-| | * | | | commit 6caeb4caadaa3d9daa4ed6bcfc8d6cfc2687b35e
-| | |/ / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | |   Date:   Mon Feb 20 23:36:51 2023 +0700
-| | | | |   
-| | | | |       Delete login.js
-| | | | |   
-| * | | |   commit ea715084e820d72e51139041fc3740d26c27498d
-| |\ \ \ \  Merge: 09d5217 e680693
-| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | Date:   Thu Feb 23 01:45:13 2023 +0700
-| | | | | | 
-| | | | | |     Merge pull request #27 from Panthaweekan/napatsiri-patch-3
-| | | | | |     
-| | | | | |     Change the details of the page appearance.
-| | | | | | 
-| | * | | | commit e680693936da417723f768ceec087a186af87dbe
-| | |/ / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | |   Date:   Mon Feb 20 23:34:59 2023 +0700
-| | | | |   
-| | | | |       Change the details of the page appearance.
-| | | | |   
-| * | | |   commit 09d521740c26d2a4b94f6cd0a71e9f302b448380
-| |\ \ \ \  Merge: 5800db5 71d392a
-| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | Date:   Thu Feb 23 01:43:41 2023 +0700
-| | | | | | 
-| | | | | |     Merge pull request #26 from Panthaweekan/napatsiri-patch-6
-| | | | | |     
-| | | | | |     Create home.html
-| | | | | | 
-| | * | | | commit 71d392acbad3125b22fc433262cfa53edcb9aaaf
-| | |/ / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | |   Date:   Mon Feb 20 23:37:39 2023 +0700
-| | | | |   
-| | | | |       Create home.html
-| | | | |   
-| * | | |   commit 5800db5f5436365f388527e0ec3b5a301eba881e
-| |\ \ \ \  Merge: c89cb07 c0fdfd3
-| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | Date:   Thu Feb 23 01:42:02 2023 +0700
-| | | | | | 
-| | | | | |     Merge pull request #17 from Panthaweekan/napatsiri-patch-8
-| | | | | |     
-| | | | | |     change time sec
-| | | | | | 
-| | * | | | commit c0fdfd3514a3afa633364a812a4eb836ed0873c7
-| | | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | | | Date:   Wed Feb 22 23:45:22 2023 +0700
-| | | | | | 
-| | | | | |     change time sec
-| | | | | |   
-| * | | | |   commit c89cb07c0ea25aa5d77c8b1d403fcb5289e00f37
-| |\ \ \ \ \  Merge: 0cae57e f9f24f8
-| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | | Date:   Thu Feb 23 01:41:33 2023 +0700
-| | | | | | | 
-| | | | | | |     Merge pull request #18 from Panthaweekan/napatsiri-patch-9
-| | | | | | |     
-| | | | | | |     Update first.html
-| | | | | | | 
-| | * | | | | commit f9f24f89ebdf7071297a967be37115169699ebe1
-| | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | | |   Date:   Wed Feb 22 23:46:37 2023 +0700
-| | | | | |   
-| | | | | |       Update first.html
-| | | | | |   
-| * | | | |   commit 0cae57e4c9b6119011e0500dd24a3944b66e949c
-| |\ \ \ \ \  Merge: f093d4f 6513e16
-| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | | Date:   Thu Feb 23 01:41:07 2023 +0700
-| | | | | | | 
-| | | | | | |     Merge pull request #19 from Panthaweekan/napatsiri-patch-10
-| | | | | | |     
-| | | | | | |     Create howpage.html
-| | | | | | | 
-| | * | | | | commit 6513e16b74b753281e428c00b2ff5e7d42a9a662
-| | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | | |   Date:   Wed Feb 22 23:50:42 2023 +0700
-| | | | | |   
-| | | | | |       Create howpage.html
-| | | | | |   
-| * | | | |   commit f093d4fa6770ccacd9f50b6a91f81721e7381703
-| |\ \ \ \ \  Merge: 5def3de 57cd521
-| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | | Date:   Thu Feb 23 01:40:01 2023 +0700
-| | | | | | | 
-| | | | | | |     Merge pull request #20 from Panthaweekan/napatsiri-patch-11
-| | | | | | |     
-| | | | | | |     Create howpage.css
-| | | | | | | 
-| | * | | | | commit 57cd521c47c53edc5f6252f1728bd785fdfc4252
-| | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | | |   Date:   Wed Feb 22 23:51:23 2023 +0700
-| | | | | |   
-| | | | | |       Create howpage.css
-| | | | | |   
-| * | | | |   commit 5def3de090640266b964d24f5341a94238e0e8e8
-| |\ \ \ \ \  Merge: 2d6b018 15a3184
-| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | | Date:   Thu Feb 23 01:39:32 2023 +0700
-| | | | | | | 
-| | | | | | |     Merge pull request #21 from Panthaweekan/napatsiri-patch-12
-| | | | | | |     
-| | | | | | |     Create planpage.html
-| | | | | | | 
-| | * | | | | commit 15a3184e73e56c4c8fc0e51f5c1c48d6cbae363b
-| | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | | |   Date:   Wed Feb 22 23:52:23 2023 +0700
-| | | | | |   
-| | | | | |       Create planpage.html
-| | | | | |   
-| * | | | |   commit 2d6b018aa30a9ae9cfcdb2fc978027a49f4f315f
-| |\ \ \ \ \  Merge: 9c24af5 062294a
-| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | | Date:   Thu Feb 23 01:39:01 2023 +0700
-| | | | | | | 
-| | | | | | |     Merge pull request #22 from Panthaweekan/napatsiri-patch-13
-| | | | | | |     
-| | | | | | |     Create planpage.css
-| | | | | | | 
-| | * | | | | commit 062294a0551045e4a5bec23fcebc8f4c2261526c
-| | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | | |   Date:   Wed Feb 22 23:53:02 2023 +0700
-| | | | | |   
-| | | | | |       Create planpage.css
-| | | | | |   
-| * | | | |   commit 9c24af52eb1c3e42d99af386fffe9f580e9d4c72
-| |\ \ \ \ \  Merge: 4b30f9a e0c6c76
-| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | | Date:   Thu Feb 23 01:38:21 2023 +0700
-| | | | | | | 
-| | | | | | |     Merge pull request #23 from Panthaweekan/napatsiri-patch-14
-| | | | | | |     
-| | | | | | |     Create planpage.js
-| | | | | | | 
-| | * | | | | commit e0c6c76fa4baf6573927fa217739a2b12dc2c465
-| | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | | |   Date:   Wed Feb 22 23:53:33 2023 +0700
-| | | | | |   
-| | | | | |       Create planpage.js
-| | | | | |   
-| * | | | |   commit 4b30f9ab016316878676ae8bd6594129d8bf9c07
-| |\ \ \ \ \  Merge: 04fd9cb 89b2f80
-| | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | | | | Date:   Thu Feb 23 01:37:54 2023 +0700
-| | | | | | | 
-| | | | | | |     Merge pull request #24 from Panthaweekan/napatsiri-patch-15
-| | | | | | |     
-| | | | | | |     Create seleccha.html
-| | | | | | | 
-| | * | | | | commit 89b2f80ea913abd4734971a04dd7525891ef0b4b
-| | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | | |   Date:   Wed Feb 22 23:54:35 2023 +0700
-| | | | | |   
-| | | | | |       Create seleccha.html
-| | | | | |   
-| * | | | |   commit 04fd9cbbea1b3037e7906abfb9bec4f02543940b
-| |\ \ \ \ \  Merge: 70daa6e 2307141
-| | |/ / / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| |/| | | |   Date:   Thu Feb 23 01:37:18 2023 +0700
-| | | | | |   
-| | | | | |       Merge pull request #25 from Panthaweekan/napatsiri-patch-16
-| | | | | |       
-| | | | | |       Create selecta.css
-| | | | | | 
-| | * | | | commit 230714102ee4de605ab03d347b3442c35291c696
-| |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | | |   Date:   Wed Feb 22 23:55:17 2023 +0700
-| | | | |   
-| | | | |       Create selecta.css
-| | | | |   
-| * | | |   commit 70daa6e7a7efe5fbe91ebf28bc59b98a5ad761fe
-| |\ \ \ \  Merge: 7df2fa9 40ef1af
-| | |/ / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| |/| | |   Date:   Tue Feb 21 23:57:25 2023 +0700
-| | | | |   
-| | | | |       Merge pull request #16 from Panthaweekan/napatsiri-patch-7
-| | | | |       
-| | | | |       Create home.css
-| | | | | 
-| | * | | commit 40ef1af9960f2f23f97cc752fff8910fbb71c5ce
-| |/ / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| | | |   Date:   Mon Feb 20 23:39:20 2023 +0700
-| | | |   
-| | | |       Create home.css
-| | | | 
-| | | * commit 5083e9a4e52fffbacf6b5cc3843d3ff2811638bd
-| | | | Author: Donteatpineappleonpizza <winittra_saengsroy@cmu.ac.th>
-| | | | Date:   Mon Feb 20 11:34:46 2023 +0700
-| | | | 
-| | | |     Add Graphic pic.
-| | | | 
-| | | * commit 14b7ae702c3160173786bd62b890dff8226714e7
-| | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
-| | | | Date:   Mon Feb 20 01:49:13 2023 +0700
-| | | | 
-| | | |     Graphic folder
-| | | | 
-| | | * commit 978fbb30b6c63c099c5ed0e530373f4b3adac298
-| |_|/  Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
-|/| |   Date:   Mon Feb 20 01:47:32 2023 +0700
-| | |   
-| | |       create Graphic folder for Frontend
-| | |   
-| | | * commit a4e0c41431b135c25f6ac5252199d38c97e50846
-| | |/  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| |/|   Date:   Mon Feb 20 23:33:19 2023 +0700
-| | |   
-| | |       Fix keypad and add animation
-| | |   
-| | | * commit cfbfc41fd8ce8e977d0741750e46d2be089aecb1
-| | |/  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-| |/|   Date:   Mon Feb 20 23:32:14 2023 +0700
-| | |   
-| | |       Fix keypad and add animation
-| | | 
-| * | commit 7df2fa9067d09cad7c31fe2ad5e2789bba828960
-|/ /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| |   Date:   Mon Feb 20 14:48:35 2023 +0700
+| | * commit fdddb591d40dcdaa398def5af570e277bd9b6ba9
+| |/  Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| |   Date:   Thu Feb 23 01:54:48 2023 +0700
 | |   
-| |       Update README.md
+| |       git-log-eval.txt for assignment
 | |   
-* |   commit a3767c485cddd8003cf309e3e808381fa9a5f062
-|\ \  Merge: b089cf0 d7b53c3
+| *   commit a3767c485cddd8003cf309e3e808381fa9a5f062
+| |\  Merge: b089cf0 d7b53c3
 | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | Date:   Mon Feb 20 01:42:08 2023 +0700
 | | | 
@@ -355,15 +649,15 @@
 | | |     
 | | |     Create login.css
 | | |   
-| * |   commit d7b53c3a165aa15de6dd60ca3c55f7fe98506b19
-| |\ \  Merge: 0d68f54 b089cf0
-| |/ /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-|/| |   Date:   Mon Feb 20 01:41:57 2023 +0700
+| | *   commit d7b53c3a165aa15de6dd60ca3c55f7fe98506b19
+| | |\  Merge: 0d68f54 b089cf0
+| | |/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| |/|   Date:   Mon Feb 20 01:41:57 2023 +0700
 | | |   
 | | |       Merge branch 'main' into napatsiri-patch-1
 | | |   
-* | |   commit b089cf05e1099a67e5fa82768377c095c2082a30
-|\ \ \  Merge: 7e97be8 c36a3ea
+| * |   commit b089cf05e1099a67e5fa82768377c095c2082a30
+| |\ \  Merge: 7e97be8 c36a3ea
 | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | Date:   Mon Feb 20 01:40:26 2023 +0700
 | | | | 
@@ -371,72 +665,72 @@
 | | | |     
 | | | |     Merge pull request #13 from Panthaweekan/main
 | | | |   
-| * | |   commit c36a3ea3e352e2f40439893cb44644b903d08f08
-| |\ \ \  Merge: 083b993 7e97be8
-| |/ / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-|/| | |   Date:   Mon Feb 20 01:40:02 2023 +0700
+| | * |   commit c36a3ea3e352e2f40439893cb44644b903d08f08
+| | |\ \  Merge: 083b993 7e97be8
+| | |/ /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| |/| |   Date:   Mon Feb 20 01:40:02 2023 +0700
 | | | |   
 | | | |       Merge pull request #13 from Panthaweekan/main
 | | | |       
 | | | |       Updated Frontend Branch!
 | | | | 
-* | | | commit 7e97be82576a06cebdedc417ae2171c3494ee794
-|\| | | Merge: 0b56add 083b993
+| * | | commit 7e97be82576a06cebdedc417ae2171c3494ee794
+| |\| | Merge: 0b56add 083b993
 | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | Date:   Mon Feb 20 01:39:33 2023 +0700
 | | | | 
 | | | |     Merge branch 'Frontend' into main
 | | | | 
-| * | | commit 083b9939178992bdc2959df134076959d11eaeb8
+| | * | commit 083b9939178992bdc2959df134076959d11eaeb8
 | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
 | | | | Date:   Sun Feb 19 17:46:09 2023 +0700
 | | | | 
 | | | |     Create first.css
 | | | | 
-| * | | commit a831a8faebd51d68c5ef616db28a7ee9911c6794
+| | * | commit a831a8faebd51d68c5ef616db28a7ee9911c6794
 | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
 | | | | Date:   Sun Feb 19 17:45:26 2023 +0700
 | | | | 
 | | | |     Create first.html
 | | | | 
-| * | | commit dc9b8a7e05e9cc67f75f96f16fe8b055c620b9b1
+| | * | commit dc9b8a7e05e9cc67f75f96f16fe8b055c620b9b1
 | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
 | | | | Date:   Sat Feb 18 16:05:01 2023 +0700
 | | | | 
 | | | |     Update 2 players
 | | | | 
-| * | | commit 52b750eda81a043ebf4dd060ea7ff4651ec2c268
+| | * | commit 52b750eda81a043ebf4dd060ea7ff4651ec2c268
 | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
 | | | | Date:   Sat Feb 18 16:04:06 2023 +0700
 | | | | 
 | | | |     Update 2 players
 | | | | 
-| * | | commit fc4d453514cec491cc97a1c634c9f88ae9b5f201
+| | * | commit fc4d453514cec491cc97a1c634c9f88ae9b5f201
 | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
 | | | | Date:   Thu Feb 16 23:23:04 2023 +0700
 | | | | 
 | | | |     Create login.js
 | | | | 
-| * | | commit 9c39b465f682269bd2ae1e3d20d972f048b19e54
+| | * | commit 9c39b465f682269bd2ae1e3d20d972f048b19e54
 | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
 | | | | Date:   Thu Feb 16 23:22:38 2023 +0700
 | | | | 
 | | | |     Create login.html
 | | | | 
-| * | | commit 09840a73405cc6c57e64c4956154bdf2d218640a
+| | * | commit 09840a73405cc6c57e64c4956154bdf2d218640a
 | | | | Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
 | | | | Date:   Thu Feb 16 23:22:12 2023 +0700
 | | | | 
 | | | |     Create login.css
 | | | | 
-| * | | commit 258fb1f8efee616eb0c56498191fb7cd0cdbc42a
+| | * | commit 258fb1f8efee616eb0c56498191fb7cd0cdbc42a
 | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | Date:   Thu Feb 16 02:51:50 2023 +0700
 | | | | 
 | | | |     Update README.md
 | | | |   
-| * | |   commit 0f99ceb424e298e5592753f88b93d88bb263f46e
-| |\ \ \  Merge: a3cb379 9d07f6e
+| | * |   commit 0f99ceb424e298e5592753f88b93d88bb263f46e
+| | |\ \  Merge: a3cb379 9d07f6e
 | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | Date:   Thu Feb 16 02:45:37 2023 +0700
 | | | | | 
@@ -444,64 +738,64 @@
 | | | | |     
 | | | | |     Merge test!
 | | | | | 
-* | | | | commit 0b56add857b39c293a8ca509bab7c79c74b8c34d
+| * | | | commit 0b56add857b39c293a8ca509bab7c79c74b8c34d
 | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | Date:   Mon Feb 20 01:23:11 2023 +0700
 | | | | | 
 | | | | |     Renew Configuration!
 | | | | | 
-* | | | | commit a0b51e7b9f89ce63bc5ce91c223d11be8074dd08
+| * | | | commit a0b51e7b9f89ce63bc5ce91c223d11be8074dd08
 | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | Date:   Mon Feb 20 01:21:21 2023 +0700
 | | | | | 
 | | | | |     reverse README.md
 | | | | |   
-* | | | |   commit 9fafce3fe1ee66c6b2b29d42f411f71d0ab33511
-|\ \ \ \ \  Merge: 8bb0662 dfee291
-| | |_|_|/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| |/| | |   Date:   Mon Feb 20 01:20:33 2023 +0700
+| * | | |   commit 9fafce3fe1ee66c6b2b29d42f411f71d0ab33511
+| |\ \ \ \  Merge: 8bb0662 dfee291
+| |/ / / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+|/| | | |   Date:   Mon Feb 20 01:20:33 2023 +0700
 | | | | |   
 | | | | |       Merge pull request #11 from Panthaweekan/Backend
 | | | | |       
 | | | | |       Updated Backend!
 | | | | |   
-| * | | |   commit dfee2912c263eb385c7c252c4962744ca5421763
-| |\ \ \ \  Merge: 320e392 84c213a
+* | | | |   commit dfee2912c263eb385c7c252c4962744ca5421763
+|\ \ \ \ \  Merge: 320e392 84c213a
 | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | | Date:   Mon Feb 20 01:19:18 2023 +0700
 | | | | | | 
 | | | | | |     Merge branch 'Backend' of https://github.com/Panthaweekan/OOP-Project-UPBEAT into Backend
 | | | | | | 
-| | * | | | commit 84c213a9235b2cc5e6c3c9baa98472449fdfa402
+| * | | | | commit 84c213a9235b2cc5e6c3c9baa98472449fdfa402
 | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | | Date:   Mon Feb 20 01:05:05 2023 +0700
 | | | | | | 
 | | | | | |     Update README.md
 | | | | | | 
-| * | | | | commit 320e392ce80148daf6a360fbeab2b23f68b0b9a1
+* | | | | | commit 320e392ce80148daf6a360fbeab2b23f68b0b9a1
 | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | | Date:   Mon Feb 20 01:18:57 2023 +0700
 | | | | | | 
 | | | | | |     Updated Backend!
 | | | | | |   
-* | | | | |   commit 8bb06623da7e7cae752708152fc3964eab434022
-|\ \ \ \ \ \  Merge: 9231f82 e82c164
+| | * | | |   commit 8bb06623da7e7cae752708152fc3964eab434022
+| | |\ \ \ \  Merge: 9231f82 e82c164
 | | |/ / / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | |/| | | |   Date:   Mon Feb 20 01:00:17 2023 +0700
 | | | | | |   
 | | | | | |       Merge pull request #10 from Panthaweekan/Backend
 | | | | | |       
 | | | | | |       Update Tokenizer Parser and AST
+| | | | | | 
+| * | | | | commit e82c164066ad24ffa4c820b7c95a33616d90ece3
+| |\| | | | Merge: b58f60e 9231f82
+| | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | | | Date:   Mon Feb 20 01:00:09 2023 +0700
+| | | | | | 
+| | | | | |     Merge branch 'main' into Backend
 | | | | | |   
-| * | | | |   commit e82c164066ad24ffa4c820b7c95a33616d90ece3
-| |\ \ \ \ \  Merge: b58f60e 9231f82
-| |/ / / / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-|/| | | | |   Date:   Mon Feb 20 01:00:09 2023 +0700
-| | | | | |   
-| | | | | |       Merge branch 'main' into Backend
-| | | | | |   
-* | | | | |   commit 9231f8200608ea5780a01820a972e2684e6dbe84
-|\ \ \ \ \ \  Merge: d1b8ed4 4fd248b
+| | * | | |   commit 9231f8200608ea5780a01820a972e2684e6dbe84
+| | |\ \ \ \  Merge: d1b8ed4 4fd248b
 | | | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | | | Date:   Sun Feb 19 21:25:20 2023 +0700
 | | | | | | | 
@@ -509,8 +803,8 @@
 | | | | | | |     
 | | | | | | |     Create first.css
 | | | | | | | 
-| * | | | | | commit 4fd248b9266fcb74470ea36fa3d0afbc3a643e24
-|/ / / / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | | * | | | commit 4fd248b9266fcb74470ea36fa3d0afbc3a643e24
+| | |/ / / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
 | | | | | |   Date:   Sun Feb 19 17:48:09 2023 +0700
 | | | | | |   
 | | | | | |       Create first.css
@@ -522,141 +816,141 @@
 | | | | | |     Update README.md
 | | | | | | 
 | * | | | | commit 3a61268f4422fab8a507a531283e50d5367a9cb6
-| |/ / / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+|/ / / / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | |   Date:   Sun Feb 19 21:30:14 2023 +0700
 | | | | |   
 | | | | |       Update README.md
 | | | | | 
-| * | | | commit 918a205de063af5c6b32a02dd249fbe88dca0ce0
+* | | | | commit 918a205de063af5c6b32a02dd249fbe88dca0ce0
 | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | Date:   Sun Feb 19 21:27:34 2023 +0700
 | | | | | 
 | | | | |     Finish Tokenizer and Plan about AST , Parser for implement next!
 | | | | | 
-| * | | | commit c9501e12e81124eb50458d76ef553abded8fa581
+* | | | | commit c9501e12e81124eb50458d76ef553abded8fa581
 | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | Date:   Sat Feb 18 23:09:44 2023 +0700
 | | | | | 
 | | | | |     Update README.md
 | | | | | 
-| * | | | commit 5b904f469ca71b36d0d3264447a0702fb0bfe99e
+* | | | | commit 5b904f469ca71b36d0d3264447a0702fb0bfe99e
 | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | Date:   Sat Feb 18 23:07:34 2023 +0700
 | | | | | 
 | | | | |     Update README.md
 | | | | | 
-| * | | | commit 2b67927c40a34599d258ae0490797ae2ff86505f
+* | | | | commit 2b67927c40a34599d258ae0490797ae2ff86505f
 | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | Date:   Sat Feb 18 23:06:52 2023 +0700
 | | | | | 
 | | | | |     Update README.md
 | | | | | 
-| * | | | commit 60a726ac03ec41c2645c75c5099820b6eba95997
+* | | | | commit 60a726ac03ec41c2645c75c5099820b6eba95997
 | | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | | Date:   Sat Feb 18 23:01:16 2023 +0700
 | | | | | 
 | | | | |     Update README.md
 | | | | | 
 | | | | * commit 0d68f5401598413de2ab0e8b72a5efe8949cee1d
-| |_|_|/  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
-|/| | |   Date:   Sun Feb 19 17:46:51 2023 +0700
+| | |_|/  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| |/| |   Date:   Sun Feb 19 17:46:51 2023 +0700
 | | | |   
 | | | |       Create login.css
 | | | | 
-* | | | commit d1b8ed492279db6fa7992888784d4c2b7faad70e
+| * | | commit d1b8ed492279db6fa7992888784d4c2b7faad70e
 | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | Date:   Sat Feb 18 23:10:30 2023 +0700
 | | | | 
 | | | |     Update README.md
-| | | | 
-* | | | commit 5ff1659c283d5bd7faa005eeb6fb1a32105d653b
-|\| | | Merge: e6965bc cc09dc2
-| | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| | | | Date:   Sat Feb 18 22:58:42 2023 +0700
-| | | | 
-| | | |     Merge pull request #8 from Panthaweekan/Backend
-| | | |     
-| | | |     Backend!
 | | | |   
-| * | |   commit cc09dc2d7271cef7d145c8a9bc8b1811f5d45a12
-| |\ \ \  Merge: 74a6e5c e6965bc
+| * | |   commit 5ff1659c283d5bd7faa005eeb6fb1a32105d653b
+| |\ \ \  Merge: e6965bc cc09dc2
 | |/ / /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-|/| | |   Date:   Sat Feb 18 22:58:12 2023 +0700
+|/| | |   Date:   Sat Feb 18 22:58:42 2023 +0700
 | | | |   
-| | | |       Merge pull request #7 from Panthaweekan/main
+| | | |       Merge pull request #8 from Panthaweekan/Backend
 | | | |       
-| | | |       Pull main to Backend
+| | | |       Backend!
 | | | | 
-* | | | commit e6965bc80c4f1a90090774d192246edaf98e07eb
+* | | | commit cc09dc2d7271cef7d145c8a9bc8b1811f5d45a12
+|\| | | Merge: 74a6e5c e6965bc
+| | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | | Date:   Sat Feb 18 22:58:12 2023 +0700
+| | | | 
+| | | |     Merge pull request #7 from Panthaweekan/main
+| | | |     
+| | | |     Pull main to Backend
+| | | | 
+| * | | commit e6965bc80c4f1a90090774d192246edaf98e07eb
 | | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | | Date:   Sat Feb 18 22:52:20 2023 +0700
 | | | | 
 | | | |     Coding Test Parser and Tokenizer! but not correct yet
 | | | |   
-* | | |   commit ae9a43956c9ceaf15033a4b0baca7aa3566f6a06
-|\ \ \ \  Merge: 9d07f6e 8ef11c0
-| |_|_|/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-|/| | |   Date:   Thu Feb 16 23:19:24 2023 +0700
+| * | |   commit ae9a43956c9ceaf15033a4b0baca7aa3566f6a06
+| |\ \ \  Merge: 9d07f6e 8ef11c0
+| | |_|/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| |/| |   Date:   Thu Feb 16 23:19:24 2023 +0700
 | | | |   
 | | | |       Merge pull request #6 from Panthaweekan/napatsiri-patch-1
 | | | |       
 | | | |       Create login html
 | | | | 
-| * | | commit 8ef11c06faa6aad860934fbdbbef57675f3136e8
-|/ / /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
+| | * | commit 8ef11c06faa6aad860934fbdbbef57675f3136e8
+| |/ /  Author: Napatsiri Phetsri <90751121+napatsiri@users.noreply.github.com>
 | | |   Date:   Thu Feb 16 22:24:30 2023 +0700
 | | |   
 | | |       Create login html
 | | | 
-| * | commit 74a6e5c837afc7edd95aa29c03e73a592caa5e6c
+* | | commit 74a6e5c837afc7edd95aa29c03e73a592caa5e6c
 | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | Date:   Thu Feb 16 02:59:55 2023 +0700
 | | | 
 | | |     Update README.md
 | | | 
-| * | commit dcc6c32812efd9102f1f587be44912d2cad570ed
+* | | commit dcc6c32812efd9102f1f587be44912d2cad570ed
 | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | Date:   Thu Feb 16 02:50:19 2023 +0700
 | | | 
 | | |     Update README.md
+| | | 
+* | | commit d570ac7cedf6a1af26cb149c2416253e6c24a9a0
+|\| | Merge: b1d2c34 9d07f6e
+| | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | Date:   Thu Feb 16 02:47:16 2023 +0700
+| | | 
+| | |     Merge pull request #5 from Panthaweekan/main
+| | |     
+| | |     Test
+| | | 
+| * | commit 9d07f6eb88d1a5c285830dcb18a00ef98324f6f8
+| |\| Merge: 1d43e0a a3cb379
+| | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | | Date:   Thu Feb 16 02:44:39 2023 +0700
+| | | 
+| | |     Merge pull request #3 from Panthaweekan/Frontend
+| | |     
+| | |     Merge pull request #2 from Panthaweekan/main
 | | |   
-| * |   commit d570ac7cedf6a1af26cb149c2416253e6c24a9a0
-| |\ \  Merge: b1d2c34 9d07f6e
-| |/ /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-|/| |   Date:   Thu Feb 16 02:47:16 2023 +0700
-| | |   
-| | |       Merge pull request #5 from Panthaweekan/main
-| | |       
-| | |       Test
-| | |   
-* | |   commit 9d07f6eb88d1a5c285830dcb18a00ef98324f6f8
-|\ \ \  Merge: 1d43e0a a3cb379
+| | *   commit a3cb3794497609d00535bb7c2308267cedd1c4c6
+| | |\  Merge: 8bc9f94 1d43e0a
 | | |/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| |/|   Date:   Thu Feb 16 02:44:39 2023 +0700
-| | |   
-| | |       Merge pull request #3 from Panthaweekan/Frontend
-| | |       
-| | |       Merge pull request #2 from Panthaweekan/main
-| | |   
-| * |   commit a3cb3794497609d00535bb7c2308267cedd1c4c6
-| |\ \  Merge: 8bc9f94 1d43e0a
-| |/ /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-|/| |   Date:   Thu Feb 16 02:44:13 2023 +0700
+| |/|   Date:   Thu Feb 16 02:44:13 2023 +0700
 | | |   
 | | |       Merge pull request #2 from Panthaweekan/main
 | | |       
 | | |       Updated other Branch Test!
 | | |   
-* | |   commit 1d43e0a242d23e4b6a801186cb2de49195e91635
-|\ \ \  Merge: e8dc469 b1d2c34
-| | |/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
-| |/|   Date:   Thu Feb 16 02:40:40 2023 +0700
+| * |   commit 1d43e0a242d23e4b6a801186cb2de49195e91635
+| |\ \  Merge: e8dc469 b1d2c34
+| |/ /  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+|/| |   Date:   Thu Feb 16 02:40:40 2023 +0700
 | | |   
 | | |       Merge pull request #1 from Panthaweekan/Backend
 | | |       
 | | |       merge test!
 | | | 
-| * | commit b1d2c345b2335dbcb79663ae3a0ccff864873f52
+* | | commit b1d2c345b2335dbcb79663ae3a0ccff864873f52
 |/ /  Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
 | |   Date:   Thu Feb 16 02:39:16 2023 +0700
 | |   
