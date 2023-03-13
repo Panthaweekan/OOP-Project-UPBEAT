@@ -1,0 +1,14 @@
+{
+  "m": 9,
+  "n": 9,
+  "init_plan_min": 10,
+  "init_plan_sec": 0,
+  "init_budget": 5000,
+  "init_center_dep": 1000,
+  "plan_rev_min": 5,
+  "plan_rev_sec": 0,
+  "rev_cost": 500,
+  "max_dep": 500,
+  "interest_pct": 1.5
+}
+
