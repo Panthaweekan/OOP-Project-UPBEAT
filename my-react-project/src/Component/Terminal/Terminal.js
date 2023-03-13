@@ -16,6 +16,7 @@ function Terminal() {
   const [currentFolder, setCurrentFolder] = useState(files["root"]);
   const [path, setPath] = useState([]);
   const [output, setOutput] = useState('');
+  const [isInputDisabled, setIsInputDisabled] = useState(false);
 
   const inputRef = useRef(null);
 
@@ -61,12 +62,21 @@ function Terminal() {
     inputRef.current.focus();
   }, []);
 
+  const handleDoneButtonClick = () => {
+    setIsInputDisabled(true);
+  };
+
+  const handleEnableButtonClick = () => {
+    setIsInputDisabled(false);
+    inputRef.current.focus();
+  };
+
   return (
     <div className="container">
       <div className="panel">
         <div className="action">
           <div className="command">
-            <span100 className="symbol">$</span100>
+            <span100 className="symbol"></span100>
             <input
               className="in"
               type="text"
@@ -74,11 +84,28 @@ function Terminal() {
               autoFocus
               onKeyDown={handleInput}
               ref={inputRef}
+              disabled={isInputDisabled}
             />
           </div>
           <div className="output">{output}</div>
         </div>
       </div>
+      <div className="right-button-container1">
+        {isInputDisabled ? (
+          <div className="button-container1 right-button3">
+            <button className="custom-btn4 btn-16" onClick={handleEnableButtonClick}>
+              <span12>Revision</span12>
+            </button>
+          </div>
+        ) : (
+          <div className="button-container1 right-button2">
+            <button className="custom-btn3 btn-15" onClick={handleDoneButtonClick}>
+              <span12>Done</span12>
+            </button>
+          </div>
+        )}
+      </div>
+      <div className="square5"></div>
     </div>
   );
 }

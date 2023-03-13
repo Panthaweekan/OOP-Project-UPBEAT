@@ -15,8 +15,8 @@ body {
 
 .panel {
     width: 90%;
-    height: 80vh;
-    background: #d0d3d3;
+    height: 74vh;
+    background: #f5f5f5;
     padding: 20px;
     overflow-y: scroll;
     border-radius: 20px;
@@ -30,7 +30,7 @@ body {
 .command {
     width: 10;
     height: 5px;
-    background: #d0d3d3;
+    background: #f5f5f5;
     color: #060606;
     font-size: 16px;
     font-weight: 700;
@@ -38,7 +38,7 @@ body {
 
 input[type="text"] {
     width: 90%;
-    background: #d0d3d3;
+    background: #f5f5f5;
     border: none;
     outline: none;
     color: rgb(0, 0, 0);
@@ -52,3 +52,132 @@ input[type="text"] {
     margin-top: 5px;
     margin-left: 12px;
 }
+
+.square5 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 900px;
+  background-color: white;
+  resize: both;
+  overflow: auto;
+  border-radius: 0%;
+  z-index: 5;
+}
+
+.right-button-container1 {
+    display: flex;
+    justify-content: flex-end;
+    height: 100px; /* Set the height of the container */
+    position: absolute;
+    bottom: -12.5%;
+    right: 30%;
+    z-index: 9999;
+  }
+  
+  .right-button2 {
+    margin-left: 0px;
+    margin-top: 10%;
+  }
+
+  .right-button3 {
+    margin-left: 0px;
+    margin-top: 10%;
+  }
+
+.custom-btn3 {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 10px 25px;
+  font: 0.875em/1.6 "Varela Round", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+}
+
+.custom-btn4 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 25px;
+    font: 0.875em/1.6 "Varela Round", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+  }
+
+.btn-15 {
+    background: 
+    #0cb193;
+    border: none;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  .btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #018f75;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-15:hover {
+    color: #fff;
+  }
+  .btn-15:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-15:active {
+    top: 2px;
+  }
+
+  .btn-16 {
+    background: 
+    #fca045;
+    border: none;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  .btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #f46a00;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-16:hover {
+    color: #fff;
+  }
+  .btn-16:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-16:active {
+    top: 2px;
+  }

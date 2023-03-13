@@ -19,7 +19,7 @@ html {
 .plan {
   position: fixed;
   top: 3.7%;
-  right: 5%;
+  right: 3%;
   z-index: 1;
   font-size: 1.2em;
   font-weight: 400;
@@ -37,6 +37,50 @@ html {
   border: 2px solid #623e1c;
   border-radius: 40px;
   z-index: 5;
+}
+
+.box2 {
+  position: fixed;
+  bottom: 38.5%;
+  left: 4%;
+  width: 110px;
+  height: 30px;
+  background-color: transparent;
+  background-color: rgb(191, 237, 253);
+  border: 1px solid #1654ff;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+#ice {
+  position: absolute;
+  top: 10.5%;
+  left: 18.5%;
+  width: 3%;
+  height: 7;
+  z-index: 99;
+}
+
+.box3 {
+  position: fixed;
+  bottom: 34.5%;
+  left: 4%;
+  width: 110px;
+  height: 30px;
+  background-color: transparent;
+  background-color: rgb(255, 241, 184);
+  border: 1px solid #623e1c;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+#money-img2 {
+  position: absolute;
+  bottom: 34.4%;
+  left: 2.8%;
+  width: 2%;
+  height: 6;
+  z-index: 100;
 }
 
 #money-img {
@@ -57,7 +101,16 @@ html {
   z-index: 2;
 }
 
-.square5 {
+#speech {
+  position: absolute;
+  bottom: 10%;
+  left: -6%;
+  width: 23%;
+  height: 50%;
+  z-index: 11;
+}
+
+/* .square5 {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -67,7 +120,7 @@ html {
   resize: both;
   overflow: auto;
   border-radius: 0%;
-}
+} */
 
 .sq {
   position: fixed;
@@ -87,7 +140,7 @@ html {
     height: 100px; /* Set the height of the container */
     position: absolute;
     top: -6.6%;
-    right: 11.6%;
+    right: 11.55%;
   }
   
   .right-button {
@@ -123,6 +176,21 @@ html {
   padding: 0;
   border: none;
 }
+
+.btn-4 {
+  background: rgb(240, 108, 222);
+  background: linear-gradient(
+    0deg,
+    rgb(240, 108, 222) 0%,
+    rgb(254, 55, 198)  100%
+  );
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
 .btn-3 span7 {
   position: relative;
   display: block;
