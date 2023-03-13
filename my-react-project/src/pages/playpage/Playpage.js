@@ -36,7 +36,7 @@ function PlayPage() {
       <img id="p1-img" src={pen1} alt="player 1"/>    
       <img id="speech" src={bubble} alt="bubble"/>
       <div className="box2"></div>
-      <div id="ice" src={ice} alt="ice"/>
+      <img id="ice" src={ice} alt="ice" />
       <img id="money-img2" src={coin} alt="money"/>
       <div className="box3"></div>
       <div className="box"></div>
