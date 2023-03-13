@@ -53,7 +53,7 @@ public class GameParserTest {
 
     @Test
     public void testReadFile() throws IOException {
-        Path fileName = Path.of("OOP-Project-UPBEAT/IntelliJ/project/src/Parser/TestFiles/Constructor_plan");
+        Path fileName = Path.of("OOP-Project-UPBEAT/IntelliJ/project/src/Parser/TestFiles/Construction_plan.txt");
         String str = Files.readString(fileName);
         parser = new GameParser((new ExprTokenizer(str)));
         assertDoesNotThrow(() -> parser.Parse());
