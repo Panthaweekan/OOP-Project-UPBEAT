@@ -188,13 +188,13 @@ public class GameState implements GameCommand{
         if(checkBudget()){
             curr_player.updateBudget(-Cost);
             if(cityCrew.getOwner() == curr_player) {
-                int cityCenterRow = curr_player.getCityCenter().getRow();
-                int cityCenterCol = curr_player.getCityCenter().getCol();
                 int cityCrewRow = cityCrew.getRow();
                 int cityCrewCol = cityCrew.getCol();
-                int distance = (int) Math.floor(Math.sqrt(Math.pow(cityCenterRow - cityCrewRow, 2) + Math.pow(cityCenterCol - cityCrewCol, 2)));
-                if (distance < 0) distance = 1;
-                int cost = (5 * distance) + 10;
+                int cityCenterRow = curr_player.getCityCenter().getRow();
+                int cityCenterCol = curr_player.getCityCenter().getCol();
+                int dist = (int) Math.floor(Math.sqrt(Math.pow(cityCenterRow - cityCrewRow, 2) + Math.pow(cityCenterCol - cityCrewCol, 2)));
+                if (dist < 0) dist = 1;
+                int cost = (5 * dist) + 10;
                 if (curr_player.getBudget() >= cost) {
                     curr_player.updateBudget(-cost);
                     cityCrew.updateOwner(curr_player);
@@ -242,8 +242,8 @@ public class GameState implements GameCommand{
     @Override
     public long opponent() {
         Region[] areas = new GameRegion[6];
-        long distance = 0;
-        boolean stop;
+        long dist = 0;
+        boolean state;
         Arrays.fill(areas, cityCrew);
         do {
             for(int i = 0 ; i < 6; i++){
@@ -251,16 +251,19 @@ public class GameState implements GameCommand{
                 long location = areas[i].getLocation();
                 Player player = territory.get((int) location).getOwner();
                 if(player != null && player != curr_player)
-                    return i + 1L + (distance * 10L);
-                int mockLocation = cal_newMove(Direction.values()[i], (int) location, areas[i].getCol());
-                if(mockLocation != -1)
-                    areas[i] = territory.get(mockLocation);
+                    return i + 1L + (dist * 10L);
+                int moveCal = cal_newMove(Direction.values()[i], (int) location, areas[i].getCol());
+                if(moveCal != -1)
+                    areas[i] = territory.get(moveCal);
                 else areas[i] = null;
             }
-            stop = true;
-            for(Region region : areas) stop = stop && (region == null);
-            distance++;
-        } while (!stop);
+            state = true;
+            for(Region region : areas) state = state
+                    && (region == null);
+            dist++;
+
+        } while (!state);
+
         return 0;
     }
 
@@ -319,28 +322,21 @@ public class GameState implements GameCommand{
         return GameSetup.getMax_dep();
     }
 
-    private double CalRate(long d){
+    private double Cal_Rate(long d){
         long b = GameSetup.getInterest_pct();
         return b*Math.log10(d)*Math.log(turn);
     }
-    private void CalculateInterest() {
-        //the interest for the region in the current turn is d*r/100
-        // d is the current deposit of a region
-        // r is the interest rate percentage
-        //the interest rate percentage r to be used is b * log10 d * ln t
-        // b is the base interest rate percentage as specified in the configuration file
-        // d is the current deposit of a region
-        // t is the current turn count of a player
+    private void Cal_Interest() {
         long max = GameSetup.getMax_dep();
         for(Region region: territory) {
             long d = region.getDeposit();
             if(d == max || d == 0) continue;
-            double r = CalRate(d);
-            double i = d*r/100;
-            region.updateDeposit(Math.round(i));
+            double rate = Cal_Rate(d);
+            double interest = d*rate/100;
+            region.updateDeposit(Math.round(interest));
         }
     }
-    public void beginTurn() {
+    public void startTurn() {
         this.cityCrew = curr_player.getCityCenter();
     }
 
@@ -349,7 +345,7 @@ public class GameState implements GameCommand{
             curr_player = getPlayers(1);
         }else{
             curr_player = getPlayers(0);
-            CalculateInterest();
+            Cal_Interest();
             turn++;
         }
     }
@@ -371,10 +367,10 @@ public class GameState implements GameCommand{
         return ran.nextInt(100);
     }
 
-    private void evaluatePlan(String plan){
+    private void execPlan(String plan){
         Parser parser = new GameParser(new ExprTokenizer(plan));
         List<Node.Exec> nodes = parser.Parse();
-        if(turn %2 == 0){
+        if(turn % 2 == 0){
             if(Plan2 == null) Plan2 = plan;
             else if(!Plan2.equals(plan)) {
                 curr_player.updateBudget(-GameSetup.getRev_Cost());
