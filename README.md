@@ -9,6 +9,7 @@ work space!
 
  - Problem now!
    - Not sure how to implement relocate method and other method that need to used in gameplay
+   - Opponent method in GameState not working for Test-Coverage (least Update)
 
  # Finish
    - Tokenizer
@@ -22,6 +23,7 @@ work space!
    - try to connect SpringFramework (hardcord)
    
  # Plan now (13/3/2023)
+ +++ Write Documentation and Presentation Slide for today afternoon presentation
    - Do all tester and simply code from feedback (done) -> implement List for Parser and AST (done)
    - Do elevaluator for game-state! (90 % done)
    - Test Game-State (Coverage or not)
