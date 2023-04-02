@@ -19,7 +19,7 @@ import java.util.*;
 public class GameSetup {
 
     /** Initial configuration **/
-    private static long rows = 9;
+    private static long rows = 11;
     private static long cols = 9;
 
     private static long init_plan_min = 10;

@@ -243,27 +243,23 @@ public class GameState implements GameCommand{
     public long opponent() {
         Region[] areas = new GameRegion[6];
         long dist = 0;
-        boolean state;
+        boolean stopState;
         Arrays.fill(areas, cityCrew);
         do {
             for(int i = 0 ; i < 6 ; i++){
                 if(areas[i] == null) continue;
-                long location = areas[i].getLocation();
-                Player player = territory.get((int) location).getOwner();
+                Player player = territory.get(areas[i].getLocation()).getOwner();
                 if(player != null && player != curr_player)
                     return i + 1L + (dist * 10L);
-                int moveCal = cal_newMove(Direction.values()[i], (int) location, areas[i].getCol());
+                int moveCal = cal_newMove(Direction.values()[i], areas[i].getLocation(), areas[i].getCol());
                 if(moveCal != -1)
                     areas[i] = territory.get(moveCal);
                 else areas[i] = null;
             }
-            state = true;
-            for(Region region : areas) state = state
-                    && (region == null);
+            stopState = true;
+            for(Region region : areas) stopState = stopState && (region == null);
             dist++;
-
-        } while (!state);
-
+        } while (!stopState);
         return 0;
     }
 
