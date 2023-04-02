@@ -17,14 +17,16 @@ work space!
    - Some method in GameState
 
  # Need to do next
-   - implement all GameState method for gameplay (now is 60% done)
+   - implement all GameState method for gameplay (now is 90% done) 2/4/2023
+   - implement file-reader from GameState and GameSetup to be playable
+   - try to connect SpringFramework (hardcord)
    
  # Plan now (13/3/2023)
    - Do all tester and simply code from feedback (done) -> implement List for Parser and AST (done)
-   - Do elevaluator for game-state! (60 % done)
+   - Do elevaluator for game-state! (90 % done)
    - Test Game-State (Coverage or not)
    - Need to sample GameState to Test (not implement yet!)
    + Need to know more about Spring Framework
    + Help Frontend to design MVC for use in Spring (optional)
    
- # Mar/13/2023 (Deadline)
+ # Apr/3/2023 (Deadline)
