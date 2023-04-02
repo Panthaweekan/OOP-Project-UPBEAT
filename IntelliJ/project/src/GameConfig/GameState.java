@@ -1,8 +1,14 @@
 package GameConfig;
 
+import AST.Node;
 import GameConfig.Player.Player;
+import GameConfig.Region.GameRegion;
 import GameConfig.Region.Region;
+import Parser.GameParser;
+import Parser.Parser;
+import Tokenizer.ExprTokenizer;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -15,6 +21,7 @@ public class GameState implements GameCommand{
     private final long Cost = 1;
     private Player curr_player;
     private Region cityCrew;
+    private String Plan1, Plan2;
     private int turn;
 
     /**
@@ -25,7 +32,7 @@ public class GameState implements GameCommand{
     public GameState(List<Player> players, List<Region> territory) {
         this.territory = territory;
         this.players = players;
-        this.curr_player = this.players.get(1); // not really sure but I don't think it gonna worked ;-;
+        this.curr_player = this.players.get(0); // not really sure but I don't think it gonna worked ;-;
         this.turn = 1;
     }
 
@@ -178,7 +185,25 @@ public class GameState implements GameCommand{
 
     @Override
     public boolean relocate() {
-        return false; // Don't know how to get the Shortest-path
+        if(checkBudget()){
+            curr_player.updateBudget(-Cost);
+            if(cityCrew.getOwner() == curr_player) {
+                int cityCenterRow = curr_player.getCityCenter().getRow();
+                int cityCenterCol = curr_player.getCityCenter().getCol();
+                int cityCrewRow = cityCrew.getRow();
+                int cityCrewCol = cityCrew.getCol();
+                int distance = (int) Math.floor(Math.sqrt(Math.pow(cityCenterRow - cityCrewRow, 2) + Math.pow(cityCenterCol - cityCrewCol, 2)));
+                if (distance < 0) distance = 1;
+                int cost = (5 * distance) + 10;
+                if (curr_player.getBudget() >= cost) {
+                    curr_player.updateBudget(-cost);
+                    cityCrew.updateOwner(curr_player);
+                    curr_player.updateCityCenter(cityCrew);
+                }
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -216,7 +241,27 @@ public class GameState implements GameCommand{
 
     @Override
     public long opponent() {
-        return 0; // not implement yet!
+        Region[] areas = new GameRegion[6];
+        long distance = 0;
+        boolean stop;
+        Arrays.fill(areas, cityCrew);
+        do {
+            for(int i = 0 ; i < 6; i++){
+                if(areas[i] == null) continue;
+                long location = areas[i].getLocation();
+                Player player = territory.get((int) location).getOwner();
+                if(player != null && player != curr_player)
+                    return i + 1L + (distance * 10L);
+                int mockLocation = cal_newMove(Direction.values()[i], (int) location, areas[i].getCol());
+                if(mockLocation != -1)
+                    areas[i] = territory.get(mockLocation);
+                else areas[i] = null;
+            }
+            stop = true;
+            for(Region region : areas) stop = stop && (region == null);
+            distance++;
+        } while (!stop);
+        return 0;
     }
 
     @Override
@@ -274,12 +319,78 @@ public class GameState implements GameCommand{
         return GameSetup.getMax_dep();
     }
 
+    private double CalRate(long d){
+        long b = GameSetup.getInterest_pct();
+        return b*Math.log10(d)*Math.log(turn);
+    }
+    private void CalculateInterest() {
+        //the interest for the region in the current turn is d*r/100
+        // d is the current deposit of a region
+        // r is the interest rate percentage
+        //the interest rate percentage r to be used is b * log10 d * ln t
+        // b is the base interest rate percentage as specified in the configuration file
+        // d is the current deposit of a region
+        // t is the current turn count of a player
+        long max = GameSetup.getMax_dep();
+        for(Region region: territory) {
+            long d = region.getDeposit();
+            if(d == max || d == 0) continue;
+            double r = CalRate(d);
+            double i = d*r/100;
+            region.updateDeposit(Math.round(i));
+        }
+    }
+    public void beginTurn() {
+        this.cityCrew = curr_player.getCityCenter();
+    }
+
+    public void endTurn() {
+        if(curr_player == getPlayers(0)){
+            curr_player = getPlayers(1);
+        }else{
+            curr_player = getPlayers(0);
+            CalculateInterest();
+            turn++;
+        }
+    }
+    private Player checkWinner() {
+        if(getPlayers(0).getBudget() == 0)
+            return getPlayers(1);
+        else if(getPlayers(1).getBudget() == 0)
+            return getPlayers(0);
+        if(getPlayers(0).getCityCenter() == null)
+            return getPlayers(1);
+        else if(getPlayers(1).getCityCenter() == null)
+            return getPlayers(0);
+        return null;
+    }
+
     @Override
     public long getRandom() {
         Random ran = new Random();
         return ran.nextInt(100);
     }
 
+    private void evaluatePlan(String plan){
+        Parser parser = new GameParser(new ExprTokenizer(plan));
+        List<Node.Exec> nodes = parser.Parse();
+        if(turn %2 == 0){
+            if(Plan2 == null) Plan2 = plan;
+            else if(!Plan2.equals(plan)) {
+                curr_player.updateBudget(-GameSetup.getRev_Cost());
+                Plan2 = plan;
+            }
+        }else{
+            if(Plan1 == null) Plan1 = plan;
+            else if(!Plan1.equals(plan)) {
+                curr_player.updateBudget(-GameSetup.getRev_Cost());
+                Plan1 = plan;
+            }
+        }
+        for(Node.Exec node : nodes){
+            node.execute(this);
+        }
+    }
     @Override
     public Map<String, Long> getIdentifiers() {
         return curr_player.getIdentifiers();

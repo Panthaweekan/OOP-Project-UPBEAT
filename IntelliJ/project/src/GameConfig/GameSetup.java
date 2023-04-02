@@ -40,6 +40,7 @@ public class GameSetup {
     public static long getRows() {return rows;}
     public static long getCols() {return cols;}
     public static long getInit_budget() {return init_budget;}
+    public static long getRev_Cost(){return rev_Cost;}
     public static long getMax_dep() {return max_dep;}
     public static long getInterest_pct() {return interest_pct;}
     public static long getInit_center_dep() { return init_center_dep;}
