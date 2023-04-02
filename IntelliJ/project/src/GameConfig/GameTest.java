@@ -80,7 +80,7 @@ final class GameTest {
         long collect = 100;
         if(game.collect(collect)) {
             assertEquals(game.getCityCrew().getDeposit(), allPlayer.get(0).getCityCenter().getDeposit());
-            assertEquals(allPlayer.get(0).getBudget(), budget + collect - Cost);
+            assertEquals(allPlayer.get(0).getBudget(), collect + budget - Cost);
         }
     }
 
@@ -102,13 +102,13 @@ final class GameTest {
     public void AttackOwnRegionTest() {
         game.startTurn();
         long budget = GameSetup.getInit_budget();
-        long investment = 100;
+        long inv = 100;
         if(game.move(Direction.Up)) {
-            game.invest(investment);
-            assertEquals(game.getCityCrew().getDeposit(), investment);
-            assertEquals(allPlayer.get(0).getBudget(),  budget - investment - 2 * Cost);
+            game.invest(inv);
+            assertEquals(game.getCityCrew().getDeposit(), inv);
+            assertEquals(allPlayer.get(0).getBudget(),  budget - inv - 2 * Cost);
             game.move(Direction.Down);
-            if(game.attack(Direction.Up, investment)) {
+            if(game.attack(Direction.Up, inv)) {
                 game.move(Direction.Up);
                 assertNull(game.getCityCrew().getOwner());
             }
@@ -118,17 +118,18 @@ final class GameTest {
     @Test
     public void testAttackToEnemyRegion(){
         game.startTurn();
-        long investment = 100;
-        long attack = 50;
+        long inv = 100;
+        long atkVal = 50;
         game.move(Direction.DownRight);
-        game.invest(investment);
+        game.invest(inv);
         game.endTurn();
+
         game.startTurn();
-        if(game.attack(Direction.Down, attack)) {
+        if(game.attack(Direction.Down, atkVal)) {
             assertNotNull(territory.get(1).getOwner());
             assertEquals(territory.get(1).getOwner(), allPlayer.get(0));
         }
-        if(game.attack(Direction.Down, attack))
+        if(game.attack(Direction.Down, atkVal))
             assertNull(territory.get(3).getOwner());
     }
     @Test
@@ -136,20 +137,17 @@ final class GameTest {
         game.startTurn();
         long dist = game.nearby(Direction.DownRight);
         assertEquals(204, dist);
-        game.move(Direction.UpLeft);
-        dist = game.nearby(Direction.DownRight);
-        assertEquals(204, dist);
-        game.move(Direction.UpRight);
-        game.move(Direction.UpRight);
-        game.move(Direction.UpRight);
+        game.move(Direction.DownLeft);
         dist = game.nearby(Direction.Down);
         assertEquals(0, dist);
-        game.move(Direction.DownRight);
-        game.move(Direction.DownRight);
-        game.move(Direction.DownRight);
-        dist = game.nearby(Direction.DownLeft);
+        game.move(Direction.UpRight);
+        game.move(Direction.Up);
+        dist = game.nearby(Direction.Up);
         assertEquals(0, dist);
         game.move(Direction.Down);
+        game.move(Direction.DownLeft);
+        dist = game.nearby(Direction.DownRight);
+        assertEquals(0, dist);
     }
 
 }
