@@ -246,7 +246,7 @@ public class GameState implements GameCommand{
         boolean state;
         Arrays.fill(areas, cityCrew);
         do {
-            for(int i = 0 ; i < 6; i++){
+            for(int i = 0 ; i < 6 ; i++){
                 if(areas[i] == null) continue;
                 long location = areas[i].getLocation();
                 Player player = territory.get((int) location).getOwner();
@@ -322,9 +322,9 @@ public class GameState implements GameCommand{
         return GameSetup.getMax_dep();
     }
 
-    private double Cal_Rate(long d){
-        long b = GameSetup.getInterest_pct();
-        return b*Math.log10(d)*Math.log(turn);
+    private double Cal_Rate(long r){
+        long int_pct = GameSetup.getInterest_pct();
+        return int_pct * Math.log10(r) * Math.log(turn);
     }
     private void Cal_Interest() {
         long max = GameSetup.getMax_dep();
