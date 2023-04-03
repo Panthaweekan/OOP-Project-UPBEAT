@@ -181,6 +181,10 @@ public class GameState implements GameCommand{
         return false;
     }
 
+    /**
+     *
+     * @effect : move and updateOwner to region , update CityCenter
+     */
     @Override
     public boolean relocate() {
         if(checkBudget()){
@@ -223,6 +227,10 @@ public class GameState implements GameCommand{
         return 0L;
     }
 
+    /**
+     * @param dir
+     * @effect : move city-crew to direction that have been selected
+     */
     @Override
     public boolean move(Direction dir) {
         if(checkBudget()) {
@@ -237,6 +245,9 @@ public class GameState implements GameCommand{
         return false;
     }
 
+    /**
+     * @effect : Check opponent region nearby areas
+     */
     @Override
     public long opponent() {
         Region[] areas = new GameRegion[6];
@@ -318,10 +329,18 @@ public class GameState implements GameCommand{
         return GameSetup.getMax_dep();
     }
 
+    /**
+     * @param r
+     * @effect Calculate Rate for Interest_pct
+     */
     private double Cal_Rate(long r){
         long int_pct = GameSetup.getInterest_pct();
         return int_pct * Math.log10(r) * Math.log(turn);
     }
+
+    /**
+     * @effect : Calculate Interest for gameState's turn
+     */
     private void Cal_Interest() {
         long max = GameSetup.getMax_dep();
         for(Region region : territory) {
@@ -331,19 +350,30 @@ public class GameState implements GameCommand{
             region.updateDeposit(Math.round(interest));
         }
     }
+
+    /**
+     * @effect : set CityCrew to current-player.cityCenter
+     */
     public void startTurn() {
         this.cityCrew = curr_player.getCityCenter();
     }
 
+    /**
+     * @effect : switch current player to other player on list of all player
+     */
     public void endTurn() {
         if(curr_player == getPlayers(0)){
             curr_player = getPlayers(1);
-        }else{
+        } else {
             curr_player = getPlayers(0);
             Cal_Interest();
             turn++;
         }
     }
+
+    /**
+     * @effect : Check who is the winner by budget and cityCenter
+     */
     private Player checkWinner() {
         if(getPlayers(0).getBudget() == 0)
             return getPlayers(1);
@@ -356,12 +386,19 @@ public class GameState implements GameCommand{
         return null;
     }
 
+    /**
+     * @effect : Just random 0-99
+     */
     @Override
     public long getRandom() {
         Random ran = new Random();
         return ran.nextInt(100);
     }
 
+    /**
+     * @param plan
+     * @effect : Execute Plan foreach Player's plan
+     */
     private void execPlan(String plan){
         Parser parser = new GameParser(new ExprTokenizer(plan));
         List<Node.Exec> nodes = parser.Parse();

@@ -55,7 +55,8 @@ public class GameParser implements Parser {
             return parseCommand();
         }
     }
-    
+
+    /** Multiple Statement **/
     private void parseManyStatement(List<Exec> l){
         while(tkz.hasNext() && !tkz.peek("}")) {
             l.add(parseStatement());

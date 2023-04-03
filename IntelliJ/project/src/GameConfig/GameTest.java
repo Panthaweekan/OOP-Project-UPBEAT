@@ -18,7 +18,7 @@ final class GameTest {
     Player p2 = new GamePlayer("Player 2" , GameSetup.getInit_budget() , territory.get(10));
     public final List<Player> allPlayer = Arrays.asList(p1 , p2); // add Player 1 and 2 into allPlayer list
     GameState game = new GameState(allPlayer , territory); // setup GameState
-    long Cost = 1;
+    long Cost = 100;
 
     @BeforeEach
     public void addMoneyInCityCenter(){
@@ -31,12 +31,16 @@ final class GameTest {
     /** Command Test <<
      *  All about GameState and GamePlay **/
     @Test
-    public void Move2OpponentRegion(){
+    public void MoveToOpponentRegion(){
         game.startTurn();
         assertTrue(game.move(Direction.Right));
         game.move(Direction.Down);
         assertFalse(game.move(Direction.Down));
     }
+
+    /**
+     * Test about : When CityCrew move out of map region
+     */
     @Test
     public void MoveOutOfMap(){
         game.startTurn();
@@ -49,6 +53,9 @@ final class GameTest {
         }
     }
 
+    /**
+     * Test about : Invest in Unowned-region
+     */
     @Test
     public void InvestTest(){
         game.startTurn();
@@ -62,6 +69,9 @@ final class GameTest {
         }
     }
 
+    /**
+     * Test about : Relocate on Map region
+     */
     @Test
     public void RelocateTest( ){
         game.startTurn();
@@ -75,6 +85,9 @@ final class GameTest {
         }
     }
 
+    /**
+     * Test about : Collect on CityCenter
+     */
     @Test
     public void CollectCityCenter(){
         game.startTurn();
@@ -86,6 +99,9 @@ final class GameTest {
         }
     }
 
+    /**
+     * Test about : Collect to Unowned-Region
+     */
     @Test
     public void CollectNull(){
         game.startTurn();
@@ -100,6 +116,9 @@ final class GameTest {
         }
     }
 
+    /**
+     *  Test about : Attack self-region
+     */
     @Test
     public void AttackOwnRegionTest() {
         game.startTurn();
@@ -117,6 +136,26 @@ final class GameTest {
         }
     }
 
+    /**
+     * Test about : Opponent Region (Not working yet)
+     */
+    @Test
+    public void OpponentTest(){
+        game.startTurn();
+        assertEquals(12, game.opponent());
+        game.move(Direction.UpRight);
+        assertEquals(12, game.opponent());
+        game.move(Direction.Down);
+        assertEquals(12, game.opponent());
+        game.move(Direction.Down);
+        assertEquals(12, game.opponent());
+        game.move(Direction.UpLeft);
+        assertEquals(12, game.opponent());
+    }
+
+    /**
+     * Test about : Attack on enemy region
+     */
     @Test
     public void AttackToEnemyRegionTest(){
         game.startTurn();
@@ -134,6 +173,10 @@ final class GameTest {
         if(game.attack(Direction.Down, atkVal))
             assertNull(territory.get(3).getOwner());
     }
+
+    /**
+     * Test about : NearBy region
+     */
     @Test
     public void NearByTest(){
         game.startTurn();
@@ -149,17 +192,4 @@ final class GameTest {
         assertEquals(0, dist);
     }
 
-    @Test
-    public void OpponentTest(){
-        game.startTurn();
-        assertEquals(12, game.opponent());
-        game.move(Direction.UpRight);
-        assertEquals(12, game.opponent());
-        game.move(Direction.Down);
-        assertEquals(12, game.opponent());
-        game.move(Direction.Down);
-        assertEquals(12, game.opponent());
-        game.move(Direction.UpLeft);
-        assertEquals(12, game.opponent());
-    }
 }
