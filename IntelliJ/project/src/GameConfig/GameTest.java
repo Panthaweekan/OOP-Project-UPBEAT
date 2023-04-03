@@ -15,25 +15,24 @@ import static org.junit.jupiter.api.Assertions.*;
 final class GameTest {
     List<Region> territory = GameSetup.createMap();
     Player p1 = new GamePlayer("Player 1" , GameSetup.getInit_budget() , territory.get(1));
-    Player p2 = new GamePlayer("Player 2" , GameSetup.getInit_budget() , territory.get(2));
-    public final List<Player> allPlayer = Arrays.asList(p1 , p2);
-    GameState game = new GameState(allPlayer , territory);
-    int col = (int) GameSetup.getCols();
+    Player p2 = new GamePlayer("Player 2" , GameSetup.getInit_budget() , territory.get(10));
+    public final List<Player> allPlayer = Arrays.asList(p1 , p2); // add Player 1 and 2 into allPlayer list
+    GameState game = new GameState(allPlayer , territory); // setup GameState
     long Cost = 1;
 
     @BeforeEach
     public void addMoneyInCityCenter(){
         territory.get(1).updateOwner(allPlayer.get(0));
         territory.get(1).updateDeposit(GameSetup.getInit_budget());
-        territory.get(2).updateOwner(allPlayer.get(1));
-        territory.get(2).updateDeposit(GameSetup.getInit_budget());
+        territory.get(10).updateOwner(allPlayer.get(1));
+        territory.get(10).updateDeposit(GameSetup.getInit_budget());
     }
     @Test
     public void Move2OpponentRegion(){
         game.startTurn();
-        assertTrue(game.move(Direction.DownLeft));
+        assertTrue(game.move(Direction.Right));
         game.move(Direction.Down);
-        assertFalse(game.move(Direction.DownLeft));
+        assertFalse(game.move(Direction.Down));
     }
     @Test
     public void MoveOutOfMap(){
@@ -52,7 +51,7 @@ final class GameTest {
         game.startTurn();
         long budget = GameSetup.getInit_budget();
         long inv = 500;
-        if(game.move(Direction.Right)) {
+        if(game.move(Direction.Down)) {
             if(game.invest(inv)) {
                 assertEquals(game.getCityCrew().getDeposit(), inv);
                 assertEquals(allPlayer.get(1).getBudget(), budget - inv - 2 * Cost);
@@ -64,7 +63,7 @@ final class GameTest {
     public void RelocateTest( ){
         game.startTurn();
         int location = game.getCityCrew().getLocation();
-        for(int i = 0; i < 4; i++) if(game.move(Direction.Down)) {
+        for(int i = 0; i < 4; i++) if(game.move(Direction.DownRight)) {
             game.invest(100);
         }
         if(game.relocate()) {
@@ -88,13 +87,13 @@ final class GameTest {
     public void CollectNull(){
         game.startTurn();
         long money = GameSetup.getInit_budget();
-        long investment = 100;
         long collect = 0;
+        long investment = 100;
         if(game.move(Direction.Up)) {
             game.invest(investment);
             game.collect(collect);
-            assertEquals(game.getCityCrew().getDeposit(), investment);
             assertEquals(allPlayer.get(0).getBudget(),  money - investment - 3 * Cost);
+            assertEquals(game.getCityCrew().getDeposit(), investment);
         }
     }
 
@@ -116,7 +115,7 @@ final class GameTest {
     }
 
     @Test
-    public void testAttackToEnemyRegion(){
+    public void AttackToEnemyRegionTest(){
         game.startTurn();
         long inv = 100;
         long atkVal = 50;
@@ -133,21 +132,31 @@ final class GameTest {
             assertNull(territory.get(3).getOwner());
     }
     @Test
-    public void testNearby(){
+    public void NearByTest(){
         game.startTurn();
-        long dist = game.nearby(Direction.DownRight);
-        assertEquals(204, dist);
-        game.move(Direction.DownLeft);
-        dist = game.nearby(Direction.Down);
+        long dist = game.nearby(Direction.Up);
         assertEquals(0, dist);
-        game.move(Direction.UpRight);
-        game.move(Direction.Up);
-        dist = game.nearby(Direction.Up);
+        game.move(Direction.Right);
+        dist = game.nearby(Direction.Down);
+        assertEquals(204, dist);
+        dist = game.nearby(Direction.DownLeft);
         assertEquals(0, dist);
         game.move(Direction.Down);
-        game.move(Direction.DownLeft);
-        dist = game.nearby(Direction.DownRight);
+        dist = game.nearby(Direction.UpLeft);
         assertEquals(0, dist);
     }
 
+    @Test
+    public void testOpponent(){
+        game.startTurn();
+        assertEquals(12, game.opponent());
+        game.move(Direction.UpRight);
+        assertEquals(12, game.opponent());
+        game.move(Direction.Down);
+        assertEquals(12, game.opponent());
+        game.move(Direction.Down);
+        assertEquals(12, game.opponent());
+        game.move(Direction.UpLeft);
+        assertEquals(12, game.opponent());
+    }
 }

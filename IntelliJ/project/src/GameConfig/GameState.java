@@ -14,14 +14,12 @@ import java.util.Map;
 import java.util.Random;
 
 public class GameState implements GameCommand{
-
-    // private final Player p1, p2; old version
     private final List<Player> players;
+    private final List<String> Plans = Arrays.asList("Plan1" , "Plan2");
     private final List<Region> territory;
     private final long Cost = 1;
     private Player curr_player;
     private Region cityCrew;
-    private String Plan1, Plan2;
     private int turn;
 
     /**
@@ -257,7 +255,9 @@ public class GameState implements GameCommand{
                 else areas[i] = null;
             }
             stopState = true;
-            for(Region region : areas) stopState = stopState && (region == null);
+            for(Region region : areas) {
+                stopState = ((region == null)&&stopState);
+            }
             dist++;
         } while (!stopState);
         return 0;
@@ -324,11 +324,10 @@ public class GameState implements GameCommand{
     }
     private void Cal_Interest() {
         long max = GameSetup.getMax_dep();
-        for(Region region: territory) {
-            long d = region.getDeposit();
-            if(d == max || d == 0) continue;
-            double rate = Cal_Rate(d);
-            double interest = d*rate/100;
+        for(Region region : territory) {
+            long dep = region.getDeposit();
+            if(dep == max || dep == 0) continue;
+            double interest = dep * Cal_Rate(dep) / 100;
             region.updateDeposit(Math.round(interest));
         }
     }
@@ -367,16 +366,18 @@ public class GameState implements GameCommand{
         Parser parser = new GameParser(new ExprTokenizer(plan));
         List<Node.Exec> nodes = parser.Parse();
         if(turn % 2 == 0){
-            if(Plan2 == null) Plan2 = plan;
-            else if(!Plan2.equals(plan)) {
+            if(Plans.get(1) == null) {
+                Plans.add(1 , plan);
+            } else if(!Plans.get(1).equals(plan)) {
                 curr_player.updateBudget(-GameSetup.getRev_Cost());
-                Plan2 = plan;
+                Plans.add(1 , plan);
             }
         }else{
-            if(Plan1 == null) Plan1 = plan;
-            else if(!Plan1.equals(plan)) {
+            if(Plans.get(0) == null) {
+                Plans.add(0 , plan);
+            } else if(!Plans.get(0).equals(plan)) {
                 curr_player.updateBudget(-GameSetup.getRev_Cost());
-                Plan1 = plan;
+                Plans.add(0 , plan);
             }
         }
         for(Node.Exec node : nodes){

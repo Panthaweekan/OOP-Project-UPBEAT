@@ -31,7 +31,6 @@ public class GameSetup {
     private static long plan_rev_min = 5;
 
     private static long plan_rev_sec = 0;
-
     private static long rev_Cost = 500;
     private static long max_dep = 2500;
     private static long interest_pct = 5;
