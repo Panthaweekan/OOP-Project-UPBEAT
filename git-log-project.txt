@@ -1,104 +1,238 @@
+* commit c033aaf8f2db8a0ccac6e9d54868fc6894c60632
+| Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| Date:   Mon Apr 3 17:08:16 2023 +0700
+|
+|     Check
+|
+* commit d759b931148c208628f10eb56e8187861c2d6520
+| Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| Date:   Mon Apr 3 16:57:18 2023 +0700
+|
+|     Updated GameTest and Comment overall code
+|
+* commit 91b72b4d2423591aeff56c582a51b509b35d051a
+| Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
+| Date:   Mon Apr 3 13:15:44 2023 +0700
+|
+|     Least Updated GameState and Test
+|
+* commit c05c0a3a718a3dfca4e514e9e84a5c1f4059a16d
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Mon Apr 3 12:20:12 2023 +0700
+|
+|     Updated GameState and GameTest least version
+|
+* commit ede3905e753011c09a5ea05910c7b0d86e83c630
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Mon Apr 3 04:41:51 2023 +0700
+|
+|     Update README.md
+|
+* commit b55ec543eb4491cadad4edac7b82e18bf0c8a686
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Mon Apr 3 04:39:37 2023 +0700
+|
+|     Updated GameTest methods
+|
+* commit 59f0e8464f691da3410c1d12ba571f91d438cf38
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Mon Apr 3 04:33:47 2023 +0700
+|
+|     Implemented GameStateTest and Test some testcase to check Code Coverage (Now is about 50%)
+|
+* commit 67174d05c917808168b5fd40d53f8eebe6db8191
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Sun Apr 2 16:50:54 2023 +0700
+|
+|     initialized GameTest and Update GameState
+|
+*   commit b074fed66747fb8e737d7d60beb5c727c9e644f2
+|\  Merge: 913b60c 5cfc83f
+| | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | Date:   Sun Apr 2 16:28:11 2023 +0700
+| |
+| |     Merge branch 'Backend' of https://github.com/Panthaweekan/OOP-Project-UPBEAT into Backend
+| |
+| * commit 5cfc83fbdcc44de7004c3a542966de2886cd7a0d
+| | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | Date:   Sun Apr 2 15:37:38 2023 +0700
+| |
+| |     Update 2/4/2023 and Plan next
+| |
+* | commit 913b60c4ebe61b8059318d9c1577503efd391f7b
+|/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+|   Date:   Sun Apr 2 16:27:54 2023 +0700
+|
+|       Updated GameState's methods
+|
+* commit f589b527f2138ecb6679ab798bc0bd1d44b89bac
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Sun Apr 2 15:34:55 2023 +0700
+|
+|     implemented relocate , oppenent and inGame-state to Playable
+|
+* commit efb49d390dd37ae65dee10c2d71ae03ac242f6f2
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Mon Mar 13 23:20:02 2023 +0700
+|
+|     Change Construction_plan type to .txt
+|
+* commit a36fefb1ab51ed39e5636054fc261196a71bb60e
+| Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| Date:   Mon Mar 13 22:08:33 2023 +0700
+|
+|     Update git-log-eval.txt
+|
+*   commit 02a3a0372e01ef0478df504590acd060df0cc215
+|\  Merge: 7470f69 a6c3455
+| | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | Date:   Mon Mar 13 22:07:48 2023 +0700
+| |
+| |     Merge remote-tracking branch 'origin/Backend' into Backend
+| |
+| * commit a6c345587c2661865456b17974df968583543a61
+| | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+| | Date:   Mon Mar 13 22:05:52 2023 +0700
+| |
+| |     Update READ.ME (13/3/2023)
+| |
+* | commit 7470f69b17df828cd56f41d380b0010a2e2c871e
+|/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
+|   Date:   Mon Mar 13 22:07:30 2023 +0700
+|
+|       Update Git-log-eval.txt
+|
 * commit 651bba0b2f7ec853ac7224c700167bf1b73d5457
 | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | Date:   Mon Mar 13 22:02:32 2023 +0700
-| 
+|
 |     Updated Current Version for Documentation (GameParser,GameSetup,GameState)
-| 
+|
 * commit 4c5327c241328f2aac4ee9ff18399dc5d97e6499
 | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | Date:   Mon Mar 13 20:11:39 2023 +0700
-| 
+|
 |     Fixed Exception_AST constructor
-|   
+|
 *   commit 5d43d5dafdadb147259476c13510cc79a7bb0b81
 |\  Merge: d47fc33 edae8fc
 | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | Date:   Sun Mar 12 19:28:18 2023 +0700
-| | 
+| |
 | |     Merge branch 'Backend' of https://github.com/Panthaweekan/OOP-Project-UPBEAT into Backend
-| | 
+| |
 | * commit edae8fcfbd736919c93bf37adcb10ba9e6309f75
 | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | Date:   Sat Mar 11 19:58:53 2023 +0700
-| | 
+| |
 | |     Update README.md
-| | 
+| |
 | * commit eabd9592ed7b999292704796a021a95592c76913
 | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | Date:   Sat Mar 11 19:55:50 2023 +0700
-| | 
+| |
 | |     11/3/2023 Updated Plan and Problem
-| | 
+| |
 * | commit d47fc33d0bf75284a3c0630a5faeb43c21ecbddc
 |/  Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 |   Date:   Sun Mar 12 19:28:04 2023 +0700
-|   
+|
 |       Updated GameParserTest & GameState
-| 
+|
 * commit 06880889b87f595dcb396c113f0ebe26d5490f45
 | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | Date:   Sat Mar 11 19:50:38 2023 +0700
-| 
+|
 |     Updated GameState and renew some method
-| 
+|
 * commit 114918bb72c59b8e68d7b008d8bc7d47419e5d76
 | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | Date:   Thu Mar 9 00:02:55 2023 +0700
-| 
+|
 |     Renew GameParser , add useful methods and implemented GameState with GameSetup
-| 
+|
 * commit a8689d86ceeb7937a8888fa102a707f02cf1d6c9
 | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | Date:   Wed Mar 8 13:55:01 2023 +0700
-| 
+|
 |     Implement GameParserTest GamePlayer GameRegion and Updated all Interfaces
-| 
+|
 * commit d1d47b5305d282a8b41ab0ec20bc23e5644d32c5
 | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | Date:   Sun Mar 5 22:43:04 2023 +0700
-| 
+|
 |     5/3/2023 Updated
-| 
+|
 * commit e89b8af1da36f72a7b0ab745be31f4301627d4ab
 | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
 | Date:   Thu Feb 23 20:44:29 2023 +0700
-| 
+|
 |     Updated
-|   
+|
 *   commit 546819d0f3f6e9c4afdef33b7e5ba0b725bca17b
 |\  Merge: 35df68e 97b9731
 | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
 | | Date:   Thu Feb 23 14:20:45 2023 +0700
-| | 
+| |
 | |     Updated
-| | 
+| |
 | * commit 97b973172c9014bdf76cd30d69ad02224d88b2e3
 | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | Date:   Thu Feb 23 11:50:47 2023 +0700
-| | 
+| |
 | |     redo-updated
-| | 
+| |
 | * commit 88947d5a66e00af2f8e2a0ea507d7cd2a51b8138
 | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | Date:   Thu Feb 23 02:17:51 2023 +0700
-| | 
+| |
 | |     Update git-log-eval.txt
-| |   
+| |
 | *   commit 230e3162159cdd1009743d833802745d29bf548f
 | |\  Merge: c7a91d1 82a82c7
 | | | Author: Panthaweekan <95071144+Panthaweekan@users.noreply.github.com>
 | | | Date:   Thu Feb 23 02:04:22 2023 +0700
-| | | 
+| | |
 | | |     Merge pull request #33 from Panthaweekan/main
-| | |     
+| | |
 | | |     merge Main to Backend!
-| | | 
+| | |
 * | | commit 35df68ebaa4daa26dd0355daa94dbb6a00622adf
 | | | Author: Panthaweekan_Somngam <tatanoobza1234@hotmail.com>
 | | | Date:   Thu Feb 23 14:19:43 2023 +0700
-| | | 
+| | |
 | | |     Updated GameParser
-| | |   
+| | |
+| | | * commit 50c4b53845251c5e413cec4c42f1c1ede44f5272
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Mon Mar 13 23:19:38 2023 +0700
+| | | |
+| | | |     old
+| | | |
+| | | * commit cc76d3cd49f2b504ca1d638f0809b55ca131c567
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Mon Mar 13 21:23:32 2023 +0700
+| | | |
+| | | |     to react
+| | | |
+| | | * commit 29efb401d25a5e2a510f25c7d6daedf98fa9cff5
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Mon Mar 13 21:22:12 2023 +0700
+| | | |
+| | | |     color
+| | | |
+| | | * commit fab26090ba9b39a0d56b1982bd4f051aeb1d93b9
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Mon Mar 13 20:47:02 2023 +0700
+| | | |
+| | | |     Speech
+| | | |
+| | | * commit 32b9edcc32ec138651a5f4231ce8537238ed3363
+| | | | Author: napatsiri <nnapatsiri@gmail.com>
+| | | | Date:   Mon Mar 13 20:27:47 2023 +0700
+| | | |
+| | | |     fix command
+| | | |
 | | | * commit c0d48ab1dbcef85762edf9b7d4fb82c4bb65f9da
 | | | | Author: napatsiri <nnapatsiri@gmail.com>
 | | | | Date:   Sun Mar 12 22:44:11 2023 +0700

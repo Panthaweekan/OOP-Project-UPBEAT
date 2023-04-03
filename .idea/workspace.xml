@@ -38,7 +38,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/xanta/OPP-project-2023/OOP-Project-UPBEAT-1&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.GameParserTest">
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration name="GameParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP-Project-UPBEAT-1" />
       <extension name="coverage">
@@ -102,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameParserTest" />
         <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameParserTest" />
         <item itemvalue="JUnit.GameParserTest.testReadFile" />
         <item itemvalue="JUnit.TokenizerTest" />
       </list>
@@ -135,7 +135,7 @@
     <SUITE FILE_PATH="coverage/Upbeat_least_version$GameParserTest.ic" NAME="GameParserTest Coverage Results" MODIFIED="1680513234316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Parser.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Upbeat_least_version$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1680513279738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Upbeat_least_version$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1680516522242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>GameConfig.*</FILTER>
     </SUITE>
   </component>
