@@ -27,6 +27,9 @@ final class GameTest {
         territory.get(10).updateOwner(allPlayer.get(1));
         territory.get(10).updateDeposit(GameSetup.getInit_budget());
     }
+
+    /** Command Test <<
+     *  All about GameState and GamePlay **/
     @Test
     public void Move2OpponentRegion(){
         game.startTurn();
@@ -147,7 +150,7 @@ final class GameTest {
     }
 
     @Test
-    public void testOpponent(){
+    public void OpponentTest(){
         game.startTurn();
         assertEquals(12, game.opponent());
         game.move(Direction.UpRight);

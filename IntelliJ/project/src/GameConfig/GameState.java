@@ -17,7 +17,7 @@ public class GameState implements GameCommand{
     private final List<Player> players;
     private final List<String> Plans = Arrays.asList("Plan1" , "Plan2");
     private final List<Region> territory;
-    private final long Cost = 1;
+    private final long Cost = 100;
     private Player curr_player;
     private Region cityCrew;
     private int turn;
